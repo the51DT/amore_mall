@@ -507,18 +507,20 @@
         setTimeout(() => {
             const splash= document.querySelector('.splash');
             splash.style.opacity = '0';
-
         }, 5000);
         setTimeout(() => {
             const container = document.querySelector('.container');
-            container.style.display = 'block';
+            const body = document.querySelector('body');
+            container.style.opacity = '1';
+            body.style.overflow = 'initial'
+            splash.style.display = 'none';
         }, 5500);
 
         // swiper
         var swiper = new Swiper(".tabSwiper", {
             slidesPerView: 5,
             spaceBetween: 30,
-            loop: false
+            loop: false,
         });
 
         var swiper = new Swiper(".couponSwiper", {
@@ -526,6 +528,7 @@
             spaceBetween: 20,
             centeredSlides: true,
             initialSlide: 2,
+            autoplay: true
         });
 
         var swiper = new Swiper(".eventSwiper", {
@@ -533,6 +536,7 @@
             spaceBetween: 40,
             centeredSlides: true,
             initialSlide: 2,
+            autoplay: true
         });
 
         var swiper = new Swiper(".liveSwiper", {
@@ -541,6 +545,7 @@
             pagination: {
                 el: ".swiper-pagination",
             },
+            autoplay: true
         });
 
         // aos
