@@ -29,16 +29,87 @@ img {
   position: relative;
 }
 .section03 .swiper_coupon {
-  position: absolute;
-  top: 6.5%;
-  padding-bottom: 40px;
+  background-image: url(../img/section_03_con03.jpg);
+  padding-bottom: 80px;
 }
 .mySwiper_03 .swiper-slide {
   width: 80%;
 }
+.mySwiper_03 .swiper-wrapper {
+  background-image: url(../img/section_03_con03.jpg);
+}
 .swiper-pagination {
   bottom: -40px;
 }
+.section05 {
+  background-color: #d9ebfa;
+}
+.section_05_content {
+  margin: 0 60px;
+  padding-bottom: 50px;
+}
+.section05 .keyframe01 {
+  /* margin-top: 36px; */
+  width: 100vw;
+  width: clamp(1px, calc(100vw * 630 / 750), 630px);
+  height: clamp(1px, calc(100vw * 550 / 750), 550px);
+  background-image: url(../img/sec_05_con_01.png);
+  background-size: cover;
+  animation: img1 10s linear infinite;
+}
+@keyframes img1 {
+  15% {
+    background-image: url(../img/sec_05_con_01.png);
+  }
+  25% {
+    background-image: url(../img/sec_05_con_02.png);
+  }
+  40% {
+    background-image: url(../img/sec_05_con_02.png);
+  }
+  50% {
+    background-image: url(../img/sec_05_con_03.png);
+  }
+  65% {
+    background-image: url(../img/sec_05_con_03.png);
+  }
+  75% {
+    background-image: url(../img/sec_05_con_04.png);
+  }
+  90% {
+    background-image: url(../img/sec_05_con_04.png);
+  }
+}
+.gift02 {
+  padding-top: 80px;
+}
+.section05 .keyframe02 {
+  /* margin-top: 36px; */
+  width: clamp(1px, calc(100vw * 630 / 750), 630px);
+  height: clamp(1px, calc(100vw * 550 / 750), 550px);
+  background-image: url(../img/section_05_con02_02.png);
+  animation: img2 10s linear infinite;
+  background-size: cover;
+  border-radius: 0 0 8% 8%;
+}
+@keyframes img2 {
+  16% {
+    background-image: url(../img/section_05_con02_02.png);
+  }
+  32% {
+    background-image: url(../img/section_05_con02_03.png);
+  }
+  48% {
+    background-image: url(../img/section_05_con02_03.png);
+  }
+  64% {
+    background-image: url(../img/section_05_con02_04.png);
+  }
+  80% {
+    background-image: url(../img/section_05_con02_04.png);
+  }
+}
+
 .mySwiper_09 {
   background-color: #ddeaf3;
 }
@@ -115,9 +186,20 @@ img {
   background-color: #001d6c;
   height: 112px;
 }
+.text-tab .mySwiper_01 {
+  margin-left: 5%;
+  height: auto;
+}
+.text-tab .mySwiper_01 .swiper-slide {
+  display: flex;
+}
 .container {
   background-color: #222;
 }
 .footer {
   background-color: #ddd;
+}
+.tab-menu02 {
+  background-color: #013ae1;
+  height: 400px;
 }
