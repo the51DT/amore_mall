@@ -14,6 +14,9 @@
             margin: 0;
             padding: 0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body{
             max-width: 750px;
             margin: 0 auto;
@@ -189,7 +192,11 @@
                     slideChange: function () {
                         $('.live').removeClass('active');
                         $('.live').eq(this.realIndex).addClass('active')
+                        $('.live_list').css('margin-right', `${this.realIndex*40}px`)
                     }
+                },
+                autoplay: {
+                    delay: 5000,
                 },
                 /* breakpoints: {
                     700: {
@@ -212,13 +219,13 @@
                     670: {
                         slidesPerView: 5,
                     },
-                    550: {
+                    500: {
                         slidesPerView: 4,
                     },
-                    480: {
+                    400: {
                         slidesPerView: 3,
                     },
-                    300:{
+                    200:{
                         slidesPerView: 2,
                     }
                 },
@@ -228,6 +235,9 @@
                 slidesPerView: 1,
                 spaceBetween: 0,
                 loop: true,
+                autoplay: {
+                    delay: 5000,
+                },
             })
 
             function checkVisible( element, check = 'visible' ) {

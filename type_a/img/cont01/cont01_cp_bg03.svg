@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690" height="1200" viewBox="0 0 690 1200">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="750" height="1200" viewBox="0 0 750 1200">
   <defs>
     <clipPath id="clip-path">
-      <rect id="사각형_573" data-name="사각형 573" width="690" height="1200" transform="translate(-6322 -1647)" fill="#fff"/>
+      <rect id="사각형_573" data-name="사각형 573" width="750" height="1200" transform="translate(-6324 -1647)" fill="#fff"/>
     </clipPath>
     <clipPath id="clip-path-2">
       <rect id="사각형_541" data-name="사각형 541" width="115.831" height="112.372" transform="translate(0 0)" fill="#ff1aa3"/>
@@ -43,8 +43,8 @@
       <rect id="사각형_536" data-name="사각형 536" width="81.981" height="81.982" fill="#cbd9ff"/>
     </clipPath>
   </defs>
-  <g id="마스크_그룹_67" data-name="마스크 그룹 67" transform="translate(6322 1647)" clip-path="url(#clip-path)">
-    <g id="_03_BG_그래픽" data-name="03_BG_그래픽" transform="translate(-6352.506 -6578)">
+  <g id="마스크_그룹_828" data-name="마스크 그룹 828" transform="translate(6324 1647)" clip-path="url(#clip-path)">
+    <g id="_03_BG_그래픽" data-name="03_BG_그래픽" transform="translate(-6323.012 -6578)">
       <path id="사각형_569" data-name="사각형 569" d="M0,0H690a0,0,0,0,1,0,0V1160a40,40,0,0,1-40,40H40a40,40,0,0,1-40-40V0A0,0,0,0,1,0,0Z" transform="translate(31 4931)" fill="#4931c3"/>
       <g id="그룹_823" data-name="그룹 823" transform="translate(576 5473)" clip-path="url(#clip-path-2)">
         <g id="그룹_822" data-name="그룹 822" transform="translate(0 0)" style="isolation: isolate">
@@ -56,7 +56,7 @@
         </g>
       </g>
       <g id="그룹_828" data-name="그룹 828" transform="matrix(0.998, 0.07, -0.07, 0.998, 5.282, 5649)">
-        <g id="그룹_827" data-name="그룹 827" clip-path="url(#clip-path-4)">
+        <g id="마스크_그룹_827" data-name="마스크 그룹 827" clip-path="url(#clip-path-4)">
           <g id="그룹_826" data-name="그룹 826" style="isolation: isolate">
             <g id="그룹_825" data-name="그룹 825">
               <g id="그룹_824" data-name="그룹 824" clip-path="url(#clip-path-5)">

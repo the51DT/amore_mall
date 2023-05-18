@@ -153,7 +153,7 @@
                             </div>
                             <img
                                 class="cont01_ball cont01_ball1"
-                                src="./img/content/cont01_ball1.svg"
+                                src="./img/content/cont01_ball1.png"
                                 alt=""
                             />
                         </div>
@@ -165,12 +165,12 @@
                         <div id="nav02" class="cont02">
                             <img
                                 class="cont02_ball cont02_ball1"
-                                src="./img/content/cont02_ball1.svg"
+                                src="./img/content/cont02_ball1.png"
                                 alt=""
                             />
                             <img
                                 class="cont02_ball cont02_ball2"
-                                src="./img/content/cont02_ball2.svg"
+                                src="./img/content/cont02_ball2.png"
                                 alt=""
                             />
                             <div class="cont02_tit_01">
@@ -227,10 +227,7 @@
                             <div class="tab_cont">
                                 <div id="tab01">
                                     <div class="cont03_img">
-                                        <img
-                                            src="./img/content/cont03_img1.svg"
-                                            alt=""
-                                        />
+                                        <div class="cont03_img_1"></div>
                                     </div>
                                 </div>
                                 <div id="tab02">
@@ -264,13 +261,13 @@
                             </div>
                             <div class="cont04_img">
                                 <ul class="flex">
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont04_img1.svg"
                                             alt=""
                                         />
                                     </li>
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont04_img2.svg"
                                             alt=""
@@ -421,7 +418,7 @@
                                             data-aos="fade-down"
                                         >
                                             <img
-                                                src="./img/content/cont07_img1.svg"
+                                                src="./img/content/cont07_img1.png"
                                                 alt=""
                                             />
                                         </li>
@@ -430,7 +427,7 @@
                                             data-aos="fade-down"
                                         >
                                             <img
-                                                src="./img/content/cont07_img2.svg"
+                                                src="./img/content/cont07_img2.png"
                                                 alt=""
                                             />
                                         </li>
@@ -439,7 +436,7 @@
                                             data-aos="fade-down"
                                         >
                                             <img
-                                                src="./img/content/cont07_img3.svg"
+                                                src="./img/content/cont07_img3.png"
                                                 alt=""
                                             />
                                         </li>
@@ -448,7 +445,7 @@
                                             data-aos="fade-down"
                                         >
                                             <img
-                                                src="./img/content/cont07_img4.svg"
+                                                src="./img/content/cont07_img4.png"
                                                 alt=""
                                             />
                                         </li>
@@ -457,7 +454,7 @@
                                             data-aos="fade-down"
                                         >
                                             <img
-                                                src="./img/content/cont07_img5.svg"
+                                                src="./img/content/cont07_img5.png"
                                                 alt=""
                                             />
                                         </li>
@@ -507,18 +504,22 @@
         setTimeout(() => {
             const splash= document.querySelector('.splash');
             splash.style.opacity = '0';
-
         }, 5000);
         setTimeout(() => {
             const container = document.querySelector('.container');
-            container.style.display = 'block';
+            const body = document.querySelector('body');
+            const splash= document.querySelector('.splash');
+            container.style.opacity = '1';
+            body.style.overflow = 'initial'
+            body.style.backgroundColor = 'transparent'
+            splash.style.display = 'none';
         }, 5500);
 
         // swiper
         var swiper = new Swiper(".tabSwiper", {
             slidesPerView: 5,
             spaceBetween: 30,
-            loop: false
+            loop: false,
         });
 
         var swiper = new Swiper(".couponSwiper", {
@@ -526,13 +527,15 @@
             spaceBetween: 20,
             centeredSlides: true,
             initialSlide: 2,
+            autoplay: true
         });
 
         var swiper = new Swiper(".eventSwiper", {
             slidesPerView: 'auto',
-            spaceBetween: 40,
+            spaceBetween: 30,
             centeredSlides: true,
             initialSlide: 2,
+            autoplay: true
         });
 
         var swiper = new Swiper(".liveSwiper", {
@@ -541,6 +544,7 @@
             pagination: {
                 el: ".swiper-pagination",
             },
+            autoplay: true
         });
 
         // aos

@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="stylesheet" href="./css/type_h.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="./js/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>type_h</title>
@@ -14,10 +17,14 @@
             margin: 0;
             padding: 0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body{
             max-width: 750px;
             margin: 0 auto;
             height: 100%;
+            overflow: hidden;
         }
         .wrap{
             display: flex;
@@ -33,6 +40,9 @@
     </style>
 </head>
 <body>
+    <div class="splash">
+        <img src="./img/splash.png">
+    </div>
     <div class="wrap">
         <section class="flex main">
             <div class="con">
@@ -165,11 +175,22 @@
 
     <script>
         $(document).ready(function(){
+            setTimeout(() => {
+                $('.splash').css('opacity', '0')
+            }, 3000);
+            setTimeout(() => {
+                $('body').css({'overflow': 'initial'})
+                $('.splash').css('display', 'none')
+            }, 3500);
+
             var siwper1 = new Swiper('.coupon', {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 pagination: {
                     el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 4000,
                 },
             })
 
@@ -179,11 +200,17 @@
                 pagination: {
                     el: '.swiper-pagination',
                 },
+                autoplay: {
+                    delay: 4000,
+                },
             })
             var siwper3 = new Swiper('.sale', {
                 slidesPerView: 1.6,
                 spaceBetween: 40,
                 centeredSlides: true,
+                autoplay: {
+                    delay: 4000,
+                },
             })
 
             $('.menu').click(function(){
@@ -196,6 +223,7 @@
                 $('.sec3').css('backgroundImage', 'url(./img/sec3_back_1.png)')
                 $('.sec3 .title').attr('src', './img/sec3_title_1.svg')
                 $('.sec3 .text').attr('src', './img/sec3_text_1.svg')
+                $('.sec3 .btn').css('margin-top', `clamp(1px, calc(100vw * 543 / 750), 543px)`)
             })
             $('.sec3 .btn2').click(function(){
                 $('.sec3 .btn1').attr('src', './img/sec3_btn_1_off.svg')
@@ -203,8 +231,73 @@
                 $('.sec3').css('backgroundImage', 'url(./img/sec3_back_2.png)')
                 $('.sec3 .title').attr('src', './img/sec3_title_2.svg')
                 $('.sec3 .text').attr('src', './img/sec3_text_2.svg')
+                $('.sec3 .btn').css('margin-top', `clamp(1px, calc(100vw * 593 / 750), 593px)`)
             })
 
+            
+            $('.menu ul li a').eq(0).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${1}_on.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(1).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${2}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(2).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${3}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(3).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${4}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(4).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${5}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(5).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${6}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(6).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${7}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+            })
         })
     </script>
 </body>
