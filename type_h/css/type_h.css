@@ -13,8 +13,26 @@
     left: clamp(1px, calc(100vw * 35 / 750), 35px);
 }
 
+.splash{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(1px, calc(100vw), 750px);
+    height: 100vh;
+    background: #0E1B92;
+    transition: all ease-in-out 0.5s;
+}
+.splash img{
+    width: 100%;
+}
+
 .menu{
-    z-index: 199;
+    z-index: 10;
     position: fixed;
     bottom: clamp(1px, calc(100vw * 40 / 750), 40px);
     left: clamp(1px, calc(100vw * 84 / 750), 84px);
@@ -95,14 +113,14 @@
 
 .sec1{
     position: relative;
-    padding-bottom: 180px;
+    padding-bottom: clamp(1px, calc(100vw * 180 / 750), 180px);
 }
 .sec1 .con{
-    padding-top: 143px;
+    padding-top: clamp(1px, calc(100vw * 143 / 750), 143px);
 }
 .sec1 .num,
 .sec1 .aside{
-    margin-top: 143px;
+    margin-top: clamp(1px, calc(100vw * 143 / 750), 143px);
 }
 .sec1 .num{
     width: clamp(1px, calc(100vw * 59 / 750), 59px);
@@ -111,24 +129,24 @@
     width: clamp(1px, calc(100vw * 352 / 750), 352px);
 }
 .sec1 .con1{
-    margin-top: 58px;
+    margin-top: clamp(1px, calc(100vw * 58 / 750), 58px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
 }
 .sec1 .con2{
-    margin-top: 109.5px;
+    margin-top: clamp(1px, calc(100vw * 109.5 / 750), 109.5px);
     width: clamp(1px, calc(100vw * 507 / 750), 507px);
 }
 .sec1 .line{
-    margin-top: 49.5px;
+    margin-top: clamp(1px, calc(100vw * 49.5 / 750), 49.5px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
     border-top: solid #AEBBCA 2px;
 }
 .sec1 .slide_title{
-    margin-top: 79px;
+    margin-top: clamp(1px, calc(100vw * 79 / 750), 79px);
     width: clamp(1px, calc(100vw * 283 / 750), 283px);
 }
 .swiper_coupon {
-    margin-top: 24px;
+    margin-top: clamp(1px, calc(100vw * 24 / 750), 24px);
     width: clamp(1px, calc(100vw * 501 / 750), 501px);
     height: clamp(1px, calc(100vw * 386 / 750), 386px);
     overflow: hidden;
@@ -161,22 +179,22 @@
 .sec2{
     position: relative;
     background: #0075FF;
-    padding-top: 180px;
-    padding-bottom: 184px;
+    padding-top: clamp(1px, calc(100vw * 180 / 750), 180px);
+    padding-bottom: clamp(1px, calc(100vw * 184 / 750), 184px);
 }
 .sec2 .num{
-    top: 180px;
+    top: clamp(1px, calc(100vw * 180 / 750), 180px);
     width: clamp(1px, calc(100vw * 65 / 750), 65px);
 }
 .sec2 .title{
     width: clamp(1px, calc(100vw * 446 / 750), 446px);
 }
 .sec2 .text1{
-    margin-top: 83px;
+    margin-top: clamp(1px, calc(100vw * 83 / 750), 83px);
     width: clamp(1px, calc(100vw * 281 / 750), 281px);
 }
 .sec2 .con1{
-    margin-top: 36px;
+    margin-top: clamp(1px, calc(100vw * 36 / 750), 36px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
     height: clamp(1px, calc(100vw * 550 / 750), 550px);
     background-image: url(../img/sec2_con_1_1.png);
@@ -193,11 +211,11 @@
     90%{background-image: url(../img/sec2_con_1_4.png);}
 }
 .sec2 .text2{
-    margin-top: 83px;
+    margin-top: clamp(1px, calc(100vw * 83 / 750), 83px);
     width: clamp(1px, calc(100vw * 421 / 750), 421px);
 }
 .sec2 .con2{
-    margin-top: 36px;
+    margin-top: clamp(1px, calc(100vw * 36 / 750), 36px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
     height: clamp(1px, calc(100vw * 589 / 750), 589px);
     background-image: url(../img/sec2_con_2_1.png);
@@ -212,7 +230,7 @@
     80%{background-image: url(../img/sec2_con_2_3.png);}
 }
 .sec2 .aside{
-    top: 180px;
+    top: clamp(1px, calc(100vw * 180 / 750), 180px);
 }
 
 .sec3{
@@ -221,31 +239,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 138px;
+    padding-bottom: clamp(1px, calc(100vw * 138 / 750), 138px);
 }
 .sec3 .num{
     width: clamp(1px, calc(100vw * 67 / 750), 67px);
 }
 .sec3 .num,
 .sec3 .aside{
-    top: 164px;
+    top: clamp(1px, calc(100vw * 164 / 750), 164px);
 }
 .sec3 .con{
-    padding-top: 164px;
+    padding-top: clamp(1px, calc(100vw * 164 / 750), 164px);
 }
 .sec3 .title{
     width: clamp(1px, calc(100vw * 432 / 750), 432px);
 }
 .sec3 .flex{
-    margin-top: 38px;
-    gap: 15px;
+    margin-top: clamp(1px, calc(100vw * 38 / 750), 38px);
+    gap: clamp(1px, calc(100vw * 15 / 750), 15px);
     width: clamp(1px, calc(100vw * 415 / 750), 415px);
 }
 .sec3 .flex img{
     width: clamp(1px, calc(100vw * 200 / 750), 200px);
 }
 .sec3 .text{
-    margin-top: 38px;
+    margin-top: clamp(1px, calc(100vw * 38 / 750), 38px);
     width: clamp(1px, calc(100vw * 262 / 750), 262px);
 }
 .sec3 .btn{
@@ -255,11 +273,11 @@
 
 .sec4{
     position: relative;
-    padding-top: 140px;
+    padding-top: clamp(1px, calc(100vw * 140 / 750), 140px);
 }
 .sec4 .num,
 .sec4 .aside{
-    margin-top: 140px;
+    margin-top: clamp(1px, calc(100vw * 140 / 750), 140px);
 }
 .sec4 .num{
     width: clamp(1px, calc(100vw * 68 / 750), 68px);
@@ -268,22 +286,22 @@
     width: clamp(1px, calc(100vw * 384 / 750), 384px);
 }
 .sec4 .con1{
-    margin-top: 80px;
+    margin-top: clamp(1px, calc(100vw * 80 / 750), 80px);
     width: clamp(1px, calc(100vw * 501 / 750), 501px);
 }
 .sec4 .btn{
-    margin-top: 70px;
+    margin-top: clamp(1px, calc(100vw * 70 / 750), 70px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
 }
 
 .sec5{
     position: relative;
-    padding-top: 180px;
-    padding-bottom: 200px;
+    padding-top: clamp(1px, calc(100vw * 180 / 750), 180px);
+    padding-bottom: clamp(1px, calc(100vw * 200 / 750), 200px);
 }
 .sec5 .num,
 .sec5 .aside{
-    margin-top: 180px;
+    margin-top: clamp(1px, calc(100vw * 180 / 750), 180px);
 }
 .sec5 .num{
     width: clamp(1px, calc(100vw * 66 / 750), 66px);
@@ -292,34 +310,34 @@
     width: clamp(1px, calc(100vw * 348 / 750), 348px);
 }
 .sec5 .con1{
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
 }
 .sec5 .btn{
-    margin-top: 68px;
+    margin-top: clamp(1px, calc(100vw * 68 / 750), 68px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
 }
 
 .sec6{
     position: relative;
     background-image: url(../img/sec6_back.svg);
-    padding-top: 177px;
-    padding-bottom: 138px;
+    padding-top: clamp(1px, calc(100vw * 177 / 750), 177px);
+    padding-bottom: clamp(1px, calc(100vw * 138 / 750), 138px);
 }
 .sec6 .num{
     width: clamp(1px, calc(100vw * 108 / 750), 108px);
 }
 .sec6 .num,
 .sec6 .aside{
-    top: 177px;
+    top: clamp(1px, calc(100vw * 177 / 750), 177px);
 }
 .sec6 .title{
     width: clamp(1px, calc(100vw * 321 / 750), 321px);
 }
 .sec6 .live{
     position: relative;
-    margin-top: 101px;
-    margin-left: 1px;
+    margin-top: clamp(1px, calc(100vw * 101 / 750), 101px);
+    margin-left: clamp(1px, calc(100vw * 1 / 750), 1px);
     width: clamp(1px, calc(100vw * 579 / 750), 579px);
     overflow: hidden;
 }
@@ -341,19 +359,19 @@
     background: #FFFFFF;
 }
 .sec6 .btn{
-    margin-top: 53px;
+    margin-top: clamp(1px, calc(100vw * 53 / 750), 53px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
 }
 
 .sec7{
     overflow: hidden;
     position: relative;
-    padding-top: 176px;
-    padding-bottom: 204px;
+    padding-top: clamp(1px, calc(100vw * 176 / 750), 176px);
+    padding-bottom: clamp(1px, calc(100vw * 204 / 750), 204px);
 }
 .sec7 .num,
 .sec7 .aside{
-    margin-top: 176px;
+    margin-top: clamp(1px, calc(100vw * 176 / 750), 176px);
 }
 .sec7 .num{
     width: clamp(1px, calc(100vw * 62 / 750), 62px);
@@ -362,7 +380,7 @@
     width: clamp(1px, calc(100vw * 308 / 750), 308px);
 }
 .sale{
-    margin-top: 183px;
+    margin-top: clamp(1px, calc(100vw * 183 / 750), 183px);
 }
 .sale .swiper-slide img{
     width: clamp(1px, calc(100vw * 440 / 750), 440px);
@@ -371,7 +389,7 @@
 footer{
     background: #DED8C7;
     justify-content: center;
-    padding: 90px 0 108px;
+    padding: clamp(1px, calc(100vw * 90 / 750), 90px) 0 clamp(1px, calc(100vw * 108 / 750), 108px);
 }
 footer img{
     width: clamp(1px, calc(100vw * 653 / 750), 653px);

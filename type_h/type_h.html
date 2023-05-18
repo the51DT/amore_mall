@@ -24,6 +24,7 @@
             max-width: 750px;
             margin: 0 auto;
             height: 100%;
+            overflow: hidden;
         }
         .wrap{
             display: flex;
@@ -39,6 +40,9 @@
     </style>
 </head>
 <body>
+    <div class="splash">
+        <img src="./img/splash.png">
+    </div>
     <div class="wrap">
         <section class="flex main">
             <div class="con">
@@ -171,11 +175,22 @@
 
     <script>
         $(document).ready(function(){
+            setTimeout(() => {
+                $('.splash').css('opacity', '0')
+            }, 3000);
+            setTimeout(() => {
+                $('body').css({'overflow': 'initial'})
+                $('.splash').css('display', 'none')
+            }, 3500);
+
             var siwper1 = new Swiper('.coupon', {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 pagination: {
                     el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 4000,
                 },
             })
 
@@ -185,11 +200,17 @@
                 pagination: {
                     el: '.swiper-pagination',
                 },
+                autoplay: {
+                    delay: 4000,
+                },
             })
             var siwper3 = new Swiper('.sale', {
                 slidesPerView: 1.6,
                 spaceBetween: 40,
                 centeredSlides: true,
+                autoplay: {
+                    delay: 4000,
+                },
             })
 
             $('.menu').click(function(){
