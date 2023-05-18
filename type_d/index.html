@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMORE : D type</title>
+    <link rel="stylesheet" href="../asseets/css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="header">
+          <div class="mainvisual">
+            <img src="./img/main.png" />
+          </div>
+          <div class="text-tab">
+            <!-- Swiper -->
+            <div class="swiper mySwiper tabSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab01.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab02.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab03.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab04.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab05.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab06.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/pop-menu-tab07.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="section01"></div>
+          <div class="section02">
+            <img src="./img/section_02.png" />
+          </div>
+          <div class="section03">
+            <img src="./img/section_03.png" />
+            <!-- Swiper -->
+            <div class="swiper mySwiper swiper03">
+              <div class="swiper-wrapper">
+                <img src="./img/coupon_01.png" />
+              </div>
+              <div class="swiper-wrapper">
+                <img src="./img/coupon_01.png" />
+              </div>
+              <div class="swiper-wrapper">
+                <img src="./img/coupon_01.png" />
+              </div>
+              <div class="swiper-wrapper">
+                <img src="./img/coupon_01.png" />
+              </div>
+              <div class="swiper-wrapper">
+                <img src="./img/coupon_01.png" />
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="blue"></div>
+          </div>
+          <div class="section04">
+            <img src="./img/section_04.png" />
+          </div>
+          <div class="section05">
+            <img src="./img/section_05.png" />
+          </div>
+          <div class="section06">
+            <img src="./img/section_06.png" />
+          </div>
+          <div class="section07">
+            <img src="./img/section_07.png" />
+          </div>
+          <div class="section08">
+            <img src="./img/section_08.png" />
+          </div>
+          <div class="section09">
+            <img src="./img/section_09.png" />
+          </div>
+          <div class="section10">
+            <img src="./img/section_10.png" />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer"></div>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    // 메뉴 탭 스와이프
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: "4",
+      spaceBetween: 44,
+      loop: false,
+    });
+    // Swiper03 스와이프
+    var swiper = new Swiper(".swiper03", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
