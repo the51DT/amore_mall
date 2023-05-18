@@ -26,13 +26,13 @@ main{
     z-index: 3;
     position: sticky;
     top: 0;
-    padding: 33px 30px 29px;
+    padding: clamp(1px, calc(100vw * 33 / 750), 33px) clamp(1px, calc(100vw * 30 / 750), 30px) clamp(1px, calc(100vw * 29 / 750), 29px);
     overflow: hidden;
     background: rgba(0, 0, 0, 0.18);
     font-family: "APHQ";
     text-align: center;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: clamp(1px, calc(100vw * 25 / 750), 25px);
+    line-height: clamp(1px, calc(100vw * 30 / 750), 30px);
 }
 .menu a{
     text-decoration: none;
@@ -46,29 +46,29 @@ main{
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #430B56 7.29%, #1A1F4E 47.92%, #3F0836 100%);
-    padding-bottom: 82.79px;
+    padding-bottom: clamp(1px, calc(100vw * 82.79 / 750), clamp(1px, calc(100vw * 82.79 / 750), 82.79px));
 }
 .sec2 .title{
-    margin-top: 102px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw * 102 / 750), 102px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec2 .con1{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     width: clamp(1px, calc(100vw * 715 / 750), 715px);
 }
 .sec2 .con2{
-    margin-top: 131px;
+    margin-top: clamp(1px, calc(100vw * 131 / 750), 131px);
     width: clamp(1px, calc(100vw * 587 / 750), 587px);
 }
 .sec2 .con3{
-    margin-top: 115px;
+    margin-top: clamp(1px, calc(100vw * 115 / 750), 115px);
     width: clamp(1px, calc(100vw * 402.22 / 750), 402.22px);
 }
 
 .sec3{
     flex-direction: column;
     align-items: center;
-    padding-bottom: 86px;
+    padding-bottom: clamp(1px, calc(100vw * 86 / 750), 86px);
     background: linear-gradient(180deg, #F48312 25.52%, #E9F7FF 63.02%, rgba(123, 200, 224, 0.92) 86.46%);
 }
 .sec3 .con1,
@@ -77,19 +77,19 @@ main{
     align-items: center;
 }
 .sec3 .con1 .title{
-    margin-top: 109px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw * 109 / 750), 109px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec3 .con1 .sub_title{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     width: clamp(1px, calc(100vw * 416 / 750), 416px);
 }
 .sec3 .con1 .con1_title{
-    margin-top: 73px;
+    margin-top: clamp(1px, calc(100vw * 73 / 750), 73px);
     width: clamp(1px, calc(100vw * 381 / 750), 381px);
 }
 .sec3 .con1 .con1_swiper{
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     width: clamp(1px, calc(100vw * 524 / 750), 524px);
     height: clamp(1px, calc(100vw * 748 / 750), 748px);
 }
@@ -97,39 +97,39 @@ main{
     width: clamp(1px, calc(100vw * 550 / 750), 550px);
 }
 .sec3 .con1 .con1_btn .btn_title{
-    margin-top: 50px;
-    width: 274px;
+    margin-top: clamp(1px, calc(100vw * 50 / 750), 50px);
+    width: clamp(1px, calc(100vw * 274 / 750), 274px);
 }
 .sec3 .con1 .btn{
     margin-inline: auto;
-    margin-top: 18px;
+    margin-top: clamp(1px, calc(100vw * 18 / 750), 18px);
     width: clamp(1px, calc(100vw * 483 / 750), 483px);
     background: #F58313;
-    padding: 22px 36px 29px;
+    padding: clamp(1px, calc(100vw * 22 / 750), 33px) clamp(1px, calc(100vw * 36 / 750), 33px) clamp(1px, calc(100vw * 29 / 750), 29px);
     box-shadow: 3px 3px 4px rgba(96, 73, 29, 0.25);
-    border-radius: 10px;
+    border-radius: clamp(1px, calc(100vw * 10 / 750), 10px);
 }
 .sec3 .con2 .title{
-    margin-top: 109px;
+    margin-top: clamp(1px, calc(100vw * 109 / 750), 109px);
 }
 .sec3 .con2 .con2_swiper{
-    margin-top: 50px;
+    margin-top: clamp(1px, calc(100vw * 50 / 750), 50px);
     width: clamp(1px, calc(100vw * 510 / 750), 510px);
     height: clamp(1px, calc(100vw * 710.33 / 750), 710.33px);
 }
 .sec3 .con2 .text{
-    margin-top: 38.67px;
+    margin-top: clamp(1px, calc(100vw * 38.67 / 750), 38.67px);
     width: clamp(1px, calc(100vw * 528 / 750), 528px);
 }
 .sec3 .img_tag{
     position: absolute;
     z-index: 2;
-    padding-top: 28px;
-    padding-right: 8px;
+    padding-top: clamp(1px, calc(100vw * 28 / 750), 28px);
+    padding-right: clamp(1px, calc(100vw * 8 / 750), 8px);
 }
 .sec3 .sec3_swiper{
     overflow: hidden;
-    border-radius: 258px;
+    border-radius: clamp(1px, calc(100vw * 258 / 750), 258px);
 }
 .sec3 .sec3_swiper .swiper-slide{
     text-align: center;
@@ -140,25 +140,28 @@ main{
 .sec3 .sec3_swiper .swiper-slide img{
     width: 100%;
 }
+.sec3 .img_tag{
+    width: clamp(1px, calc(100vw * 145 / 750), 145px);
+}
 
 .sec4{
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #0A60B0 24.87%, #FFFFFF 98.31%);
-    padding-bottom: 89px;
+    padding-bottom: clamp(1px, calc(100vw * 89 / 750), 89px);
 }
 .sec4 .title{
-    margin-top: 104px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw * 104 / 750), 104px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec4 .sub_title{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     width: clamp(1px, calc(100vw * 403 / 750), 403px);
 }
 .sec4 .con{
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: clamp(1px, calc(100vw * 45 / 750), 45px);
     width: clamp(1px, calc(100vw * 620 / 750), 620px);
 }
 .sec4 .con .tab{
@@ -172,58 +175,58 @@ main{
     width: 100%;
 }
 .sec4 .btn{
-    margin-top: 50px;
+    margin-top: clamp(1px, calc(100vw * 50 / 750), 50px);
     width: clamp(1px, calc(100vw * 321 / 750), 321px);
     background: #1D6FBB;
     box-shadow: 3px 4px 5px rgba(52, 85, 122, 0.34);
-    border-radius: 10px;
-    padding: 23px 76px 27px 86px;
+    border-radius: clamp(1px, calc(100vw * 10 / 750), 10px);
+    padding: clamp(1px, calc(100vw * 23 / 750), 23px) clamp(1px, calc(100vw * 76 / 750), 76px) clamp(1px, calc(100vw * 27 / 750), 27px) clamp(1px, calc(100vw * 86 / 750), 86px);
 }
 
 .sec5{
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #126C46 38.05%, #ADB865 82.58%, #FFE176 97.74%);
-    padding-bottom: 80px;
+    padding-bottom: clamp(1px, calc(100vw * 80 / 750), 80px);
 }
 .sec5 .title{
-    margin-top: 112px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw *112 / 750), 112px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec5 .sub_title{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     width: clamp(1px, calc(100vw * 411 / 750), 411px);
 }
 .sec5 .img{
     display: flex;
-    gap: 16px;
-    margin-top: 50px;
+    gap: clamp(1px, calc(100vw * 16 / 750), 16px);
+    margin-top: clamp(1px, calc(100vw * 50 / 750), 50px);
     width: clamp(1px, calc(100vw * 620 / 750), 620px);
 }
 .sec5 .img img{
     width: 50%;
 }
 .sec5 .btn{
-    margin-top: 48px;
+    margin-top: clamp(1px, calc(100vw * 48 / 750), 48px);
     background: #126C46;
     box-shadow: 3px 4px 4px rgba(17, 118, 162, 0.25);
-    border-radius: 10px;
-    padding: 22px 123px 28px 144px;
+    border-radius: clamp(1px, calc(100vw * 10 / 750), 10px);
+    padding: clamp(1px, calc(100vw * 22 / 750), 22px) clamp(1px, calc(100vw * 123 / 750), 123px) clamp(1px, calc(100vw * 28 / 750), 28px) clamp(1px, calc(100vw * 144 / 750), 144px);
     width: clamp(1px, calc(100vw * 216 / 750), 216px);
 }
 
 .sec6{
     flex-direction: column;
     align-items: center;
-    padding-bottom: 88px;
+    padding-bottom: clamp(1px, calc(100vw * 88 / 750), 88px);
     background: linear-gradient(180deg, #FF7A2F 26.43%, #F07076 53.18%, #E468B3 75.82%);
 }
 .sec6 .title{
-    margin-top: 90px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw * 90 / 750), 90px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec6 .sub_title{
-    margin-top: 42px;
+    margin-top: clamp(1px, calc(100vw * 42 / 750), 42px);
     width: clamp(1px, calc(100vw * 468 / 750), 468px);
 }
 .sec6 .img{
@@ -232,41 +235,41 @@ main{
 .sec6 .list{
     width: clamp(1px, calc(100vw * 623 / 750), 623px);
     margin: 0 auto;
-    margin-top: 63.6px;
+    margin-top: clamp(1px, calc(100vw * 63.6 / 750), 63.6px);
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: clamp(1px, calc(100vw * 24 / 750), 24px);
 }
 .sec6 .list img{
     width: 100%;
 }
 .sec6 .btn{
-    margin-top: 59.73px;
+    margin-top: clamp(1px, calc(100vw * 59.73 / 750), clamp(1px, calc(100vw * 33 / 750), 33px)59.73px);
     background: #CA338E;
     box-shadow: 3px 4px 4px rgba(104, 27, 27, 0.25);
-    border-radius: 10px;
-    padding: 22px 113px 28px 128px;
+    border-radius: clamp(1px, calc(100vw * 10 / 750), 10px);
+    padding: clamp(1px, calc(100vw * 22 / 750), 22px) clamp(1px, calc(100vw * 113 / 750), 113px) clamp(1px, calc(100vw * 28 / 750), 28px) clamp(1px, calc(100vw * 128 / 750), 128px);
     width: clamp(1px, calc(100vw * 242 / 750), 242px);
 }
 
 .sec7{
     flex-direction: column;
     align-items: center;
-    padding-bottom: 91px;
+    padding-bottom: clamp(1px, calc(100vw * 91 / 750), 91px);
     background: linear-gradient(180deg, #38A0DD 14.59%, #FFF389 88.68%);
 }
 .sec7 .title{
-    margin-top: 107px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw * 107 / 750), 107px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec7 .sub_title{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     width: clamp(1px, calc(100vw * 478 / 750), 478px);
 }
 .sec7 .img{
-    margin-top: 65px;
+    margin-top: clamp(1px, calc(100vw * 65 / 750), 65px);
     flex-wrap: wrap;
-    gap: 14px;
+    gap: clamp(1px, calc(100vw * 14 / 750), 14px);
     width: clamp(1px, calc(100vw * 620 / 750), 620px);
 }
 .sec7 .img img{
@@ -277,22 +280,22 @@ main{
     overflow: hidden;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 91px;
+    padding-bottom: clamp(1px, calc(100vw * 91 / 750), 91px);
     background-image: url(../img/type_c_1/sec8_back.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .sec8 .title{
-    margin-top: 110px;
-    width: 146px;
+    margin-top: clamp(1px, calc(100vw * 110 / 750), 110px);
+    width: clamp(1px, calc(100vw * 146 / 750), 146px);
 }
 .sec8 .sub_title{
-    margin-top: 43px;
+    margin-top: clamp(1px, calc(100vw * 43 / 750), 43px);
     width: clamp(1px, calc(100vw * 510 / 750), 510px);
 }
 .sec8 .img{
-    margin-top: 66.03px;
+    margin-top: clamp(1px, calc(100vw * 66 / 750), 66px);
     width: clamp(1px, 100vw, 750px);
     height: clamp(1px, calc(100vw * 757 / 750), 757px);
 }
@@ -310,12 +313,14 @@ main{
     opacity: 100%;
 }
 .sec8 .live_title{
-    margin-top: 95px;
-    width: 201px;
+    margin-top: clamp(1px, calc(100vw * 95 / 750), 95px);
+    width: clamp(1px, calc(100vw * 201 / 750), 201px);
 }
 .sec8 .live_list{
     display: flex;
-    margin-top: 21px;
+    margin-top: clamp(1px, calc(100vw * 21 / 750), 21px);
+    margin-left: clamp(1px, calc(100vw * 60 / 750), 60px);
+    transition: margin 0.3s ease-in-out;
 }
 .sec8 .live_list img{
     height: clamp(1px, calc(100vw * 322 / 750), 322px);
@@ -327,10 +332,10 @@ main{
     background: linear-gradient(180deg, rgba(66, 157, 221, 0.75) 0%, rgba(220, 51, 164, 0.75) 115.53%);
 }
 .sec8 .btn{
-    margin-top: 52px;
+    margin-top: clamp(1px, calc(100vw * 52 / 750), 52px);
     width: clamp(1px, calc(100vw * 216 / 750), 216px);
-    padding: 22px 131px 28px 136px;
+    padding: clamp(1px, calc(100vw * 22 / 750), 33px) clamp(1px, calc(100vw * 131 / 750), 131px) clamp(1px, calc(100vw * 28 / 750), 28px) clamp(1px, calc(100vw * 136 / 750), 136px);
     background: #0B2030;
     box-shadow: 3px 4px 4px rgba(162, 130, 17, 0.25);
-    border-radius: 10px;
+    border-radius:clamp(1px, calc(100vw * 10 / 750), 10px);
 }
