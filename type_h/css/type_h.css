@@ -54,11 +54,11 @@
     margin-left: 0;
 }
 .menu .toggle{
-    width: clamp(1px, calc(100vw * 35 / 750), 35px);
-    height: clamp(1px, calc(100vw * 35 / 750), 35px);
+    width: clamp(1px, calc(100vw * 50 / 750), 50px);
+    height: clamp(1px, calc(100vw * 50 / 750), 50px);
     position: absolute;
-    left: clamp(1px, calc(100vw * 42 / 750), 42px);
-    bottom: clamp(1px, calc(100vw * 52 / 750), 52px);
+    left: clamp(1px, calc(100vw * 35 / 750), 35px);
+    bottom: clamp(1px, calc(100vw * 44 / 750), 44px);
     background-image: url(../img/menu_icon_off.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -79,8 +79,14 @@
     align-items: center;
 }
 .menu li{
+    display: flex;
+    align-items: flex-start;
     margin-top: clamp(1px, calc(100vw * 32 / 750), 32px);
     width: clamp(1px, calc(100vw * 580 / 750), 580px);
+    align-items: top;
+}
+.menu li a{
+    height: clamp(1px, calc(100vw * 75 / 750), 75px);
 }
 .menu li img{
     width: 100%;
