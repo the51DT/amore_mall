@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AMORE : D type</title>
+    <title>AMORE : E type</title>
     <link rel="stylesheet" href="../asseets/css/reset.css" />
     <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
     <style></style>
   </head>
   <body>
@@ -58,7 +58,19 @@
           <div class="section03">
             <img src="./img/section_03.png" />
             <!-- Swiper -->
-            <div class="swiper mySwiper swiper03">
+
+            <div class="swiper_coupon">
+                <div class="swiper-container coupon">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
+                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
+                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
+                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <div class="swiper mySwiper swiper03">
               <div class="swiper-wrapper">
                 <img src="./img/coupon_01.png" />
               </div>
@@ -75,7 +87,7 @@
                 <img src="./img/coupon_01.png" />
               </div>
               <div class="swiper-pagination"></div>
-            </div>
+            </div> -->
             <div class="blue"></div>
           </div>
           <div class="section04">
@@ -123,5 +135,18 @@
         clickable: true,
       },
     });
+    $(document).ready(function(){
+        var siwper1 = new Swiper('.coupon', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+
+        // $('.menu').click(function(){
+        //     $(this).toggleClass('active')
+        // })
+    })
   </script>
 </html>
