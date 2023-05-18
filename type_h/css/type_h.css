@@ -33,13 +33,14 @@
     width: clamp(1px, calc(100vw * 704 / 750), 704px);
     height: clamp(1px, calc(100vw * 899 / 750), 899px);
     background-image: url(../img/menu_on.svg);
+    margin-left: 0;
 }
 .menu .toggle{
-    width: clamp(1px, calc(100vw * 40 / 750), 40px);
-    height: clamp(1px, calc(100vw * 40 / 750), 40px);
+    width: clamp(1px, calc(100vw * 35 / 750), 35px);
+    height: clamp(1px, calc(100vw * 35 / 750), 35px);
     position: absolute;
-    left: clamp(1px, calc(100vw * 40 / 750), 40px);
-    bottom: clamp(1px, calc(100vw * 50 / 750), 50px);
+    left: clamp(1px, calc(100vw * 42 / 750), 42px);
+    bottom: clamp(1px, calc(100vw * 52 / 750), 52px);
     background-image: url(../img/menu_icon_off.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -54,7 +55,7 @@
     display: none;
 }
 .menu.active ul{
-    margin-top: clamp(1px, calc(100vw * 30 / 750), 30px);
+    margin-top: clamp(1px, calc(100vw * 20 / 750), 20px);
     display: block;
     flex-direction: column;
     align-items: center;
@@ -66,6 +67,12 @@
 .menu li img{
     width: 100%;
 }
+@media (min-width: 750px) {
+    .menu{
+        left: auto;
+        margin-left: 85px;
+    }
+} 
 
 .main{
     position: relative;
@@ -91,6 +98,10 @@
     padding-bottom: 180px;
 }
 .sec1 .con{
+    padding-top: 143px;
+}
+.sec1 .num,
+.sec1 .aside{
     margin-top: 143px;
 }
 .sec1 .num{
@@ -238,12 +249,16 @@
     width: clamp(1px, calc(100vw * 262 / 750), 262px);
 }
 .sec3 .btn{
-    margin-top: clamp(1px, calc(100vw * 593 / 750), 593px);
+    margin-top: clamp(1px, calc(100vw * 543 / 750), 543px);
     width: clamp(1px, calc(100vw * 500 / 750), 500px);
 }
 
 .sec4{
     position: relative;
+    padding-top: 140px;
+}
+.sec4 .num,
+.sec4 .aside{
     margin-top: 140px;
 }
 .sec4 .num{
@@ -263,8 +278,12 @@
 
 .sec5{
     position: relative;
-    margin-top: 180px;
+    padding-top: 180px;
     padding-bottom: 200px;
+}
+.sec5 .num,
+.sec5 .aside{
+    margin-top: 180px;
 }
 .sec5 .num{
     width: clamp(1px, calc(100vw * 66 / 750), 66px);
@@ -329,8 +348,12 @@
 .sec7{
     overflow: hidden;
     position: relative;
-    margin-top: 176px;
+    padding-top: 176px;
     padding-bottom: 204px;
+}
+.sec7 .num,
+.sec7 .aside{
+    margin-top: 176px;
 }
 .sec7 .num{
     width: clamp(1px, calc(100vw * 62 / 750), 62px);
