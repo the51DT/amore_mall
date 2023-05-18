@@ -145,8 +145,8 @@ img {
     margin: 0 auto;
     height: calc(100vw * 535 / 750);
     max-height: 535px;
-    background: url(../img/content/cont01_top.svg) no-repeat center center /
-        100%;
+    background: #2e2f3e url(../img/content/cont01_top.svg) no-repeat center
+        center / 100%;
 }
 .cont01 .cont01_tit_01 img {
     width: calc(100vw * 479 / 750);
@@ -211,7 +211,7 @@ img {
 /* cont02 */
 .cont02 {
     max-width: 100%;
-    margin-top: calc(100vw * -120 / 750);
+    margin-top: calc(100vw * -40 / 750);
     height: calc(100vw * 2662 / 750);
     max-height: 2662px;
     background: url(../img/content/cont02.svg) no-repeat center center / 100%;
@@ -232,7 +232,7 @@ img {
     max-height: 263px;
 }
 .cont02_ball1 {
-    top: 10%;
+    top: 7%;
     right: 0;
     width: calc(100vw * 293 / 750);
     max-width: 293px;
@@ -240,7 +240,7 @@ img {
     max-height: 341px;
 }
 .cont02_ball2 {
-    top: 25%;
+    top: 17%;
     left: 0;
     z-index: 1;
     width: calc(100vw * 248 / 750);
@@ -249,7 +249,7 @@ img {
     max-height: 262px;
 }
 .cont02 .cont02_tit_01 {
-    padding-top: calc(100vw * 350 / 750);
+    padding-top: calc(100vw * 200 / 750);
     margin: 0 auto;
     margin-bottom: calc(100vw * 80 / 750);
     width: calc(100vw * 426 / 750);
@@ -339,7 +339,7 @@ img {
     z-index: 4;
 }
 .cont03 .cont03_tit_01 {
-    padding-top: calc(100vw * 140 / 750);
+    padding-top: calc(100vw * 180 / 750);
     width: calc(100vw * 444 / 750);
     max-width: 444px;
     margin: 0 auto;
@@ -397,7 +397,7 @@ img {
     z-index: 3;
 }
 .cont04 .cont04_tit_01 {
-    padding-top: calc(100vw * 140 / 750);
+    padding-top: calc(100vw * 180 / 750);
     margin: 0 auto;
     margin-bottom: calc(100vw * 80 / 750);
     width: calc(100vw * 455 / 750);
@@ -579,10 +579,10 @@ img {
     }
 
     .cont02 {
-        margin-top: -120px;
+        margin-top: -40px;
     }
     .cont02 .cont02_tit_01 {
-        padding-top: 300px;
+        padding-top: 200px;
         margin-bottom: 80px;
     }
     .cont02 .cont02_img_01 {
@@ -593,7 +593,7 @@ img {
         margin-top: -40px;
     }
     .cont03 .cont03_tit_01 {
-        padding-top: 140px;
+        padding-top: 180px;
     }
     .cont03 .cont03_tab > ul {
         margin-top: 80px;
@@ -618,7 +618,7 @@ img {
         margin-top: -40px;
     }
     .cont04 .cont04_tit_01 {
-        padding-top: 140px;
+        padding-top: 180px;
         margin-bottom: 80px;
     }
     .cont04 .cont04_img > ul {
