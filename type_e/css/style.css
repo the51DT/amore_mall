@@ -28,12 +28,16 @@ img {
 .section03 {
   position: relative;
 }
+.section03 .swiper_coupon {
+  position: absolute;
+  top: 6.5%;
+  padding-bottom: 40px;
+}
 .mySwiper_03 .swiper-slide {
   width: 80%;
 }
-.section03 .swiper_coupon {
-  position: absolute;
-  bottom: 0;
+.swiper-pagination {
+  bottom: -40px;
 }
 .mySwiper_09 {
   background-color: #ddeaf3;
