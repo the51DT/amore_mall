@@ -30,7 +30,7 @@
 }
 .main .img{
     margin-top: clamp(1px, calc(100vw * 387 / 750), 387px);
-    margin-left: -28px;
+    margin-left: clamp(1px, calc(100vw * -28 / 750), -28px);
     width: clamp(1px, calc(100vw * 634 / 750), 634px);
     z-index: 2;
 }
@@ -58,7 +58,7 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 100px;
+    height: clamp(1px, calc(100vw * 100 / 750), 100px);
 }
 .menu ul li{
     width: calc(100vw * 150 / 750);
@@ -72,9 +72,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 29px;
+    top: clamp(1px, calc(100vw * 29 / 750), 29px);
     right: 0;
-    height: 41px;
+    height: clamp(1px, calc(100vw * 41 / 750), 41px);
     border-right: 1px solid #FFFFFF;
 }
 .menu ul li:last-of-type:after{
@@ -83,7 +83,7 @@
 .menu ul a{
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
+    font-size: clamp(1px, calc(100vw * 24 / 750), 24px);
     line-height: 133%;
     color: #FFFFFF;
 }
@@ -105,30 +105,30 @@
     flex-direction: column;
     align-items: center;
     background: #4C5EF0;
-    padding-bottom: 48px;
+    padding-bottom: clamp(1px, calc(100vw * 48 / 750), 48px);
     text-align: center;
 }
 .sec1 .con1 .title{
-    margin-top: 128px;
+    margin-top: clamp(1px, calc(100vw * 128 / 750), 128px);
     width: clamp(1px, calc(100vw * 583 / 750), 583px);
 }
 .sec1 .con1 .img{
-    margin-top: 45px;
+    margin-top:clamp(1px, calc(100vw * 45 / 750), 45px);
     width: clamp(1px, calc(100vw * 551 / 750), 551px);
 }
 .sec1 .con1 .btn{
-    margin-top: 23.85px;
+    margin-top: clamp(1px, calc(100vw * 23.85 / 750), 23.85px);
     border: 1px solid #FFFFFF;
-    border-radius: 157px;
-    padding: 24px clamp(1px, calc(100vw * 135 / 750), 135px) 27px;
+    border-radius: clamp(1px, calc(100vw * 157 / 750), 157px);
+    padding: clamp(1px, calc(100vw * 24 / 750), 24px) clamp(1px, calc(100vw * 135 / 750), 135px) clamp(1px, calc(100vw * 27 / 750), 27px);
     width: clamp(1px, calc(100vw * 320 / 750), 320px);
 }
 .sec1 .con1 .text{
-    margin-top: 48px;
+    margin-top: clamp(1px, calc(100vw * 48 / 750), 48px);
     width: clamp(1px, calc(100vw * 605 / 750), 605px);
 }
 .sec1 .con2{
-    margin-top: 86px;
+    margin-top: clamp(1px, calc(100vw * 86 / 750), 86px);
 }
 .sec1 .con2 .flex{
     width: clamp(1px, calc(100vw * 591 / 750), 591px);
@@ -142,26 +142,26 @@
     width: clamp(1px, calc(100vw * 591 / 750), 591px);
 }
 .sec1 .con2 .btn{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     border: 1px solid #FFFFFF;
-    border-radius: 157px;
-    padding: 24px clamp(1px, calc(100vw * 114 / 750), 114px) 27px;
+    border-radius: clamp(1px, calc(100vw * 157 / 750), 157px);
+    padding: clamp(1px, calc(100vw * 24 / 750), 24px) clamp(1px, calc(100vw * 114 / 750), 114px) clamp(1px, calc(100vw * 27 / 750), 27px);
     width: clamp(1px, calc(100vw * 362 / 750), 362px);
 }
 .sec1 .con3 .img{
-    margin-top: 12px;
-    margin-left: 26px;
+    margin-top: clamp(1px, calc(100vw * 12 / 750), 12px);
+    margin-left: clamp(1px, calc(100vw * 26 / 750), 26px);
     width: clamp(1px, calc(100vw * 642 / 750), 642px);
 }
 .sec1 .con3 .btn{
-    margin-top: 44px;
+    margin-top: clamp(1px, calc(100vw * 44 / 750), 44px);
     border: 1px solid #FFFFFF;
-    border-radius: 157px;
-    padding: 24px clamp(1px, calc(100vw * 142 / 750), 142px) 27px;
+    border-radius: clamp(1px, calc(100vw * 157 / 750), 157px);
+    padding: clamp(1px, calc(100vw * 24 / 750), 24px) clamp(1px, calc(100vw * 142 / 750), 142px) clamp(1px, calc(100vw * 27 / 750), 27px);
     width: clamp(1px, calc(100vw * 305 / 750), 305px);
 }
 .sec1 .con3 .text{
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     width: clamp(1px, calc(100vw * 590 / 750), 590px);
 }
 
@@ -170,17 +170,17 @@
     align-items: center;
 }
 .sec2 .title{
-    margin-top: 128px;
+    margin-top: clamp(1px, calc(100vw * 128 / 750), 128px);
     width: clamp(1px, calc(100vw * 487 / 750), 487px);
 }
 .sec2 .img{
-    margin-top: 86px;
+    margin-top: clamp(1px, calc(100vw * 86 / 750), 86px);
     width: clamp(1px, calc(100vw * 589 / 750), 589px);
 }
 .sec2 .btn{
-    margin-top: 102px;
+    margin-top: clamp(1px, calc(100vw * 102 / 750), 102px);
     background: #4C5EF0;
-    padding: 27px clamp(1px, calc(100vw * 158 / 750), 158px);
+    padding: clamp(1px, calc(100vw * 27 / 750), 27px) clamp(1px, calc(100vw * 158 / 750), 158px);
     width: clamp(1px, calc(100vw * 273 / 750), 273px);
 }
 
@@ -189,12 +189,12 @@
     align-items: center;
 }
 .sec3 .title{
-    margin-top: 128px;
+    margin-top: clamp(1px, calc(100vw * 128 / 750), 128px);
     width: clamp(1px, calc(100vw * 432 / 750), 432px);
 }
 .sec3 .slide1{
     position: relative;
-    margin-top: 86px;
+    margin-top: clamp(1px, calc(100vw * 86 / 750), 86px);
     width: clamp(1px, calc(100vw * 670 / 750), 670px);
 }
 .sec3 .slide1 .img{
@@ -220,7 +220,7 @@
 }
 .sec3 .slide2{
     position: relative;
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     width: clamp(1px, calc(100vw * 670 / 750), 670px);
 }
 .sec3 .slide2 .img{
@@ -244,18 +244,25 @@
 .sec3 .slide2 .swiper-slide img{
     width: 100%;
 }
+.sec3 .swiper-pagination-bullet{
+    width: clamp(1px, calc(100vw * 8 / 750), 8px);
+    height: clamp(1px, calc(100vw * 8 / 750), 8px);
+}
+.sec3 .swiper-pagination-bullet-active{
+    background: #2DC88F;
+}
 
 .sec4{
     flex-direction: column;
     align-items: center;
-    padding-bottom: 128px;
+    padding-bottom: clamp(1px, calc(100vw * 128 / 750), 128px);
 }
 .sec4 .title{
-    margin-top: 128px;
+    margin-top: clamp(1px, calc(100vw * 128/ 750), 128px);
     width: clamp(1px, calc(100vw * 576 / 750), 576px);
 }
 .sec4 .tab{
-    margin-top: 86px;
+    margin-top: clamp(1px, calc(100vw * 86 / 750), 86px);
     align-items: flex-start;
     width: clamp(1px, calc(100vw * 670 / 750), 670px);
 }
@@ -279,17 +286,17 @@
     color: #FFFFFF;
 }
 .sec4 .img{
-    margin-top: 17.58px;
-    gap: 22px;
+    margin-top: clamp(1px, calc(100vw * 17.58 / 750), 17.58px);
+    gap: clamp(1px, calc(100vw * 22 / 750), 22px);
     width: clamp(1px, calc(100vw * 670 / 750), 670px);
 }
 .sec4 .img img{
     width: calc(50% - 11px);
 }
 .sec4 .btn{
-    margin-top: 102px;
+    margin-top: clamp(1px, calc(100vw * 102 / 750),102px);
     background: #4C5EF0;
-    padding: 27px clamp(1px, calc(100vw * 158 / 750), 158px);
+    padding: clamp(1px, calc(100vw * 27 / 750), 27px) clamp(1px, calc(100vw * 158 / 750), 158px);
     width: clamp(1px, calc(100vw * 273 / 750), 273px);
 }
 
@@ -297,21 +304,21 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #F8A0B0 0%, rgba(248, 160, 176, 0) 100%);
-    padding-bottom: 125.78px;
+    padding-bottom: clamp(1px, calc(100vw * 125.78 / 750), 125.78px);
 }
 .sec5 .title{
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     width: clamp(1px, calc(100vw * 641 / 750), 641px);
 }
 .sec5 .img{
-    margin-top: 15px;
+    margin-top: clamp(1px, calc(100vw * 15 / 750), 15px);
     width: clamp(1px, calc(100vw * 667 / 750), 667px);
 }
 .sec5 .btn{
-    margin-top: 102px;
+    margin-top: clamp(1px, calc(100vw * 102 / 750), 102px);
     background: #000000;
-    border-radius: 43px;
-    padding: 27px 36px;
+    border-radius: clamp(1px, calc(100vw * 43 / 750), 43px);
+    padding: clamp(1px, calc(100vw * 27 / 750), 27px) clamp(1px, calc(100vw * 36 / 750), 36px);
     width: clamp(1px, calc(100vw * 225 / 750), 225px);
 }
 
@@ -320,11 +327,11 @@
     align-items: center;
 }
 .sec6 .title{
-    margin-top: 2px;
+    margin-top: clamp(1px, calc(100vw * 2 / 750), 2px);
     width: clamp(1px, calc(100vw * 430 / 750), 430px);
 }
 .sec6 .img{
-    margin-top: 86px;
+    margin-top: clamp(1px, calc(100vw * 86 / 750), 86px);
     width: clamp(1px, calc(100vw * 589 / 750), 589px);
 }
 
@@ -332,25 +339,25 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 48px;
+    padding-bottom: clamp(1px, calc(100vw * 48 / 750), 48px);
 }
 .sec7 .title{
-    margin-top: 128px;
+    margin-top: clamp(1px, calc(100vw * 128 / 750), 128px);
     width: clamp(1px, calc(100vw * 470 / 750), 470px);
 }
 .sec7 .btn{
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     background: #000000;
-    border-radius: 43px;
-    padding: 27px 35px;
+    border-radius: clamp(1px, calc(100vw * 43 / 750), 43px);
+    padding: clamp(1px, calc(100vw * 27 / 750),27px) clamp(1px, calc(100vw * 35 / 750), 35px);
     width: clamp(1px, calc(100vw * 309 / 750), 309px);
 }
 .sec7 .img{
-    margin-top: 62px;
+    margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
     width: clamp(1px, calc(100vw * 584 / 750), 584px);
 }
 .sec7 .con{
-    margin-top: 102px;
+    margin-top: clamp(1px, calc(100vw * 102 / 750), 102px);
     width: clamp(1px, calc(100vw * 670 / 750), 670px);
 }
 .sec7 .con .top{
@@ -366,7 +373,7 @@
     align-items: center;
     gap: clamp(1px, calc(100vw * 65 / 750), 65px);
     border: 1px solid #000000;
-    border-radius: 82px;
+    border-radius: clamp(1px, calc(100vw * 82 / 750), 82px);
     font-weight: 500;
     font-size: clamp(1px, calc(100vw * 32 / 750), 32px);
     line-height: 100%;
