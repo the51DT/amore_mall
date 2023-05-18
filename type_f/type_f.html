@@ -169,19 +169,19 @@
                     <div class="img-box_gift_bottom">
                         <div class="img-box_gift-img">
                             <a href="#" class="btn_details">
-                                <div class="img-box img-box25">
+                                <div class="img-box img-box_25">
                                     <img src="./image/sec03_text08.svg" alt="">
                                 </div>
-                                <div class="imb-box img-box26">
+                                <div class="imb-box img-box_26">
                                     <img src="./image/sec03_arrow.svg" alt="">
                                 </div>
                             </a>
                         </div>
                         <div class="img-box_git-text">
-                            <div class="img-box img-box20">
+                            <div class="img-box img-box_20">
                                 <img src="./image/sec03_text09.svg" alt="">
                             </div>
-                            <div class="img-box img-box21">
+                            <div class="img-box img-box_21">
                                 <img src="./image/sec03_text10.svg" alt="">
                             </div>
                         </div>
@@ -206,28 +206,73 @@
                     </div>
                     <div class="img-box_gift_bottom">
                         <div class="img-box_gift-img">
-                            <a href="#">
-                                <div class="img-box img-box25">
-                                    <img src="./image/sec03_text08.svg" alt="">
-                                    <img src="./image/sec03_arrow.svg" alt="">
-                                </div>
-                            </a>
                         </div>
-                        <div class="img-box_git-text">
-                            <div class="img-box img-box26">
-                                <img src="" alt="">
-                            </div>
-                            <div class="img-box img-box27">
-                                <img src="" alt="">
+                        <div class="img-box_gift-text">
+                            <div class="img-box img-box_25">
+                                <img src="./image/sec03_text11.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section04">
-                <div class="img-box">
+                <div class="img-box img-box_26">
                     <!-- 파랑색 탭 -->
-                    <img src="" alt="">
+                    <img src="./image/sec04_text1.svg" alt="">
+                </div>
+                <div class="benefit-area">
+                    <ul class="benefit_tab-btn">
+                        <li class="current">
+                            <a href="#none">
+                                <div class="img-box img-box_27">
+                                    <img src="./image/sec04_tab-btn1.svg" alt="" class="btn_benefit">
+                                    <img src="./image/sec04_tab-btn1_current.svg" alt="" class="btn_benefit_current">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="img-box img-box_28">
+                                    <img src="./image/sec04_tab-btn2.svg" alt="" class="btn_benefit">
+                                    <img src="./image/sec04_tab-btn2_current.svg" alt="" class="btn_benefit_current">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="benefit_tab-content">
+                        <div class="benefit_tab-content_item benefit_tab-content_item01 current">
+                            <div class="benefit_tab-content_item_text-box">
+                                <div class="img-box img-box_29">
+                                    <img src="./image/sec04_text2.svg" alt="">
+                                </div>
+                                <div class="img-box img-box_30">
+                                    <img src="./image/sec04_text3.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="img-box img-box_31">
+                                <a href="#">
+                                    <img src="./image/sec04_text4.svg" alt="">
+                                    <img src="./image/sec04_arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="benefit_tab-content_item benefit_tab-content_item02">
+                            <div class="benefit_tab-content_item_text-box">
+                                <div class="img-box img-box_32">
+                                    <img src="./image/sec04_text5.svg" alt="">
+                                </div>
+                                <div class="img-box img-box_30">
+                                    <img src="./image/sec04_text3.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="img-box img-box_31">
+                                <a href="#">
+                                    <img src="./image/sec04_text4.svg" alt="">
+                                    <img src="./image/sec04_arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section05">
@@ -287,11 +332,17 @@
             $(this).children('.nav_item').hide()
             $(this).children('.nav_item_current').show()
         });
-        // const swiper02 = new Swiper('.swiper2', {
-        //     slidesPerView: 2.3,
-        //     spaceBetween: 10,
-        //     debugger: true,
-        // });
+        $(".benefit-area .benefit_tab-btn li a").click(function() {
+            $(".benefit-area .benefit_tab-btn li a").parent().removeClass("current");
+            $(this).parent().addClass("current");
+            if ($(this).parent().index() == 0) {
+                $(".benefit-area .benefit_tab-content .benefit_tab-content_item").removeClass("current");
+                $(".benefit-area .benefit_tab-content .benefit_tab-content_item01").addClass("current");
+            } else if ($(this).parent().index() == 1) {
+                $(".benefit-area .benefit_tab-content .benefit_tab-content_item").removeClass("current");
+                $(".benefit-area .benefit_tab-content .benefit_tab-content_item02").addClass("current");
+            }
+        });
     </script>
 </body>
 
