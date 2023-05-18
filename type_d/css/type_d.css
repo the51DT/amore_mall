@@ -62,8 +62,8 @@
 }
 .menu ul li{
     width: calc(100vw * 150 / 750);
-    height: calc(100% - 18px);
-    padding-top: 18px;
+    height: calc(100% - calc(100vw * 10 / 750));
+    padding-top: calc(100vw * 18 / 750);
     position: relative;
     background: #4C5EF0;
     opacity: 0.8;
@@ -436,6 +436,11 @@
     padding-left: clamp(1px, calc(100vw * 27 / 750), 27px);
     padding-top: clamp(1px, calc(100vw * 5 / 750), 5px);
     animation: up1 0.3s ease-in-out;
+}
+@media (max-width:500px) {
+    .sec7 .live{
+        padding-top: clamp(1px, calc(100vw * 20 / 750), 20px);
+    }
 }
 @keyframes up1 {
     0%{
