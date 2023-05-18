@@ -81,7 +81,7 @@
     }
 
     /* nav */
-    .nav_wrap {display: none; position: sticky; top: 0; left: 0; width: 100%; height: 100%; padding: 3rem 3.5rem; background-color: #c51e26; z-index: 100;}
+    .nav_wrap {display: block; position: sticky; top: 0; left: 0; width: 100%; height: 100%; padding: 3rem 3.5rem; background-color: #c51e26; z-index: 1000;}
     .nav li a {display: block; font-size: 3rem; color: rgba(255, 255, 255, .5); font-weight: bold; line-height: 4rem;}
     .nav li a:hover {top: 0; color: #fff; background: url(./img/main/nav_act.svg) no-repeat center top / 100% 100%;}
     .nav_wrap img {width: 10.7rem; height: 10rem;}
@@ -90,9 +90,9 @@
     .cont01 {position: relative;}
     .cont01 .bg_img_wrap {padding-top: 16.2rem;}
     .cont01 .tit_area {position: absolute; top: 20.9rem; left: 0;}
-    .cont01 .fck_img_01 {position: absolute; top: 8.3rem; left: 28.3rem;}
-    .cont01 .fck_img_02 {position: absolute; top: 6.5rem; right: 5.8rem;}
-    .cont01 .tit_inn {margin-top: 10rem;}
+    .cont01 .fck_img_01 {position: absolute; top: 8.3rem; left: 28.3rem; animation: flicker-effect .8s linear infinite alternate;}
+    .cont01 .fck_img_02 {position: absolute; top: 6.5rem; right: 5.8rem; animation: flicker-effect 1.5s linear infinite alternate;}
+    .cont01 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont01 .cp_pack01 {width: 100%; margin-top: 36.3rem; background: url(../type_a/img/cont01/cont01_cp_bg01.svg) no-repeat center top / 100% auto;}
     .cont01 .cp_pack01 .cp_tit {padding-top: 7.3rem;}
     .cont01 .cp_pack01 .cp_img {padding-top: 4.5rem;}
@@ -103,14 +103,29 @@
     .cont01 .cp_pack02 .cp_img {padding-top: 6.1rem;}
     .cont01 .cp_pack02 .cp_list {padding: 75px 0 86px;}
     .cont01 .cp_pack03 {width: 100%; background: url(../type_a/img/cont01/cont01_cp_bg03.svg) no-repeat center top / 100% auto;}
+    .cont01 .cp_pack03 .cp_pack03_bg {margin: 0 auto; width: 69rem; overflow: hidden;}
+    .cont01 .swiper-slide {width: 60%;}
     .cont01 .cp_pack03 .cp_tit {padding-top: 75px;}
     .cont01 .cp_pack03 .cp_img {padding-top: 61px;}
     .cont01 .cp_pack03 .cpSwiper {padding-top: 75px;}
     .cont01 .cp_pack03 .cp_list {padding: 82.5px 0 96px;}
 
+    /* cont01_animation */
+    @keyframes flicker-effect {
+        0% {opacity: 0;}
+        50% {opacity: .4;}
+        100% {opacity: 1;}
+    }
+    @keyframes flicker_tit-effect {
+        0% {opacity: .3;}
+        50% {opacity: .8;}
+        100% {opacity: 1;}
+    }
+
     /* cont02 */
     .cont02 {position: relative;}
     .cont02 .bg_img_wrap {padding-top: 108px;}
+    .cont02 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont02 .tit_area {position: absolute; top: 280.5px; left: 0;}
     .cont02 .txt_area01 {margin-top: 101px;}
     .cont02 .swiper_wrap01 {margin-top: 610px;}
@@ -124,10 +139,12 @@
     .cont02 .swiper_wrap02.badge {position: relative;}
     .cont02 .swiper_wrap01.badge::before {content: ""; position: absolute; display: block; top: 0; right: 73px; width: 120px; height: 120px; background: url(./img/cont02/cont02_slide01_badge.svg) no-repeat center center / 100% 100%; z-index: 100;}
     .cont02 .swiper_wrap02.badge::before {content: ""; position: absolute; display: block; top: 0; right: 73px; width: 120px; height: 120px; background: url(./img/cont02/cont02_slide02_badge.svg) no-repeat center center / 100% 100%; z-index: 100;}
+    .cont02 .swiper-pagination {margin-bottom: 20px;}
 
     /* cont03 */
     .cont03 {position: relative;}
     .cont03 .bg_img_wrap {padding-top: 142px;} 
+    .cont03 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont03 .tit_area {position: absolute; top: 236px; left: 0;}
     .cont03 .tab_wrap {padding: 70px 171px 50px; margin-top: 410px;}
     .cont03 .tab_wrap > .tab_inn {position: relative; display: flex; align-items: center; justify-content: space-between; border: 1.5px solid #fff; border-radius: 50px;}
@@ -166,6 +183,7 @@
     /* cont04 */
     .cont04 {position: relative;}
     .cont04 .bg_img_wrap {padding-top: 149px;} 
+    .cont04 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont04 .fck_img_01 {position: absolute; top: 492px; left: 0; z-index: 1;}
     .cont04 .fck_img_02 {position: absolute; top: 295px; left: 108px;}
     .cont04 .fck_img_03 {position: absolute; top: 194px; right: 55px;} 
@@ -180,6 +198,7 @@
     /* cont05 */
     .cont05 {position: relative;}
     .cont05 .bg_img_wrap {padding-top: 149px;} 
+    .cont05 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont05 .money_img_01 {position: absolute; top: 145px; left: 220px; width: 69px; height: 69px;}
     .cont05 .money_img_01 img {width: 69px; height: 69px;}
     .cont05 .money_img_02 {position: absolute; top: 300px; left: 141px;}
@@ -194,6 +213,7 @@
     /* cont06 */
     .cont06 {position: relative;}
     .cont06 .bg_img_wrap {padding-top: 135px;} 
+    .cont06 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont06 .bal_img_01 {position: absolute; top: 285px; left: 112px;}
     .cont06 .bal_img_02 {position: absolute; top: 165px; right: 120px;}
     .cont06 .bg_img_01 {position: absolute; top: 0; left: 0;}
@@ -203,10 +223,18 @@
     /* cont07 */
     .cont07 {position: relative;}
     .cont07 .bg_img_wrap {padding-top: 150px;} 
+    .cont07 .light_img {animation: flicker_tit-effect 1.2s linear infinite alternate;}
     .cont07 .bg_img {position: absolute; top: 150px; left: 123px;}
     .cont07 .tit_area {position: absolute; top: 270px; left: 0;}
-    .cont07 .tab_wrap {padding: 852px 0 40px;}
-    .cont07 .tab_cont {}
+    .cont07 .tab_wrap {padding: 852px 175px 40px;}
+    .cont07 .tab_wrap > .tab_inn {position: relative; display: flex; align-items: center; justify-content: space-around; border: 1.5px solid #fff; border-radius: 50px;}
+    .cont07 .tab_wrap > .tab_inn::before {content: ""; position: absolute; top: 0; left: 50%; width: 50%; height: 100%; border-radius: 50px; background-color: #fff; transition: all .4s ease-in;}
+    .cont07 .tab_wrap > .tab_inn.active::before {left: 0;}
+    .cont07 .tab_wrap > .tab_inn > li {position: relative; padding: 24px 36.5px;}
+    .cont07 .tab_wrap > .tab_inn > li a {display: block; font-size: 28px; color: #fff; font-weight: 900;}
+    .cont07 .tab_wrap > .tab_inn > li:nth-child(2) a {color: #000;}
+    .cont07 .tab_wrap > .tab_inn.active > li:nth-child(1) a {color: #000;}
+    .cont07 .tab_wrap > .tab_inn.active > li:nth-child(2) a {color: #fff;}
     .cont07 .btn {padding: 40px 0 115px;}
 
     /* footer */
@@ -251,9 +279,6 @@
                         <div class="main_tit">
                             <img src="./img/main/main_tit.svg" alt="">
                         </div>
-                        <!-- <div class="main_ico">
-                            <img src="./img/main/main_ico.svg" alt="">
-                        </div> -->
                         <div class="sub_tit">
                             <img src="./img/main/main_sub_tit.svg" alt="">
                         </div>
@@ -420,6 +445,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                     <div class="txt01">
@@ -462,6 +488,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </div>
                     <div class="txt02">
@@ -664,9 +691,9 @@
                         </div>
                     </div>
                     <div class="tab_wrap">
-                        <ul class="tab_inn">
-                            <li><a href="#tab03">2만원 이상</a></li>
-                            <li><a href="#tab04">4만원 이상</a></li>
+                        <ul class="tab_inn flex">
+                            <li><a href="#tab03">이번 주</a></li>
+                            <li><a href="#tab04">다음 주</a></li>
                         </ul>
                      </div>
                      <div class="tab_cont flex">
@@ -677,7 +704,7 @@
                         </div>
                         <div id="tab04">
                             <div class="tab_img">
-                                <img src="./img/cont07/cont07_img02.svg" alt="">
+                                <img src="./img/cont07/cont07_img02.svg" alt=""> 
                              </div>
                         </div>
                      </div>
@@ -728,9 +755,8 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    // nav
-    const $tabMenu = $('.cont03 .tab_wrap > .tab_inn');
-
+    // cont03 nav
+    const $tabMenu01 = $('.cont03 .tab_wrap > .tab_inn');
     $(function(){
         $('.tab_inn a').click(function () {
             if ($tabMenu.hasClass('active')) {
@@ -748,10 +774,49 @@
         })
     });
 
-    // swiper
-    var swiper = new Swiper(".cpSwiper", {
+    // cont07 nav
+    const $tabMenu02 = $('.cont07 .tab_wrap > .tab_inn');
+    $(function(){
+        $('.tab_inn a').click(function () {
+            if ($tabMenu.hasClass('active')) {
+                $tabMenu.removeClass('active');
+                $('#tab04').show();
+                $('#tab03').hide();
+            } else {
+                $tabMenu.addClass('active');
+                $('#tab04').hide();
+                $('#tab03').show();
+            }
+            // $('.tab_inn a').removeClass('active');
+            // $(this).addClass('active');
+            return false;
+        })
+    });
+
+    // cpSwiper
+    var swiper = new Swiper(".cpSwiper", {      
+        autoplay: {
+            delay: 0,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+            },
         slidesPerView : 3,
+        speed: 3000,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loopedSlides: 3, 
+        observer: true, observeParents: true,
+    });
+
+    // swiper
+    var swiper = new Swiper(".bfSwiper", {
+        slidesPerView : 1,
         spaceBetween: 10,
+        pagination : { 
+            el : '.swiper-pagination',
+            clickable : true
+        },
     });
 </script>
 </html>
