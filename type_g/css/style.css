@@ -196,6 +196,18 @@ img {
     height: calc(100vw * 1372 / 750);
     max-height: 1372px;
     background: url(../img/content/coipon_bg.svg) no-repeat center center / 100%;
+    position: relative;
+}
+.cont01 .cont01_cp::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: calc(100% - 46px);
+    background-color: #2e2f3e;
+    position: absolute;
+    left: 0;
+    bottom: calc(100vw * 40 / 750);
+    z-index: -1;
 }
 .cont01 .cont01_cp .couponSwiper {
     padding-top: calc(100vw * 450 / 750);
@@ -218,6 +230,17 @@ img {
     text-align: center;
     position: relative;
     z-index: 5;
+}
+.cont02::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: calc(100% - 46px);
+    background-color: #11a875;
+    position: absolute;
+    left: 0;
+    bottom: calc(100vw * 40 / 750);
+    z-index: -1;
 }
 .cont01_ball,
 .cont02_ball {
@@ -474,6 +497,17 @@ img {
     position: relative;
     z-index: 2;
 }
+.cont05::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: calc(100% - 46px);
+    background-color: #2e2f3e;
+    position: absolute;
+    left: 0;
+    bottom: calc(100vw * 40 / 750);
+    z-index: -1;
+}
 .cont05 .cont05_tit_01 {
     margin: 0 auto;
     margin-bottom: calc(100vw * 80 / 750);
@@ -580,6 +614,9 @@ img {
         padding-bottom: 28px;
     }
 
+    .cont01 .cont01_cp::after {
+        bottom: 40px;
+    }
     .cont01 .cont01_tit_01 {
         padding-top: 160px;
     }
@@ -604,6 +641,9 @@ img {
 
     .cont02 {
         margin-top: -40px;
+    }
+    .cont02::after {
+        bottom: 40px;
     }
     .cont02 .cont02_tit_01 {
         padding-top: 200px;
@@ -652,6 +692,9 @@ img {
 
     .cont05 {
         margin-top: -40px;
+    }
+    .cont05::after {
+        bottom: 40px;
     }
     .cont05 .cont05_tit_01 {
         margin-bottom: 80px;
