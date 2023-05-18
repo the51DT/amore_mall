@@ -1,0 +1,108 @@
+/* common */
+body {
+  margin: 0 auto;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 30px;
+  line-height: 42px;
+  /* background: #fff; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.tabSwiper .swiper-wrapper {
+  display: flex;
+  margin-left: 30px;
+}
+.swiper.mySwiper {
+  display: flex;
+}
+.tabSwiper .swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+.section03 {
+  position: relative;
+}
+.swiper_coupon {
+  margin-top: 24px;
+  width: 348px;
+  width: clamp(1px, calc(100vw * 524 / 348), 348px);
+  height: clamp(1px, calc(100vw * 386 / 750), 386px);
+  overflow: hidden;
+  position: absolute;
+  right: calc(100% - 50%);
+  transform: translateX(50%);
+}
+.coupon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.coupon .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.coupon .swiper-slide img {
+  width: 100%;
+}
+/* .coupon .swiper-pagination {
+  bottom: clamp(1px, calc(100vw * -48 / 750), -47px) !important;
+}
+.coupon .swiper-pagination-bullet {
+  width: clamp(1px, calc(100vw * 125.25 / 750), 125.25px);
+  height: clamp(1px, calc(100vw * 6 / 750), 6px);
+  border-radius: 0;
+  margin: 0 !important;
+} */
+.coupon .swiper-pagination-bullet-active {
+  background: #0e1b92;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ccc;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #eee;
+}
+.text-tab {
+  /* background-color: #001d6c; */
+  height: 112px;
+}
+.container {
+  background-color: #222;
+}
+.section03 {
+  position: relative;
+}
+/* .section03 .blue {
+  width: 524px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: blue;
+  bottom: 142px;
+  position: absolute;
+  left: calc(100% - 50%);
+  transform: translateX(-50%);
+  border-radius: 5%;
+} */
+.swiper03 {
+  display: inline-block;
+  text-align: center;
+}
+.footer {
+  background-color: #ddd;
+}
