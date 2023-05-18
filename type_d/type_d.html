@@ -20,6 +20,9 @@
             margin: 0;
             padding: 0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body{
             max-width: 750px;
             margin: 0 auto;
@@ -271,15 +274,95 @@
                 $('.sec4 .tab .tab2 img').attr('src', './img/sec4_tab_on.svg')
             })
 
+            var html2 = [`<p>19 (월)</p>
+                        <div>
+                            <p>오후 8시</p>
+                            <p>설화수</p>
+                            <span>조윤아/김예진</span>
+                        </div>
+                        <img class="live_back" src="./img/sec7_con_back_off.svg">`,
+                        `<p>20 (화)</p>
+                            <div>
+                                <p>오후 8시</p>
+                                <p>헤라</p>
+                                <span>조윤아/김예진</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back.svg">
+                            <img class="up" src="./img/sec7_con_back_on.svg">`,
+                        `<p>21 (수)</p>
+                            <div>
+                                <p>오전 11시</p>
+                                <p>오설록</p>
+                                <span>권혁수</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back_off.svg">`,
+                        `<p>22 (목)</p>
+                            <div>
+                                <p>오전 11시</p>
+                                <p>스킨케어연합</p>
+                                <span>황인선</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back_off.svg">`,
+                        `<p>23 (금)</p>
+                            <div>
+                                <p>오전 11시</p>
+                                <p>메이크업연합</p>
+                                <span>조윤아/김예진</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back_off.svg">`
+                        ]
+                        var html1 = [`<p>12 (월)</p>
+                        <div>
+                            <p>오전 11시</p>
+                            <p>SK 구독 상품</p>
+                            <span>박문영/김진영</span>
+                        </div>
+                        <img class="live_back" src="./img/sec7_con_back_off.svg">`,
+                        `<p>13 (화)</p>
+                            <div>
+                                <p>오후 8시</p>
+                                <p>아이오페</p>
+                                <span>최정윤</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back.svg">
+                            <img class="up" src="./img/sec7_con_back_on.svg">`,
+                        `<p>14 (수)</p>
+                            <div>
+                                <p>오후 8시</p>
+                                <p>바이탈뷰티</p>
+                                <span>이솔이</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back_off.svg">`,
+                        `<p>15 (목)</p>
+                            <div>
+                                <p>오후 8시</p>
+                                <p>프리메라</p>
+                                <span>최희</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back_off.svg">`,
+                        `<p>16 (금)</p>
+                            <div>
+                                <p>오전 11시</p>
+                                <p>AP</p>
+                                <span>박문영/김진영</span>
+                            </div>
+                            <img class="live_back" src="./img/sec7_con_back_off.svg">`
+                        ]
             $('.sec7 .con .top .tab p').eq(0).click(function(){
                 $('.sec7 .con .top .tab p').removeClass('active')
                 $(this).addClass('active')
                 $('.sec7 .con .top .tab').addClass('toggle')
+                for(var i = 0; i < 5; i++){
+                    $('.sec7 .con .live').eq(i).html(html1[i]);
+                }
             })
             $('.sec7 .con .top .tab p').eq(1).click(function(){
                 $('.sec7 .con .top .tab p').removeClass('active')
                 $(this).addClass('active')
                 $('.sec7 .con .top .tab').removeClass('toggle')
+                for(var i = 0; i < 5; i++){
+                    $('.sec7 .con .live').eq(i).html(html2[i]);
+                }
             })
 
             $('.sec7 .live').click(function(){
