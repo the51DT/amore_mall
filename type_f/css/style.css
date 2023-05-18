@@ -1,0 +1,40 @@
+/* common */
+
+body {
+    margin: 0 auto;
+}
+
+.wrap {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.nav .swiper-slide {
+    width: fit-content;
+}
+
+.nav .swiper-slide.current {
+    background: #161D30;
+}
+
+.nav .swiper-slide a {
+    display: block;
+    padding: 35px 40px;
+}
