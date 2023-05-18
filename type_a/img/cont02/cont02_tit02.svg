@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="345" height="80" viewBox="0 0 345 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-size: 32px;
+        font-family: Pretendard-Bold, Pretendard;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="_02" data-name="02" transform="translate(-202 -7912)">
+    <g id="_Txt_혜택" data-name="+ Txt_혜택" transform="translate(-1 417)">
+      <text id="_15만원_이상_구매_시_선셋_무드등_증정" data-name="15만원 이상 구매 시
+선셋 무드등 증정" class="cls-1" transform="translate(375 7525)"><tspan x="-125.391" y="0">15만원 이상 구매 시</tspan><tspan x="-104.172" y="42">선셋 무드등 증정</tspan></text>
+      <g id="_._" data-name="+. +" transform="translate(895 7455.348)">
+        <path id="패스_1141" data-name="패스 1141" class="cls-2" d="M25.949,14.918c-8.106,2.324-9.849,4.208-12,12.968-2.151-8.76-3.894-10.644-12-12.968,8.106-2.324,9.849-4.208,12-12.968,2.151,8.76,3.894,10.644,12,12.968" transform="translate(-693.949 68.396)"/>
+        <path id="패스_1142" data-name="패스 1142" class="cls-2" d="M25.949,14.918c-8.106,2.324-9.849,4.208-12,12.968-2.151-8.76-3.894-10.644-12-12.968,8.106-2.324,9.849-4.208,12-12.968,2.151,8.76,3.894,10.644,12,12.968" transform="translate(-372.949 68.396)"/>
+      </g>
+    </g>
+  </g>
+</svg>

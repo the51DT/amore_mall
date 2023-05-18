@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690" height="1165" viewBox="0 0 690 1165">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_572" data-name="사각형 572" width="690" height="1165" transform="translate(-6322 -2811)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_66" data-name="마스크 그룹 66" transform="translate(6322 2811)" clip-path="url(#clip-path)">
+    <g id="그룹_891" data-name="그룹 891" transform="translate(-6352 -4931)">
+      <rect id="사각형_570" data-name="사각형 570" width="690" height="1166" transform="translate(31 2120)" fill="#4931c3"/>
+      <g id="쿠폰라인" transform="translate(1 -190)">
+        <circle id="타원_17" data-name="타원 17" cx="17.5" cy="17.5" r="17.5" transform="translate(702 3440)" fill="#1b0e56"/>
+        <circle id="타원_18" data-name="타원 18" cx="17.5" cy="17.5" r="17.5" transform="translate(13 3440)" fill="#1b0e56"/>
+        <path id="패스_277" data-name="패스 277" d="M0,0H642.531" transform="translate(54.5 3457.5)" fill="none" stroke="#999" stroke-width="3" stroke-dasharray="8 6"/>
+      </g>
+      <g id="쿠폰라인-2" data-name="쿠폰라인" transform="translate(1 -1320)">
+        <circle id="타원_17-2" data-name="타원 17" cx="17.5" cy="17.5" r="17.5" transform="translate(702 3440)" fill="#1b0e56"/>
+        <circle id="타원_18-2" data-name="타원 18" cx="17.5" cy="17.5" r="17.5" transform="translate(13 3440)" fill="#1b0e56"/>
+        <path id="패스_277-2" data-name="패스 277" d="M0,0H642.531" transform="translate(54.5 3457.5)" fill="none" stroke="#999" stroke-width="3" stroke-dasharray="8 6"/>
+      </g>
+    </g>
+  </g>
+</svg>

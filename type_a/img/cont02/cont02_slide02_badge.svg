@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c51c24;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 28px;
+        font-family: Pretendard-ExtraBold, Pretendard;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="_icon_선착순" data-name="+ icon_선착순" transform="translate(-541 -7875)">
+    <circle id="타원_27" data-name="타원 27" class="cls-1" cx="60" cy="60" r="60" transform="translate(541 7875)"/>
+    <text id="선착순" class="cls-2" transform="translate(601 7945)"><tspan x="-36.299" y="0">선착순</tspan></text>
+  </g>
+</svg>

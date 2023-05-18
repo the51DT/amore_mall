@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="141" viewBox="0 0 141 141">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c51c24;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 28px;
+        font-family: Pretendard-ExtraBold, Pretendard;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="딱지" transform="translate(-534 -9278)">
+    <circle id="타원_11" data-name="타원 11" class="cls-1" cx="70.5" cy="70.5" r="70.5" transform="translate(534 9278)"/>
+    <text id="첫_구매_한정_혜택" data-name="첫 구매
+한정 혜택" class="cls-2" transform="translate(605 9339)"><tspan x="-39.43" y="0">첫 구매</tspan><tspan x="-51.529" y="38">한정 혜택</tspan></text>
+  </g>
+</svg>

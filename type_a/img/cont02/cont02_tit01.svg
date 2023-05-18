@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="411" height="80" viewBox="0 0 411 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 32px;
+        font-family: Pretendard-Bold, Pretendard;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="_01" data-name="01" transform="translate(-170 -6375)">
+    <g id="_혜택1" data-name="+ 혜택1">
+      <g id="_._" data-name="+. +" transform="translate(898 6327.555)">
+        <path id="패스_1141" data-name="패스 1141" class="cls-1" d="M25.949,14.918c-8.106,2.324-9.849,4.208-12,12.968-2.151-8.76-3.894-10.644-12-12.968,8.106-2.324,9.849-4.208,12-12.968,2.151,8.76,3.894,10.644,12,12.968" transform="translate(-729.949 68.396)"/>
+        <path id="패스_1142" data-name="패스 1142" class="cls-1" d="M25.949,14.918c-8.106,2.324-9.849,4.208-12,12.968-2.151-8.76-3.894-10.644-12-12.968,8.106-2.324,9.849-4.208,12-12.968,2.151,8.76,3.894,10.644,12,12.968" transform="translate(-342.949 68.396)"/>
+      </g>
+      <text id="_5만원_이상_구매_시_어드벤트_캘린더_4_900원" data-name="5만원 이상 구매 시 
+어드벤트 캘린더 4,900원" class="cls-2" transform="translate(375 6405)"><tspan x="-121.578" y="0">5만원 이상 구매 시 </tspan><tspan x="-164.516" y="42">어드벤트 캘린더 4,900원</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="409" height="43" viewBox="0 0 409 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff1c27;
+        font-size: 36px;
+        font-family: Pretendard-Bold, Pretendard;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #999;
+        font-size: 32px;
+        font-family: Pretendard-Medium, Pretendard;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="_가격" data-name="+ 가격" transform="translate(-182 -7203)">
+    <text id="_83_4_900원" data-name="83% 4,900원" class="cls-1" transform="translate(478 7237)"><tspan x="-112.395" y="0">83%</tspan><tspan class="cls-2" y="0" xml:space="preserve"> 4,900원</tspan></text>
+    <text id="정가_29_000" data-name="정가 29,000" class="cls-3" transform="translate(267 7234)"><tspan x="-84.953" y="0">정가 29,000</tspan></text>
+  </g>
+</svg>
