@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMORE : E type</title>
-    <link rel="stylesheet" href="../asseets/css/reset.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/jquery-3.6.3.min.js"></script>
     <style></style>
   </head>
@@ -21,7 +26,7 @@
           </div>
           <div class="text-tab">
             <!-- Swiper -->
-            <div class="swiper mySwiper tabSwiper">
+            <div class="swiper mySwiper mySwiper_01">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="./img/pop-menu-tab01.png" />
@@ -58,37 +63,43 @@
           <div class="section03">
             <img src="./img/section_03.png" />
             <!-- Swiper -->
-
             <div class="swiper_coupon">
-                <div class="swiper-container coupon">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
-                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
-                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
-                        <div class="swiper-slide"><img src="./img/coupon_01.png"></div>
-                    </div>
+              <div class="swiper mySwiper mySwiper_03">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_01.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_02.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_03.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_04.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_05.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_06.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_07.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_08.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_09.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/coupon_10.SVG" />
+                  </div>
+                </div>
                 <div class="swiper-pagination"></div>
+              </div>
             </div>
-
-            <!-- <div class="swiper mySwiper swiper03">
-              <div class="swiper-wrapper">
-                <img src="./img/coupon_01.png" />
-              </div>
-              <div class="swiper-wrapper">
-                <img src="./img/coupon_01.png" />
-              </div>
-              <div class="swiper-wrapper">
-                <img src="./img/coupon_01.png" />
-              </div>
-              <div class="swiper-wrapper">
-                <img src="./img/coupon_01.png" />
-              </div>
-              <div class="swiper-wrapper">
-                <img src="./img/coupon_01.png" />
-              </div>
-              <div class="swiper-pagination"></div>
-            </div> -->
-            <div class="blue"></div>
           </div>
           <div class="section04">
             <img src="./img/section_04.png" />
@@ -103,10 +114,45 @@
             <img src="./img/section_07.png" />
           </div>
           <div class="section08">
-            <img src="./img/section_08.png" />
+            <img src="./img/section_08_top.jpg" />
+
+            <div class="swiper-card">
+              <!-- Swiper -->
+              <div class="swiper mySwiper mySwiper_08">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/live_01.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/live_02.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/live_03.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./img/section_08_bot.jpg" />
           </div>
           <div class="section09">
-            <img src="./img/section_09.png" />
+            <img src="./img/section_09_top.jpg" />
+            <div class="swiper-card">
+              <!-- Swiper -->
+              <div class="swiper mySwiper mySwiper_09">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/card_01.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/card_02.SVG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/card_03.SVG" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./img/section_09_bot.jpg" />
           </div>
           <div class="section10">
             <img src="./img/section_10.png" />
@@ -117,36 +163,43 @@
         <div class="footer"></div>
       </footer>
     </div>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // 메뉴 탭 스와이프
+      var swiper = new Swiper(".mySwiper_01", {
+        slidesPerView: "4",
+        spaceBetween: 44,
+        loop: false,
+      });
+      // section03 Swiper
+      var swiper = new Swiper(".mySwiper_03", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      // section08 Swiper
+      var swiper = new Swiper(".mySwiper_08", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 5,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      // section09 Swiper
+      var swiper = new Swiper(".mySwiper_09", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 5,
+      });
+    </script>
   </body>
-  <script src="./js/swiper-bundle.min.js"></script>
-  <script>
-    // 메뉴 탭 스와이프
-    var swiper = new Swiper(".tabSwiper", {
-      slidesPerView: "4",
-      spaceBetween: 44,
-      loop: false,
-    });
-    // Swiper03 스와이프
-    var swiper = new Swiper(".swiper03", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-    $(document).ready(function(){
-        var siwper1 = new Swiper('.coupon', {
-            slidesPerView: 3,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        })
-
-        // $('.menu').click(function(){
-        //     $(this).toggleClass('active')
-        // })
-    })
-  </script>
 </html>
