@@ -1,44 +1,214 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Amore Mall Gate</title>
-</head>
-<body>
-    <div class="wrap">
-        <ul>
-            <li>
-                
-                <a href="./type_a/type_a.html">Type A</a>
-            </li>
-            <li>
-                <a href="./type_b/type_b.html">Type B</a>
-            </li>
-            <li>
-                <a href="./type_c/type_c_1.html">Type C_1</a>
-            </li>
-            <li>
-                <a href="./type_c/type_c_2.html">Type C_2</a>
-            </li>
-            <li>
-                <a href="./type_d/type_d.html">Type D</a>
-            </li>
-            <li>
-                <a href="./type_e/type_e.html">Type E</a>
-            </li>
-            <li>
-                <a href="./type_f/type_f.html">Type F</a>
-            </li>
-            <li>
-                <a href="./type_g/type_g.html">Type G</a>
-            </li>
-            <li>
-                <a href="./type_h/type_h.html">Type H</a>
-            </li>
-        </ul>
-    </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Amore Mall Gate</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+            }
+            .wrap {
+                width: 100%;
+                max-width: 750px;
+                height: calc(100vw * 4370 / 750);
+                max-height: 4370px;
+                margin: 0 auto;
+                background-image: url(./img/bg.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .container {
+                padding: calc(100vw * 65 / 750) calc(100vw * 58 / 750) 0;
+            }
+            .main_txt {
+                width: calc(100vw * 551 / 750);
+                max-width: 551px;
+            }
+            .main_txt img {
+                width: 100%;
+            }
+            .special {
+                margin-top: calc(100vw * 118 / 750);
+            }
+            .special_txt {
+                width: calc(100vw * 366 / 750);
+                max-width: 366px;
+            }
+            .matching_txt {
+                width: calc(100vw * 364 / 750);
+                max-width: 364px;
+            }
+            .charm_txt {
+                width: calc(100vw * 549 / 750);
+                max-width: 549px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: calc(100vw * 40 / 750);
+                row-gap: calc(100vw * 64 / 750);
+                margin-top: calc(100vw * 70 / 750);
+            }
+            ul li {
+                width: calc(100vw * 280 / 750);
+                max-width: 280px;
+            }
+            ul li a {
+                display: block;
+                width: 100%;
+            }
+            ul li a img {
+                width: 100%;
+            }
+            .matching,
+            .charm {
+                margin-top: calc(100vw * 168 / 750);
+            }
+            @media (min-width: 750px) {
+                .container {
+                    padding: 65px 58px 0;
+                }
+                .special {
+                    margin-top: 118px;
+                }
+                ul {
+                    column-gap: 40px;
+                    row-gap: 64px;
+                    margin-top: 70px;
+                }
+                .matching,
+                .charm {
+                    margin-top: 168px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="main_txt">
+                    <img src="./img/main_txt.png" alt="main_txt" />
+                </div>
+                <div class="special">
+                    <img
+                        class="special_txt"
+                        src="./img/special_txt.png"
+                        alt="special_txt"
+                    />
+                    <ul>
+                        <li>
+                            <a href="./type_b/type_b.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_a.png"
+                                    alt="special_a"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_a/type_a.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_b.png"
+                                    alt="special_b"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_c/type_c_2.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_c.png"
+                                    alt="special_c"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_d/type_d.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_d.png"
+                                    alt="special_d"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="matching">
+                    <img
+                        class="matching_txt"
+                        src="./img/matching_txt.png"
+                        alt="matching_txt"
+                    />
+                    <ul>
+                        <li>
+                            <a href="./type_h/type_h.html" target="_blank">
+                                <img
+                                    class="matching_img"
+                                    src="./img/matching_a.png"
+                                    alt="matching_a"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_g/type_g.html" target="_blank">
+                                <img
+                                    class="matching_img"
+                                    src="./img/matching_b.png"
+                                    alt="matching_b"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="charm">
+                    <img
+                        class="charm_txt"
+                        src="./img/charm_txt.png"
+                        alt="charm_txt"
+                    />
+                    <ul>
+                        <li>
+                            <a href="./type_f/type_f.html" target="_blank">
+                                <img
+                                    class="charm_img"
+                                    src="./img/charm_a.png"
+                                    alt="charm_a"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_e/type_e.html" target="_blank">
+                                <img
+                                    class="charm_img"
+                                    src="./img/charm_b.png"
+                                    alt="charm_b"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_c/type_c_1.html" target="_blank">
+                                <img
+                                    class="charm_img"
+                                    src="./img/charm_c.png"
+                                    alt="charm_c"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
