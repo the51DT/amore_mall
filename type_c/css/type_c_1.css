@@ -316,6 +316,8 @@ main{
 .sec8 .live_list{
     display: flex;
     margin-top: 21px;
+    margin-left: 60px;
+    transition: margin 0.3s ease-in-out;
 }
 .sec8 .live_list img{
     height: clamp(1px, calc(100vw * 322 / 750), 322px);

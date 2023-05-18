@@ -14,6 +14,9 @@
             margin: 0;
             padding: 0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body{
             max-width: 750px;
             margin: 0 auto;
@@ -189,7 +192,11 @@
                     slideChange: function () {
                         $('.live').removeClass('active');
                         $('.live').eq(this.realIndex).addClass('active')
+                        $('.live_list').css('margin-right', `${this.realIndex*40}px`)
                     }
+                },
+                autoplay: {
+                    delay: 5000,
                 },
                 /* breakpoints: {
                     700: {
@@ -222,12 +229,18 @@
                         slidesPerView: 2,
                     }
                 },
+                autoplay: {
+                    delay: 5000,
+                },
             })
 
             var swiper3 = new Swiper(".sec3_swiper", {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 loop: true,
+                autoplay: {
+                    delay: 5000,
+                },
             })
 
             function checkVisible( element, check = 'visible' ) {
