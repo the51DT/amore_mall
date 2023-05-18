@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/type_h.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>type_h</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            max-width: 750px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            background: #F5F0E2;
+        }
+        .flex{
+            display: flex;
+        }
+        li{
+            list-style: none;
+        }
+        main{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section class="flex main">
+            <div class="con">
+                <img class="title" src="./img/main_title.svg">
+            </div>
+            <img class="aside" src="./img/main_aside.svg">
+        </section>
+    
+        <main>
+            <aside class="menu">
+                <div class="flex">
+                    <ul class="flex">
+                        <li><a href="#"><img src="./img/menu_1_on.svg"></a></li>
+                        <li><a href="#"><img src="./img/menu_2_off.svg"></a></li>
+                        <li><a href="#"><img src="./img/menu_3_off.svg"></a></li>
+                        <li><a href="#"><img src="./img/menu_4_off.svg"></a></li>
+                        <li><a href="#"><img src="./img/menu_5_off.svg"></a></li>
+                        <li><a href="#"><img src="./img/menu_6_off.svg"></a></li>
+                        <li><a href="#"><img src="./img/menu_7_off.svg"></a></li>
+                    </ul>
+                </div>
+                <div class="toggle"></div>
+            </aside>
+            <section class="sec1">
+                <div class="con">
+                    <img class="num" src="./img/sec1_num.svg">
+                    <img class="title" src="./img/sec1_title.svg">
+                    <img class="con1" src="./img/sec1_con_1.svg">
+                    <img class="con2" src="./img/sec1_con_2.svg">
+                    <div class="line"></div>
+                    <img class="slide_title" src="./img/sec1_slide_title.svg">
+                        <div class="swiper_coupon">
+                            <div class="swiper-container coupon">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_1.svg"></div>
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_2.svg"></div>
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_3.svg"></div>
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_4.svg"></div>
+                                </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <img class="aside" src="./img/sec1_aside.svg">
+                </div>
+            </section>
+
+            <section class="sec2">
+                <div class="con">
+                    <img class="num" src="./img/sec2_num.svg">
+                    <img class="title" src="./img/sec2_title.svg">
+                    <img class="text1" src="./img/sec2_text_1.svg">
+                    <div class="con1"></div>
+                    <img class="text2" src="./img/sec2_text_2.svg">
+                    <div class="con2"></div>
+                    <img class="aside" src="./img/sec2_aside.svg">
+                </div>
+            </section>
+    
+            <section class="sec3">
+                <img src="./img/img3.png">
+            </section>
+    
+            <section class="sec4">
+                <img src="./img/img4.png">
+            </section>
+    
+            <section class="sec5">
+                <img src="./img/img5.png">
+            </section>
+    
+            <section class="sec6">
+                <img src="./img/img6.png">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="sec7">
+                <img src="./img/img7.png">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                </div>
+            </section>
+    
+            <footer class="footer">
+                <img src="./img/img8.png">
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var siwper1 = new Swiper('.coupon', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            })
+
+            $('.menu').click(function(){
+                $(this).toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>
