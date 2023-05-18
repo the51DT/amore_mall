@@ -26,27 +26,35 @@
     }
 
     /* commmon */
-    html, body {font-family: "Pretendard-Bold", "Pretendard-ExtraBold";}
+    html, body {margin: 0; padding: 0; font-size: 10px; font-family: "Pretendard-Bold", "Pretendard-ExtraBold";}
     section {overflow: hidden;}
-    .wrap {width: 750px; margin: 0 auto; text-align: center;}
+    .wrap {max-width: 750px; margin: 0 auto; text-align: center;}
     .flex {display: flex; align-items: center; justify-content: space-between;}
     .bg {background-color: #1B0E56;}
     
     /* main */
-    .main .bg_img {position: relative; max-width:100%; height: 1470px; background: url(../type_a/img/main/main_bg.svg) no-repeat center center / 100% 100%;}
-    .main .bg_img_wrap .fck_img_01 {position: absolute; top: -27px; left: -40px; animation: flicker-effect .8s linear infinite alternate;}
-    .main .bg_img_wrap .fck_img_02 {position: absolute; top: 40px; right: 46px; animation: flicker-effect 1.2s linear infinite alternate;}
-    .main .bg_img_wrap .fck_img_03 {position: absolute; top: 523px; left: 13px; animation: flicker-effect 1s linear infinite alternate;}
-    .main .bg_img_wrap .fck_img_04 {position: absolute; top: 685px; right: 21px; animation: flicker-effect 1.5s linear infinite alternate;}
-    .main .bg_img_wrap .balloon_img_01 {position: absolute; top: 738px; left: 76px; animation: float-effect 1.5s linear infinite alternate;}
-    .main .main_tit {position: relative; padding-top: 100px;}
-    .main .main_tit::after {content: ""; display: block; position: absolute; top: 55%; left: 43.5%; width: 100px; height: 100px; background: url(./img/main/main_ico.svg)  no-repeat 0 0 / auto auto; animation: ico-ani 5s infinite steps(7);}
-    .main .sub_tit {padding-top: 25px;}
-    .main .carrousel_wrap {position: relative; margin-top: 83px;}
-    .main .carrousel_wrap::after {content: ""; position: absolute; display: block; top: 148px; left: 220px; width: 330px; height: 86px; background: url(./img/main/sign.gif) no-repeat center center / 100% 100%;}
-    .main .carrousel_wrap .horse01 {position: absolute; bottom: 181px; left: 105px; animation: horse-effect 1.5s linear infinite alternate;}
-    .main .carrousel_wrap .horse02 {position: absolute; bottom: 225px; left: 315px; animation: horse-effect_b 1.5s linear infinite alternate;}
-    .main .carrousel_wrap .horse03 {position: absolute; bottom: 181px; right: 105px; animation: horse-effect 1.5s linear infinite alternate;}
+    .main .bg_img {position: relative; width:100%; background: url(../type_a/img/main/main_bg.svg) no-repeat center center / 100% auto;}
+    .main .bg_img_wrap .fck_img_01 {position: absolute; top: -2.7rem; left: -4rem; animation: flicker-effect .8s linear infinite alternate;}
+    .main .bg_img_wrap .fck_img_01 img {max-width: 20.6rem; width: 100%;}
+    .main .bg_img_wrap .fck_img_02 {position: absolute; top: 4rem; right: 4.6rem; animation: flicker-effect 1.2s linear infinite alternate;}
+    .main .bg_img_wrap .fck_img_02 img {max-width: 13.6rem; width: 100%;}
+    .main .bg_img_wrap .fck_img_03 {position: absolute; top: 52.3rem; left: 1.3rem; animation: flicker-effect 1s linear infinite alternate;}
+    .main .bg_img_wrap .fck_img_04 {position: absolute; top: 68.5rem; right: 2.1rem; animation: flicker-effect 1.5s linear infinite alternate;}
+    .main .bg_img_wrap .balloon_img_01 {position: absolute; top: 73.8rem; left: 7.6rem; animation: float-effect 1.5s linear infinite alternate;}
+    .main .main_tit {position: relative; padding-top: 10rem;}
+    .main .main_tit img {max-width: 45.5rem; width: 100%;}
+    .main .main_tit::after {content: ""; display: block; position: absolute; top: 55%; left: 43.5%; width: 100%; max-width: 10rem; min-height: 10rem; background: url(./img/main/main_ico.svg) no-repeat 0 0 / auto auto; animation: ico-ani 5s infinite steps(7);}
+    .main .sub_tit {padding-top: 2.5rem;}
+    .main .sub_tit img {max-width: 31.6rem; width: 100%;}
+    .main .carrousel_wrap {position: relative; margin-top: 8.3rem;}
+    .main .carrousel_wrap::after {content: ""; position: absolute; display: block; top: 17.3rem; left: 22rem; max-width: 33rem; height: 8.6rem; width: 100%; background: url(./img/main/sign.gif) no-repeat center center / 100% auto;}
+    .main .carrousel_wrap .carrousel img {width: 100%; max-width: 75rem;}
+    .main .carrousel_wrap .horse01 {position: absolute; bottom: 18.1rem; left: 10.5rem; animation: horse-effect 1.5s linear infinite alternate;}
+    .main .carrousel_wrap .horse02 {position: absolute; bottom: 22.5rem; left: 31.5rem; animation: horse-effect_b 1.5s linear infinite alternate;}
+    .main .carrousel_wrap .horse03 {position: absolute; bottom: 18.1rem; right: 10.5rem; animation: horse-effect 1.5s linear infinite alternate;}
+    .main .carrousel_wrap .horse01 img,
+    .main .carrousel_wrap .horse02 img,
+    .main .carrousel_wrap .horse03 img {max-width: 152px; width: 100%;}
 
     /* main_animation */
     @keyframes flicker-effect {
@@ -73,28 +81,28 @@
     }
 
     /* nav */
-    .nav_wrap {display: none; position: sticky; top: 0; left: 0; width: 100%; height: 100%; padding: 30px 35px; background-color: #c51e26; z-index: 100;}
-    .nav li a {display: block; font-size: 30px; color: rgba(255, 255, 255, .5); font-weight: bold; line-height: 40px;}
+    .nav_wrap {display: none; position: sticky; top: 0; left: 0; width: 100%; height: 100%; padding: 3rem 3.5rem; background-color: #c51e26; z-index: 100;}
+    .nav li a {display: block; font-size: 3rem; color: rgba(255, 255, 255, .5); font-weight: bold; line-height: 4rem;}
     .nav li a:hover {top: 0; color: #fff; background: url(./img/main/nav_act.svg) no-repeat center top / 100% 100%;}
-    .nav_wrap img {width: 107px; height: 100px;}
+    .nav_wrap img {width: 10.7rem; height: 10rem;}
 
     /* cont01 */
     .cont01 {position: relative;}
-    .cont01 .bg_img_wrap {padding-top: 162px;}
-    .cont01 .tit_area {position: absolute; top: 209px; left: 0;}
-    .cont01 .fck_img_01 {position: absolute; top: 83px; left: 283px;}
-    .cont01 .fck_img_02 {position: absolute; top: 65px; right: 58px;}
-    .cont01 .tit_inn {margin-top: 100px;}
-    .cont01 .cp_pack01 {margin-top: 363px; background: url(../type_a/img/cont01/cont01_cp_bg01.svg) no-repeat center top / 100% auto;}
-    .cont01 .cp_pack01 .cp_tit {padding-top: 73px;}
-    .cont01 .cp_pack01 .cp_img {padding-top: 45px;}
-    .cont01 .cp_pack01 .cp_btn {padding-top: 62px;}
-    .cont01 .cp_pack01 .cp_list {padding: 41px 0;}
-    .cont01 .cp_pack02 {background: url(../type_a/img/cont01/cont01_cp_bg02.svg) no-repeat center top / 100% auto;}
-    .cont01 .cp_pack02 .cp_tit {padding-top: 109px;}
-    .cont01 .cp_pack02 .cp_img {padding-top: 61px;}
-    .cont01 .cp_pack02 .cp_list {padding: 75px 0 89px;}
-    .cont01 .cp_pack03 {background: url(../type_a/img/cont01/cont01_cp_bg03.svg) no-repeat center top / 100% auto;}
+    .cont01 .bg_img_wrap {padding-top: 16.2rem;}
+    .cont01 .tit_area {position: absolute; top: 20.9rem; left: 0;}
+    .cont01 .fck_img_01 {position: absolute; top: 8.3rem; left: 28.3rem;}
+    .cont01 .fck_img_02 {position: absolute; top: 6.5rem; right: 5.8rem;}
+    .cont01 .tit_inn {margin-top: 10rem;}
+    .cont01 .cp_pack01 {width: 100%; margin-top: 36.3rem; background: url(../type_a/img/cont01/cont01_cp_bg01.svg) no-repeat center top / 100% auto;}
+    .cont01 .cp_pack01 .cp_tit {padding-top: 7.3rem;}
+    .cont01 .cp_pack01 .cp_img {padding-top: 4.5rem;}
+    .cont01 .cp_pack01 .cp_btn {padding-top: 6.2rem;}
+    .cont01 .cp_pack01 .cp_list {padding: 4.1rem 0;}
+    .cont01 .cp_pack02 {width: 100%; background: url(../type_a/img/cont01/cont01_cp_bg02.svg) no-repeat center top / 100% auto;}
+    .cont01 .cp_pack02 .cp_tit {padding-top: 10.9rem;}
+    .cont01 .cp_pack02 .cp_img {padding-top: 6.1rem;}
+    .cont01 .cp_pack02 .cp_list {padding: 75px 0 86px;}
+    .cont01 .cp_pack03 {width: 100%; background: url(../type_a/img/cont01/cont01_cp_bg03.svg) no-repeat center top / 100% auto;}
     .cont01 .cp_pack03 .cp_tit {padding-top: 75px;}
     .cont01 .cp_pack03 .cp_img {padding-top: 61px;}
     .cont01 .cp_pack03 .cpSwiper {padding-top: 75px;}
@@ -180,13 +188,38 @@
     .cont05 .money_img_03 img {width: 87px; height: 87px;}
     .cont05 .bg_img {position: absolute; top: 128px; left: 0;}
     .cont05 .tit_area {position: absolute; top: 284px; left: 0;}
-    .cont05 .card_list {padding-top: 240px;}
+    .cont05 .card_list {padding-top: 500px;}
+    .cont05 .btn {padding-top: 30px;}
 
     /* cont06 */
     .cont06 {position: relative;}
+    .cont06 .bg_img_wrap {padding-top: 135px;} 
+    .cont06 .bal_img_01 {position: absolute; top: 285px; left: 112px;}
+    .cont06 .bal_img_02 {position: absolute; top: 165px; right: 120px;}
+    .cont06 .bg_img_01 {position: absolute; top: 0; left: 0;}
+    .cont06 .tit_area {position: absolute; top: 220px; left: 0;}
+    .cont06 .swiper.evSwiper {padding-top: 410px;}
 
     /* cont07 */
     .cont07 {position: relative;}
+    .cont07 .bg_img_wrap {padding-top: 150px;} 
+    .cont07 .bg_img {position: absolute; top: 150px; left: 123px;}
+    .cont07 .tit_area {position: absolute; top: 270px; left: 0;}
+    .cont07 .tab_wrap {padding: 852px 0 40px;}
+    .cont07 .tab_cont {}
+    .cont07 .btn {padding: 40px 0 115px;}
+
+    /* footer */
+    .footer {position: relative;}
+    .footer .footer_bg {position: relative;}
+    .footer .fck_img_01 {position: absolute; top: 11.7rem; left: 8.8rem;}
+    .footer .fck_img_02 {position: absolute; top: 5.1rem; left: 23.3rem;}
+    .footer .fck_img_03 {position: absolute; top: 5.6rem; right: 10.4rem;} 
+    .footer .fck_img_04 {position: absolute; top: 21.4rem; right: 7.3rem;}
+    .footer .txt {position: absolute; top: 26.8rem; left: 21.3rem;}
+    .footer .man {position: absolute; bottom: 17.2rem; left: 7.7rem;}
+    .footer .box {position: absolute; bottom: 17.5rem; left: 24.8rem;}
+    .footer .woman {position: absolute; bottom: 16.5rem; right: 1.8rem;}
 
 </style>
 
@@ -303,32 +336,34 @@
                         </div>
                     </div>
                     <div class="cp_pack03">
-                        <div class="cp_tit">
-                            <img src="./img/cont01/cont01_tit03.svg" alt="">
-                        </div>
-                        <div class="swiper cpSwiper">
-                            <ul class="swiper-wrapper flex">
-                                <li class="swiper-slide">
-                                    <div class="cp_pack">
-                                        <a href="#"><img src="./img/cont01/cont01_cp01.svg" alt=""></a>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide">
-                                    <div class="cp_pack">
-                                        <a href="#"><img src="./img/cont01/cont01_cp02.svg" alt=""></a>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide">
-                                    <div class="cp_pack">
-                                        <a href="#"><img src="./img/cont01/cont01_cp03.svg" alt=""></a>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide">
-                                    <div class="cp_pack">
-                                        <a href="#"><img src="./img/cont01/cont01_cp04.svg" alt=""></a>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="cp_pack03_bg">
+                            <div class="cp_tit">
+                                <img src="./img/cont01/cont01_tit03.svg" alt="">
+                            </div>
+                            <div class="swiper cpSwiper">
+                                <ul class="swiper-wrapper flex">
+                                    <li class="swiper-slide">
+                                        <div class="cp_pack">
+                                            <a href="#"><img src="./img/cont01/cont01_cp01.png" alt=""></a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="cp_pack">
+                                            <a href="#"><img src="./img/cont01/cont01_cp02.png" alt=""></a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="cp_pack">
+                                            <a href="#"><img src="./img/cont01/cont01_cp03.png" alt=""></a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="cp_pack">
+                                            <a href="#"><img src="./img/cont01/cont01_cp04.png" alt=""></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="cp_list">
                             <img src="./img/cont01/cont01_list03.svg" alt="">
@@ -552,13 +587,13 @@
                     </div>
                     <div class="card_list flex">
                         <div class="kakao">
-                            <img src="./img/cont05/cont05_kakao.svg" alt="">
+                            <img src="./img/cont05/cont05_kakao.png" alt="">
                         </div>
                         <div class="samsung">
-                            <img src="./img/cont05/cont05_samsung.svg" alt="">
+                            <img src="./img/cont05/cont05_samsung.png" alt="">
                         </div>
                         <div class="shinhan">
-                            <img src="./img/cont05/cont05_shinhan.svg" alt="">
+                            <img src="./img/cont05/cont05_shinhan.png" alt="">
                         </div>
                     </div>
                     <div class="btn">
@@ -572,13 +607,13 @@
             <section class="section">
                 <div id="nav06" class="cont06 bg">
                     <div class="bg_img_wrap">
-                        <div class="fck_img_01">
+                        <div class="bal_img_01">
                             <img src="./img/cont06/cont06_balloon01.svg" alt="">
                         </div>
-                        <div class="fck_img_02">
+                        <div class="bal_img_02">
                             <img src="./img/cont06/cont06_balloon02.svg" alt="">
                         </div>
-                        <div class="bg_img">
+                        <div class="bal_img">
                             <img src="./img/cont06/cont06_bg_img.svg" alt="">
                         </div>
                     </div>
@@ -591,22 +626,22 @@
                         <ul class="swiper-wrapper flex">
                             <li class="swiper-slide">
                                 <div class="event">
-                                    <a href="#"><img src="./img/cont06/cont06_event01.svg" alt=""></a>
+                                    <img src="./img/cont06/cont06_event01.svg" alt="">
                                 </div>
                             </li>
                             <li class="swiper-slide">
                                 <div class="event">
-                                    <a href="#"><img src="./img/cont06/cont06_event02.svg" alt=""></a>
+                                    <img src="./img/cont06/cont06_event02.svg" alt="">
                                 </div>
                             </li>
                             <li class="swiper-slide">
                                 <div class="event">
-                                    <a href="#"><img src="./img/cont06/cont06_event03.svg" alt=""></a>
+                                    <img src="./img/cont06/cont06_event03.svg" alt="">
                                 </div>
                             </li>
                             <li class="swiper-slide">
                                 <div class="event">
-                                    <a href="#"><img src="./img/cont06/cont06_event04.svg" alt=""></a>
+                                    <img src="./img/cont06/cont06_event04.svg" alt="">
                                 </div>
                             </li>
                         </ul>
@@ -619,55 +654,35 @@
             <section class="section">
                 <div id="nav07" class="cont07 bg">
                     <div class="bg_img_wrap">
-                        <div class="fck_img_01">
-                            <img src="./img/cont01/cont01_fck_01.svg" alt="">
-                        </div>
-                        <div class="fck_img_02">
-                            <img src="./img/cont01/cont01_fck_02.svg" alt="">
-                        </div>
-                        <div class="cont01_bg_img">
-                            <img src="./img/cont01/cont01_bg_img.svg" alt="">
+                        <div class="bg_img">
+                            <img src="./img/cont07/cont07_heart.svg" alt="">
                         </div>
                     </div>
                     <div class="tit_area">
                         <div class="light_img">
                             <img src="./img/cont07/cont07_light.png" alt="">
                         </div>
-                        <div class="tit_inn">
-                            <div class="tit">
-                                <img src="" alt="">
-                            </div>
-                        </div>
                     </div>
                     <div class="tab_wrap">
                         <ul class="tab_inn">
-                            <li><a href="#tab01">2만원 이상</a></li>
-                            <li><a href="#tab02">4만원 이상</a></li>
+                            <li><a href="#tab03">2만원 이상</a></li>
+                            <li><a href="#tab04">4만원 이상</a></li>
                         </ul>
                      </div>
-                     <div class="tab_cont">
-                        <div id="tab01">
-                            <div class="tab_img badge">
-                               <img src="./img/content/cont03_img.svg" alt="">
-                            </div>
-                            <div class="tab_tit">
-                               <img src="./img/content/cont03_sub_tit.svg" alt="">
-                            </div>
-                            <div class="btn">
-                                <img src="" alt="">
+                     <div class="tab_cont flex">
+                        <div id="tab03">
+                            <div class="tab_img">
+                               <img src="./img/cont07/cont07_img01.svg" alt="">
                             </div>
                         </div>
-                        <div id="tab02">
-                            <div class="tab_img badge">
-                                <img src="./img/content/cont03_img.svg" alt="">
-                             </div>
-                            <div class="tab_tit">
-                                <img src="./img/content/cont03_sub_tit.svg" alt="">
+                        <div id="tab04">
+                            <div class="tab_img">
+                                <img src="./img/cont07/cont07_img02.svg" alt="">
                              </div>
                         </div>
                      </div>
                      <div class="btn">
-                        <img src="" alt="">
+                        <img src="./img/cont07/cont07_btn.svg" alt="">
                      </div> 
                 </div>
             </section>
@@ -680,13 +695,28 @@
                         <img src="./img/footer/footer_bg.svg" alt="">
                     </div>
                     <div class="fck_img_01">
-                        <img src="./img/cont01/cont01_fck_01.svg" alt="">
+                        <img src="./img/footer/footer_fire_1.svg" alt="">
                     </div>
                     <div class="fck_img_02">
-                        <img src="./img/cont01/cont01_fck_02.svg" alt="">
+                        <img src="./img/footer/footer_fire_2.svg" alt="">
                     </div>
-                    <div class="cont01_bg_img">
-                        <img src="./img/cont01/cont01_bg_img.svg" alt="">
+                    <div class="fck_img_03">
+                        <img src="./img/footer/footer_fire_3.svg" alt="">
+                    </div>
+                    <div class="fck_img_04">
+                        <img src="./img/footer/footer_fire_4.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <img src="./img/footer/footer_txt.svg" alt="">
+                    </div>
+                    <div class="man">
+                        <img src="./img/footer/footer_man.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="./img/footer/footer_box.svg" alt="">
+                    </div>
+                    <div class="woman">
+                        <img src="./img/footer/footer_woman.svg" alt="">
                     </div>
                 </div>
             </footer>
