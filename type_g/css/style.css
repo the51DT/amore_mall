@@ -3,6 +3,7 @@
     width: 750px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 .flex {
     display: flex;
@@ -13,7 +14,20 @@ body {
     margin: 0;
     line-height: 0;
 }
+.container {
+    display: none;
+}
 
+.splash {
+    height: 1136px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.5s;
+}
+.splash img {
+    width: 100%;
+}
 /* main */
 .bg_img {
     max-width: 100%;
@@ -51,6 +65,9 @@ body {
 }
 .nav_container {
     width: 1277px;
+}
+.nav .swiper-slide {
+    width: auto !important;
 }
 .nav li a {
     display: block;
@@ -121,6 +138,9 @@ body {
 }
 .cont01 .cont01_cp .couponSwiper {
     padding-top: 450px;
+}
+.cont01 .cont01_cp .swiper-slide {
+    width: auto !important;
 }
 .cont01 .cont01_cp img {
     width: auto;
@@ -343,6 +363,9 @@ body {
 .cont06 .cont06_tit_01 {
     padding-top: 200px;
     margin-bottom: 60px;
+}
+.cont06 .eventSwiper .swiper-slide {
+    width: auto !important;
 }
 
 /* cont07 */
