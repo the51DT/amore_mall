@@ -25,7 +25,7 @@ body {
     overflow: hidden;
     list-style-type: none;
     background: #fff;
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav .swiper-slide {
@@ -383,7 +383,7 @@ section {
 /* section04 */
 
 .section04 {
-    padding: 100px 0 200px;
+    padding: 100px 0 80px;
     background: #E7F0FF;
 }
 
@@ -513,6 +513,194 @@ section {
 .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_32 {
     margin: 40px 0 0;
     width: 146px;
+}
+
+
+/* section05 */
+
+.section05 {
+    position: relative;
+}
+
+.section05 .img-box_33 {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 578px;
+}
+
+.section05 .lucky-ev-area {
+    position: absolute;
+    left: 50%;
+    bottom: 334px;
+    transform: translateX(-50%);
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list li {
+    padding: 60px 50px 0 60px;
+    background: #fff;
+    border-radius: 32px;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list li+li {
+    margin-top: 40px;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list .img-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_34 img {
+    padding-top: 12px;
+    align-self: flex-start;
+    width: 232px;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_34 img+img {
+    padding-top: 0;
+    align-self: flex-end;
+    width: 240px;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_35 img {
+    padding-top: 12px;
+    align-self: flex-start;
+    width: 204px;
+}
+
+.section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_35 img+img {
+    padding-top: 0;
+    align-self: flex-end;
+    width: 240px;
+}
+
+.section05 .lucky-ev-area .btn_lucky-ev {
+    display: block;
+    padding: 36px 0;
+    margin: 40px auto 0;
+    background: #E74723;
+    border-radius: 32px;
+}
+
+.section05 .lucky-ev-area .btn_lucky-ev .img-box_36 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.section05 .lucky-ev-area .btn_lucky-ev .img-box_36 img {
+    width: 230px;
+}
+
+.section05 .lucky-ev-area .btn_lucky-ev .img-box_36 img+img {
+    width: 48px;
+}
+
+
+/* .section06 */
+
+.section06 {
+    padding: 86px 0 106px;
+}
+
+.section06 .img-box_37 {
+    width: 529px;
+}
+
+.section06 .payment_swiper {
+    margin-top: 100px;
+}
+
+.section06 .payment_swiper .swiper-slide {
+    position: relative;
+    margin: 0 15px;
+    width: calc(100% - 252px);
+}
+
+.section06 .payment_swiper .swiper-slide.swiper-slide_bg1 {
+    background: url(/type_f/image/sec06_bg1.png) 0 100%/ 100% 486px no-repeat;
+}
+
+.section06 .payment_swiper .swiper-slide.swiper-slide_bg2 {
+    background: url(/type_f/image/sec06_bg2.png) 0 100%/ 100% 486px no-repeat;
+}
+
+.section06 .payment_swiper .swiper-slide.swiper-slide_bg3 {
+    background: url(/type_f/image/sec06_bg3.png) 0 100%/ 100% 486px no-repeat;
+}
+
+.section06 .payment_swiper {
+    overflow: hidden;
+}
+
+.section06 .payment_swiper .img-box_38,
+.section06 .payment_swiper .img-box_40,
+.section06 .payment_swiper .img-box_42 {
+    width: 220px;
+    padding-bottom: 394px;
+}
+
+.section06 .payment_swiper .img-box_39,
+.section06 .payment_swiper .img-box_41,
+.section06 .payment_swiper .img-box_43 {
+    position: absolute;
+    left: 50%;
+    bottom: 36px;
+    transform: translate(-50%);
+}
+
+.section06 .payment_swiper .img-box_39 {
+    width: 259px;
+}
+
+.section06 .payment_swiper .img-box_41 {
+    width: 300px;
+}
+
+.section06 .payment_swiper .img-box_43 {
+    width: 271px;
+}
+
+
+/* section08 */
+
+.section08 {
+    padding-bottom: 200px;
+}
+
+.section08 .img-box_45 {
+    margin-top: 86px;
+}
+
+.section08 .live-swiper {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.section08 .live-swiper .swiper-slide:first-child {
+    margin-left: 20px;
+}
+
+.section08 .live-swiper .swiper-slide {
+    width: calc(100% - 252px);
+}
+
+.section08 .live-swiper .btn_live-detail {
+    display: block;
+    padding: 36px 0;
+    background: #E74723;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.section08 .live-swiper .btn_live-detail .img-box {
+    width: 230px;
 }
 
 @media all and (max-width: 750px) {
@@ -695,7 +883,7 @@ section {
     }
     /* section04 */
     .section04 {
-        padding: 13.333vw 0 26.667vw;
+        padding: 13.333vw 0 10.667vw;
     }
     .section04 .img-box_26 {
         width: 76.133vw;
@@ -729,7 +917,7 @@ section {
     }
     .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_29 {
         margin: 5.333vw 0 0;
-        width: 5.333vw;
+        width: 34.667vw;
     }
     .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_30 {
         margin: 3.200vw 0 0;
@@ -751,5 +939,118 @@ section {
     .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_32 {
         margin: 5.333vw 0 0;
         width: 19.467vw;
+    }
+    /* section05 */
+    .section05 .img-box_33 {
+        top: 34.667vw;
+        width: 77.067vw;
+    }
+    .section05 .lucky-ev-area {
+        bottom: 44.533vw;
+        padding: 0 5.333vw;
+    }
+    .section05 .lucky-ev-area .lucky-ev-list li {
+        padding: 8vw 6.667vw 0 8vw;
+        border-radius: 4.267vw;
+    }
+    .section05 .lucky-ev-area .lucky-ev-list li+li {
+        margin-top: 5.333vw;
+    }
+    .section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_34 img {
+        padding-top: 1.600vw;
+        width: 30.933vw;
+    }
+    .section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_34 img+img {
+        padding-top: 0;
+        width: 32vw;
+    }
+    .section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_35 img {
+        padding-top: 1.600vw;
+        width: 27.200vw;
+    }
+    .section05 .lucky-ev-area .lucky-ev-list .img-box.img-box_35 img+img {
+        padding-top: 0;
+        width: 32vw;
+    }
+    .section05 .lucky-ev-area .btn_lucky-ev {
+        padding: 4.800vw 0;
+        margin: 5.333vw auto 0;
+        border-radius: 4.267vw;
+    }
+    .section05 .lucky-ev-area .btn_lucky-ev .img-box_36 {
+        gap: 0.533vw;
+    }
+    .section05 .lucky-ev-area .btn_lucky-ev .img-box_36 img {
+        width: 30.667vw;
+    }
+    .section05 .lucky-ev-area .btn_lucky-ev .img-box_36 img+img {
+        width: 6.400vw;
+    }
+    /* .section06 */
+    .section06 {
+        padding: 11.467vw 0 14.133vw;
+    }
+    .section06 .img-box_37 {
+        width: 70.533vw;
+    }
+    .section06 .payment_swiper {
+        margin-top: 13.333vw;
+    }
+    .section06 .payment_swiper .swiper-slide {
+        margin: 0 2vw;
+        width: calc(100% - 33.600vw);
+    }
+    .section06 .payment_swiper .swiper-slide.swiper-slide_bg1 {
+        background: url(/type_f/image/sec06_bg1.png) 0 100%/ 100% 64.800vw no-repeat;
+    }
+    .section06 .payment_swiper .swiper-slide.swiper-slide_bg2 {
+        background: url(/type_f/image/sec06_bg2.png) 0 100%/ 100% 64.800vw no-repeat;
+    }
+    .section06 .payment_swiper .swiper-slide.swiper-slide_bg3 {
+        background: url(/type_f/image/sec06_bg3.png) 0 100%/ 100% 64.800vw no-repeat;
+    }
+    .section06 .payment_swiper .img-box_38,
+    .section06 .payment_swiper .img-box_40,
+    .section06 .payment_swiper .img-box_42 {
+        width: 29.333vw;
+        padding-bottom: 52.533vw;
+    }
+    .section06 .payment_swiper .img-box_39,
+    .section06 .payment_swiper .img-box_41,
+    .section06 .payment_swiper .img-box_43 {
+        bottom: 4.800vw;
+    }
+    .section06 .payment_swiper .img-box_39 {
+        width: 34.533vw;
+    }
+    .section06 .payment_swiper .img-box_41 {
+        width: 40vw;
+    }
+    .section06 .payment_swiper .img-box_43 {
+        width: 36.133vw;
+    }
+    /* section08 */
+    .section08 {
+        padding-bottom: 26.667vw;
+    }
+    .section08 .img-box_45 {
+        margin-top: 11.467vw;
+    }
+    .section08 .live-swiper {
+        margin-top: 13.333vw;
+    }
+    .section08 .live-swiper .swiper-slide:first-child {
+        margin-left: 2.667vw;
+    }
+    .section08 .live-swiper .swiper-slide {
+        width: calc(100% - 33.600vw);
+    }
+    .section08 .live-swiper .btn_live-detail {
+        padding: 4.800vw 0;
+        border-bottom-left-radius: 4.267vw;
+        border-bottom-right-radius: 4.267vw;
+    }
+    .section08 .live-swiper .btn_live-detail .img-box {
+        width: 30.667vw;
     }
 }
