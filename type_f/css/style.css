@@ -219,6 +219,99 @@ section {
     width: 570px;
 }
 
+
+/* section03 */
+
+.section03 {
+    padding-top: 180px;
+    background: url(/type_f/image/sec03_bg.jpg) top/cover no-repeat;
+}
+
+.section03 .img-box_15 {
+    width: 444px;
+}
+
+.section03 .img-box_gift_01 {
+    padding-top: 102px;
+}
+
+.section03 .img-box_gift .img-box_gift_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px 0 40px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_badge .img-box {
+    padding: 31px 38px;
+    width: 130px;
+    height: 130px;
+    background: url(/type_f/image/sec03_badge01.svg) center/cover no-repeat;
+    box-sizing: border-box;
+}
+
+.section03 .img-box_gift .img-box_gift_bottom {
+    margin-top: 40px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_title .img-box_16 {
+    width: 105px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_title .img-box_17 {
+    width: 322px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_title .img-box_22 {
+    width: 118px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_title .img-box_23 {
+    width: 246px;
+}
+
+.section03 .img-box_gift .img-box_gift_top .img-box_gift_top_badge .img-box_24 {
+    padding: 48px 25px;
+}
+
+.section03 .img-box_gift .img-box_gift_bottom .img-box_gift-img .btn_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 17px 0;
+    margin: 0 80px;
+    background: #001E6C;
+    border-radius: 16px;
+}
+
+.section03 .img-box_gift .img-box_gift_bottom .img-box_gift-img .btn_details .img-box {
+    margin: 0;
+}
+
+.section03 .img-box_gift .img-box_gift_bottom .img-box_gift-img .btn_details .img-box25 {
+    width: 167px;
+}
+
+.section03 .img-box_gift .img-box_gift_bottom .img-box_gift-img .btn_details .img-box26 {
+    width: 48px;
+}
+
+
+/* section02 gift01 */
+
+.section03 .img-box_gift.img-box_gift_01 .img-box_gift_bottom .img-box_gift-img {
+    padding: 472px 0 28px 0;
+    background: url(/type_f/image/sec03_gift01.svg) center/cover no-repeat;
+}
+
 @media all and (max-width: 750px) {
     .nav .swiper-slide a {
         padding: 4vw 5.333vw 3.733vw;
@@ -262,5 +355,63 @@ section {
     .section02 .img-box_01 {
         padding-top: 7.467vw;
         width: 65.600vw;
+    }
+    .section02 .section02_inner {
+        padding-bottom: 26.667vw;
+    }
+    .section02 .section02_inner .img-box_02 {
+        padding-top: 24vw;
+        width: 78.667vw;
+    }
+    .section02 .section02_inner .img-box_03 {
+        padding-top: 8vw;
+        width: 73.867vw
+    }
+    .section02 .section02_inner .btn_download-coupone {
+        gap: 0.533vw;
+        padding: 4.800vw 0;
+        margin: 13.333vw 5.333vw 0;
+        border-radius: 4.267vw;
+    }
+    .section02 .section02_inner .btn_download-coupone .img-box_04 {
+        width: 37.067vw;
+    }
+    .section02 .section02_inner .btn_download-coupone .img-box_05 {
+        width: 6.400vw;
+    }
+    .section02 .section02_inner .img-box_06 {
+        padding-top: 4vw;
+        width: 76vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box {
+        margin-top: 13.333vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_07 {
+        width: 86.800vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_08 {
+        top: 10.533vw;
+        width: 76vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom {
+        bottom: 12.133vw;
+        padding: 0 15.333vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .img-box_09 {
+        width: 58.933vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper {
+        margin-top: 8.533vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .img-box {
+        padding: 10.400vw 20vw 9.733vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .swiper-pagination {
+        top: initial;
+        bottom: -5.333vw;
+    }
+    .section02 .section02_inner .img-box_14 {
+        margin-top: 7.867vw;
+        width: 76vw;
     }
 }
