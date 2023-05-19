@@ -380,7 +380,7 @@ main{
     height: clamp(1px, calc(100vw * 322 / 750), 322px);
 }
 .sec8 .live:not(.sec8 .live:nth-of-type(1)){
-    margin-left: -2px;
+    margin-left: -1px;
 }
 .sec8 .live{
     opacity: 0.6;

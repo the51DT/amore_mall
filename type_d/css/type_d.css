@@ -12,25 +12,30 @@
     position: absolute;
     top: clamp(1px, calc(100vw * 240 / 750), 240px);
     width: clamp(1px, calc(100vw * 405 / 750), 405px);
-    margin-left: 0;
-    animation: wave 1.3s ease-in infinite reverse;
+    margin-left: clamp(1px, calc(100vw * 10 / 750), 10px);
+    animation: wave 1.2s ease-in-out infinite reverse;
 }
 @keyframes wave {
     10%{
-        margin-left: clamp(1px, calc(100vw * 10 / 750), 10px);
+        margin-left: clamp(1px, calc(100vw * 20 / 750), 20px);
     }
     30%{
-        margin-left: clamp(1px, calc(100vw * 50 / 750), 50px);
+        margin-left: clamp(1px, calc(100vw * 40 / 750), 40px);
     }
     50%{
-        top: clamp(1px, calc(100vw * 270 / 750), 270px);
-        transform: rotateX(10deg);
-        transform: rotateZ(1.5deg);
+        margin-left: clamp(1px, calc(100vw * 50 / 750), 30px);
     }
-    70%{
-        margin-left: clamp(1px, calc(100vw * 40 / 750), 40px);
-        transform: rotateX(-8deg);
-        transform: rotateZ(-1deg);
+    60%{
+        top: clamp(1px, calc(100vw * 260 / 750), 260px);
+        transform: rotateX(8deg);
+        transform: rotateZ(2deg);
+    }
+    75%{
+        transform: rotateX(4deg);
+        transform: rotateZ(1deg);
+    }
+    80%{
+        margin-left: clamp(1px, calc(100vw * 10 / 750), 10px);
     }
 }
 .main .img{
@@ -109,7 +114,9 @@
     }
 }
 
-
+.swiper-pagination{
+    bottom: clamp(1px, calc(100vw * 20 / 750), 20px);
+}
 main{
     margin-top: clamp(1px, calc(100vw * 130 / 750), 130px);
 }
