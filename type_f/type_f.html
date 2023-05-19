@@ -411,7 +411,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // nav swiper
-        const swiper01 = new Swiper(".nav_swiper", {
+        const $swiper01 = new Swiper(".nav_swiper", {
             slidesPerView: "auto",
             loop: false,
             centeredSlides: false,
@@ -419,7 +419,7 @@
                 clickable: true,
             },
         });
-        const swiper02 = new Swiper(".coupon_swiper", {
+        const $swiper02 = new Swiper(".coupon_swiper", {
             slidesPerView: "1",
             loop: false,
             centeredSlides: true,
@@ -435,7 +435,7 @@
                 }
             },
         });
-        const swiper03 = new Swiper(".payment_swiper", {
+        const $swiper03 = new Swiper(".payment_swiper", {
             slidesPerView: "auto",
             initialSlide: 1,
             centeredSlides: true,
@@ -446,7 +446,7 @@
             },
         });
 
-        const swiper04 = new Swiper(".live-swiper", {
+        const $swiper04 = new Swiper(".live-swiper", {
             slidesPerView: "auto",
             loop: false,
             centeredSlides: false,
@@ -467,6 +467,14 @@
             $(".nav .swiper-slide a").children('.nav_item_current').hide();
             $(this).children('.nav_item').hide()
             $(this).children('.nav_item_current').show()
+        });
+
+        const $root = $('html, body');
+        $('.nav .swiper-slide a').click(function() {
+            $root.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+            return false;
         });
 
         // section04
