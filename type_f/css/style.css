@@ -55,10 +55,20 @@ section .img-box {
 /* splash */
 
 .splash {
+    display: none;
     position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 100vh;
+    max-height: 1136px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease-in-out 0.5s;
+    z-index: 100;
+    background: #FFEEC0;
 }
-
-.splash .img-box_01 {}
 
 .splash .img-box_02 {
     position: absolute;
@@ -705,6 +715,9 @@ section {
 }
 
 @media all and (max-width: 750px) {
+    .splash {
+        display: block;
+    }
     .nav .swiper-slide a {
         padding: 4vw 5.333vw 3.733vw;
     }
