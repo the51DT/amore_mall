@@ -1121,6 +1121,14 @@ img {
     color: #fff;
     font-weight: 900;
     align-items: center;
+    padding-left: calc(100vw * 14 / 750);
+}
+.cont07 .tab_wrap > .tab_inn > li:last-child a {
+    padding-left: 0;
+    padding-right: calc(100vw * 14 / 750);
+}
+.cont07 .tab_wrap > .tab_inn > li a.active {
+    padding: 0;
 }
 .cont07 .tab_wrap > .tab_inn > li a.active img {
     display: block;
@@ -1582,5 +1590,8 @@ img {
 
     .cont07 .tab_cont {
         margin-top: 40px;
+    }
+    .cont07 .tab_wrap > .tab_inn > li a {
+        font-size: 28px;
     }
 }
