@@ -61,6 +61,9 @@ img {
 .swiper-pagination-fraction {
   text-align: center;
 }
+.section04 {
+  position: relative;
+}
 .section05 {
   background-color: #d9ebfa;
 }
@@ -83,6 +86,10 @@ img {
 }
 .section05 .img_tag02 {
   width: clamp(1px, calc(100vw * 100 / 750), 100px);
+}
+.section04 .img_tag03 {
+  width: clamp(1px, calc(100vw * 155 / 750), 155px);
+  height: clamp(1px, calc(100vw * 160 / 750), 160px);
 }
 @keyframes img1 {
   15% {
@@ -166,6 +173,13 @@ img {
   z-index: 2;
   top: clamp(1px, calc(100vw * 350 / 750), 350px);
   right: clamp(1px, calc(100vw * 20 / 750), 20px);
+}
+
+.section04 .img_tag03 {
+  position: absolute;
+  z-index: 2;
+  top: clamp(1px, calc(100vw * 680 / 750), 680px);
+  right: clamp(1px, calc(100vw * 116 / 750), 116px);
 }
 .section08 {
   position: relative;
@@ -347,7 +361,9 @@ img {
 .section04 {
   background: #013ae1;
 }
-
+.benefit-area {
+  position: relative;
+}
 .section04 .benefit-area .benefit_tab-btn {
   display: flex;
   justify-content: center;
@@ -418,6 +434,8 @@ img {
   justify-content: space-between;
   align-items: top;
   padding-bottom: 129.5%;
+  width: clamp(1px, calc(100vw * 590 / 750), 590px);
+  position: relative;
 }
 
 .section04
