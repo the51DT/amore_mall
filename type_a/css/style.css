@@ -27,22 +27,25 @@ img {width: 100%;}
 .main .bg_img_wrap .fck_img_02 {position: absolute; top: calc(100vw * 20 / 750); right: calc(100vw * 23 / 750); animation: flicker-effect 1.2s linear infinite alternate;}
 .main .bg_img_wrap .fck_img_02 img {max-width: calc(100vw * 68 / 750); width: 100%;}
 .main .bg_img_wrap .fck_img_03 {position: absolute; top: calc(100vw * 261.5 / 750); left: calc(100vw * 6.5 / 750); animation: flicker-effect 1s linear infinite alternate;}
+.main .bg_img_wrap .fck_img_03 img {max-width: calc(100vw * 100 / 750); width: 100%;}
 .main .bg_img_wrap .fck_img_04 {position: absolute; top: calc(100vw * 342.5 / 750); right: calc(100vw * 10.5 / 750); animation: flicker-effect 1.5s linear infinite alternate;}
+.main .bg_img_wrap .fck_img_04 img {max-width: calc(100vw * 138 / 750); width: 100%;}
 .main .bg_img_wrap .balloon_img_01 {position: absolute; top: calc(100vw * 369 / 750); left: calc(100vw * 38 / 750); animation: float-effect 1.5s linear infinite alternate;}
 .main .main_tit {position: relative; padding-top: calc(100vw * 100 / 750);}
 .main .main_tit img {width: calc(100vw * 423 / 750);}
 .main .main_tit::after {content: ""; display: block; position: absolute; top: 55%; left: 43.5%; width: calc(100vw * 100 / 750); height: calc(100vw * 100 / 750); background: url(../img/main/main_ico.svg) no-repeat 0 0 / auto auto; animation: ico-ani 5s infinite steps(7);}
 .main .sub_tit {padding-top: calc(100vw * 12.5 / 750);}
-.main .sub_tit img {width: 100%;}
-.main .carrousel_wrap {position: relative; margin-top: calc(100vw * 41.5 / 750);;}
-.main .carrousel_wrap::after {content: ""; position: absolute; display: block; top: calc(100vw * 86.5 / 750); left: calc(100vw * 55 / 750); height: calc(100vw * 86 / 750); width: calc(100vw * 330 / 750); background: url(../img/main/sign.gif) no-repeat center center / 100% auto;}
-.main .carrousel_wrap .carrousel img {width: 100%; max-width: calc(100vw * 375 / 750);}
+.main .sub_tit img {max-width: calc(100vw * 348 / 750); width: 100%;}
+.main .carrousel_wrap {position: relative;}
+.main .carrousel_wrap::after {content: ""; position: absolute; display: block; top: calc(100vw * 86.5 / 750); left: calc(100vw * 55 / 750); height: calc(100vw * 86 / 750); width: calc(100vw * 330 / 750); background: url(../img/main/sign.gif) no-repeat center center / auto auto;}
+.main .carrousel_wrap .carrousel {margin-top: calc(100vw * 83 / 750);}
+.main .carrousel_wrap .carrousel img {max-width: calc(100vw * 677 / 750); width: 100%;}
 .main .carrousel_wrap .horse01 {position: absolute; bottom: calc(100vw * 90.5 / 750); left: calc(100vw * 52.5 / 750); animation: horse-effect 1.5s linear infinite alternate;}
 .main .carrousel_wrap .horse02 {position: absolute; bottom: calc(100vw * 112.5 / 750); left: calc(100vw * 157.5 / 750); animation: horse-effect_b 1.5s linear infinite alternate;}
 .main .carrousel_wrap .horse03 {position: absolute; bottom: calc(100vw * 90.5 / 750); right: calc(100vw * 52.5 / 750); animation: horse-effect 1.5s linear infinite alternate;}
 .main .carrousel_wrap .horse01 img,
 .main .carrousel_wrap .horse02 img,
-.main .carrousel_wrap .horse03 img {max-width: calc(100vw * 76 / 750); width: 100%;}
+.main .carrousel_wrap .horse03 img {max-width: calc(100vw * 152 / 750); width: 100%;}
 
 /* main_animation */
 @keyframes flicker-effect {
@@ -247,6 +250,12 @@ img {width: 100%;}
     .main .main_tit img{
         width: 423px;
     }
+    .main .carrousel_wrap .carrousel img {
+        width: 677px;
+    }
+    
+
+    /* nav */
     .nav li a{
         font-size: 30px;
         line-height: 40px;
