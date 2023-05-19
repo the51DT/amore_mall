@@ -13,24 +13,31 @@
     top: clamp(1px, calc(100vw * 240 / 750), 240px);
     width: clamp(1px, calc(100vw * 405 / 750), 405px);
     margin-left: 0;
-    animation: wave 1.3s ease-in infinite reverse;
+    animation: wave 1.2s ease-in-out infinite reverse;
 }
 @keyframes wave {
     10%{
         margin-left: clamp(1px, calc(100vw * 10 / 750), 10px);
+        transform: rotateZ(0deg);
     }
     30%{
         margin-left: clamp(1px, calc(100vw * 50 / 750), 50px);
+        transform: rotateZ(-2deg);
     }
     50%{
-        top: clamp(1px, calc(100vw * 270 / 750), 270px);
+        margin-left: clamp(1px, calc(100vw * 10 / 750), 10px);
+    }
+    60%{
+        top: clamp(1px, calc(100vw * 260 / 750), 260px);
         transform: rotateX(10deg);
-        transform: rotateZ(1.5deg);
+        transform: rotateZ(2deg);
     }
     70%{
+        transform: rotateX(7deg);
+        transform: rotateZ(1deg);
+    }
+    80%{
         margin-left: clamp(1px, calc(100vw * 40 / 750), 40px);
-        transform: rotateX(-8deg);
-        transform: rotateZ(-1deg);
     }
 }
 .main .img{
