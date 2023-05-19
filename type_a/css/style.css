@@ -572,9 +572,9 @@ img {
     left: 0;
 }
 .cont03 .tab_wrap {
-    padding: calc(100vw * 70 / 750) calc(100vw * 171 / 750)
-        calc(100vw * 50 / 750);
-    margin-top: calc(100vw * 410 / 750);
+    max-width: 407px;
+    width: calc(100vw * 407 / 750);
+    margin: calc(100vw * 400 / 750) auto 0;
 }
 .cont03 .tab_wrap > .tab_inn {
     position: relative;
@@ -619,6 +619,7 @@ img {
 }
 .cont03 .tab_cont {
     position: relative;
+    margin-top: calc(100vw * 50 / 750);
 }
 .cont03 .tab_cont > div {
     width: calc(100vw * 600 / 750);
@@ -1478,6 +1479,9 @@ img {
 
     .cont03 .bg_img_wrap {
         padding-top: 142px;
+    }
+    .cont03 .tab_cont {
+        margin-top: 50px;
     }
 
     .cont04 .bg_img_wrap {
