@@ -2,15 +2,31 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    overflow-x: hidden;
+    background-color: #030165;
+}
 .wrap {
-    width: 750px;
+    width: calc(100vw * 750 / 750);
+    max-width: 750px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw * 750 / 750);
+    max-width: 750px;
+}
+.container {
+    display: none;
 }
 
 /* main */
@@ -89,9 +105,9 @@ img {
 .nav li a {
     display: block;
     font-size: calc(100vw * 30 / 750);
+    line-height: calc(100vw * 40 / 750);
     color: #fff;
     font-weight: bold;
-    line-height: calc(100vw * 40 / 750);
 }
 .nav li.active a,
 .nav li a:hover {
@@ -102,31 +118,6 @@ img {
     height: calc(100vw * 100 / 750);
     max-width: 107px;
     max-height: 100px;
-}
-
-/* nav */
-.nav_wrap {
-    position: sticky;
-    top: 0;
-    left: 0;
-    align-self: flex-start;
-    padding: 20px 12px;
-    background-color: #070042;
-    z-index: 100;
-}
-.nav li a {
-    display: block;
-    font-size: 30px;
-    color: #fff;
-    font-weight: bold;
-    line-height: 40px;
-}
-.nav li a:hover {
-    color: #ffa2d1;
-}
-.nav_wrap img {
-    width: 107px;
-    height: 100px;
 }
 
 /* cont01 */
@@ -143,10 +134,10 @@ img {
     max-width: 588px;
 }
 .cont01 .coupon_img {
-    margin-top: calc(100vw * 40 / 750);
     margin: 0 auto;
-    width: calc(100vw * 832 / 750);
-    max-width: 832px;
+    width: calc(100vw * 750 / 750);
+    max-width: 750px;
+    margin-top: calc(100vw * 40 / 750);
 }
 .cont01 .cont01_list_01 {
     margin: 0 auto;
@@ -165,7 +156,7 @@ img {
     width: calc(100vw * 517 / 750);
     max-width: 517px;
 }
-.cont01_3 .payback_img {
+.cont01 .payback_img {
     margin: 0 auto;
     width: calc(100vw * 750 / 750);
     max-width: 750px;
@@ -231,6 +222,7 @@ img {
 
 /* cont02 */
 .cont02 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 3772 / 750);
     max-height: 3772px;
@@ -253,11 +245,49 @@ img {
     max-width: 590px;
 }
 .cont02 .cont02_img_01 {
+    height: calc(100vw * 1216 / 750);
+    max-height: 1216px;
+    position: relative;
+}
+.cont02 .cont02_img_02 {
+    height: calc(100vw * 1198 / 750);
+    max-height: 1198px;
+    position: relative;
+}
+.cont02 .cont02_img_01 {
     margin-bottom: calc(100vw * 40 / 750);
+}
+.cont02 .cont02_img_01 > img,
+.cont02 .cont02_img_02 > img {
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 .cont02 .cont02_btn,
 .cont02 .cont02_img_02 {
     margin-bottom: calc(100vw * 140 / 750);
+}
+.cont02_swiper_container {
+    margin: 0 auto;
+    width: calc(100vw * 530 / 750);
+    max-width: 530px;
+    padding-top: calc(100vw * 375 / 750);
+}
+.cont02 .swiper-pagination {
+    bottom: 5% !important;
+}
+.cont02_swiper_container .swiper-pagination-bullet {
+    width: calc(100vw * 14 / 750);
+    max-width: 14px;
+    height: calc(100vw * 14 / 750);
+    max-height: 14px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: calc(100vw * 16 / 750);
+    opacity: 1;
+}
+.cont02_swiper_container
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
 }
 
 /* cont03 */
@@ -465,8 +495,6 @@ img {
 }
 .cont07 .week_box:hover,
 .cont07 .week_box.active {
-    height: calc(100vw * 80 / 750);
-    max-height: 80px;
     background-color: #ffa2d1;
     border-radius: calc(100vw * 16 / 750);
 }
@@ -489,9 +517,14 @@ img {
     max-width: 693px;
 }
 .cont07 .tab_content div {
+    opacity: 0;
+    visibility: hidden;
     display: none;
+    transition: all ease-in-out 0.3s;
 }
 .cont07 .tab_content div.active {
+    opacity: 1;
+    visibility: visible;
     display: block;
 }
 .cont07_btn {
@@ -546,6 +579,12 @@ img {
     .cont02 .cont02_btn,
     .cont02 .cont02_img_02 {
         margin-bottom: 140px;
+    }
+    .cont02_swiper_container .swiper-pagination-bullet {
+        margin: 16px;
+    }
+    .cont02_swiper_container {
+        padding-top: 375px;
     }
 
     .cont03 .cont03_tit_01 {
