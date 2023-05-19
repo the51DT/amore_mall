@@ -221,6 +221,12 @@ section {
     bottom: -40px;
 }
 
+.section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 7px;
+    width: 14px;
+    height: 14px;
+}
+
 .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #161D30;
 }
@@ -814,6 +820,11 @@ section {
     .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .swiper-pagination {
         top: initial;
         bottom: -5.333vw;
+    }
+    .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 0.933vw;
+        width: 1.867vw;
+        height: 1.867vw;
     }
     .section02 .section02_inner .img-box_14 {
         margin-top: 7.867vw;
