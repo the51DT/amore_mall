@@ -276,10 +276,10 @@
                     $('.menu ul li').eq(4).addClass('active')
                 }
                 if (checkVisible('.sec4') ) {
-                    $('.sec4 .box').css('animation', 'box2 0.5s ease-in-out')
+                    $('.sec4 .box').css({'animation': 'box2 0.5s ease-in-out', 'opacity': 1})
                 }
                 else{
-                    $('.sec4 .box').css('animation', 'none')
+                    $('.sec4 .box').css('opacity', 0)
                 }
             }
 
