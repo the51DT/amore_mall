@@ -27,26 +27,33 @@
                     <!-- Swiper -->
                     <div class="swiper mySwiper mySwiper_01">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section03">
                                 <img src="./img/pop-menu-tab01.png" />
+                                <img src="./img/pop-menu-tab01_current.png" class="current" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section05">
                                 <img src="./img/pop-menu-tab02.png" />
+                                <img src="./img/pop-menu-tab02_current.png" class="current" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section06">
                                 <img src="./img/pop-menu-tab03.png" />
+                                <img src="./img/pop-menu-tab03_current.png" class="current" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section07">
                                 <img src="./img/pop-menu-tab04.png" />
+                                <img src="./img/pop-menu-tab04_current.png" class="current" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section09">
                                 <img src="./img/pop-menu-tab05.png" />
+                                <img src="./img/pop-menu-tab05_current.png" class="current" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section10">
                                 <img src="./img/pop-menu-tab06.png" />
+                                <img src="./img/pop-menu-tab06_current.png" class="current" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-href="#section08">
                                 <img src="./img/pop-menu-tab07.png" />
+                                <img src="./img/pop-menu-tab07_current.png" class="current" />
                             </div>
                         </div>
                     </div>
@@ -56,7 +63,7 @@
         <section>
             <div class="container">
                 <div class="section01"></div>
-                <div class="section03">
+                <div class="section03" id="section03">
                     <img src="./img/section_03_top.jpg" />
                     <img src="./img/section_03_con01.jpg" />
                     <img src="./img/section_03_con02.jpg" />
@@ -99,10 +106,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="section04_">
+                <div class="section04" id="section04">
                     <img src="./img/section_04.png" />
                 </div>
-                <div class="section05">
+                <div class="section05" id="section05">
                     <img src="./img/section_05_top.jpg" />
                     <div class="section_05_content">
                         <img src="./img/section_05_con01.png" />
@@ -114,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section04">
+                <div class="section04" id="section06">
                     <img src="./img/section_06_top.png" />
                     <!-- <div class="tab-menu02"></div> -->
                     <div class="img-box img-box_26">
@@ -177,10 +184,10 @@
                     </div>
                     <img src="./img/section_06_bot.png" />
                 </div>
-                <div class="section07">
+                <div class="section07" id="section07">
                     <img src="./img/section_07.png" />
                 </div>
-                <div class="section08">
+                <div class="section08" id="section08">
                     <img src="./img/section_08_top.jpg" />
                     <div class="swiper-card">
                         <!-- Swiper -->
@@ -200,7 +207,7 @@
                     </div>
                     <img src="./img/section_08_bot.jpg" />
                 </div>
-                <div class="section09">
+                <div class="section09" id="section09">
                     <img src="./img/section_09_top.jpg" />
                     <div class="swiper-card">
                         <!-- Swiper -->
@@ -220,7 +227,7 @@
                     </div>
                     <img src="./img/section_09_bot.jpg" />
                 </div>
-                <div class="section10">
+                <div class="section10" id="section10">
                     <img src="./img/section_10.png" />
                 </div>
             </div>
@@ -235,7 +242,7 @@
     <script>
         // 메뉴 탭 스와이프
         var swiper = new Swiper(".mySwiper_01", {
-            slidesPerView: "4",
+            slidesPerView: "auto",
             spaceBetween: 20,
             loop: false,
             breakpoints: {
@@ -293,6 +300,7 @@
             }
         });
         // text-tab click
+        var $root = $('html, body');
         $(".text-tab .mySwiper_01 .swiper-slide").click(function() {
             $(".text-tab .mySwiper_01 .swiper-slide").removeClass('current');
             $(this).addClass('current');
@@ -300,15 +308,20 @@
             $(".text-tab .mySwiper_01 .swiper-slide").children('.current').hide();
             $(this).children('img').hide()
             $(this).children('.current').show()
+                // 이동
+            $root.animate({
+                scrollTop: $($.attr(this, 'data-href')).offset().top
+            }, 500);
+            return false;
         });
 
-        const target = $(".text-tab").offset().top
+        const $nav = $(".text-tab").offset().top;
         window.addEventListener('scroll', function() {
             const currScroll = $(window).scrollTop();
-            if (currScroll >= target) {
+            if (currScroll >= $nav) {
                 console.log("넘어감")
                 $(".text-tab").addClass('fixed')
-            } else if (currScroll <= target) {
+            } else if (currScroll <= $nav) {
                 $(".text-tab").removeClass('fixed')
             }
         });

@@ -241,6 +241,34 @@ img {
     padding: 32px 0 38px;
 }
 
+.text-tab .mySwiper_01 .swiper-slide:nth-child(1) {
+    width: 136px
+}
+
+.text-tab .mySwiper_01 .swiper-slide:nth-child(2) {
+    width: 119px
+}
+
+.text-tab .mySwiper_01 .swiper-slide:nth-child(3) {
+    width: 147px
+}
+
+.text-tab .mySwiper_01 .swiper-slide:nth-child(4) {
+    width: 202px
+}
+
+.text-tab .mySwiper_01 .swiper-slide:nth-child(5) {
+    width: 119px
+}
+
+.text-tab .mySwiper_01 .swiper-slide:nth-child(6) {
+    width: 174px
+}
+
+.text-tab .mySwiper_01 .swiper-slide:nth-child(7) {
+    width: 125px
+}
+
 .text-tab .mySwiper_01 .swiper-slide.current:after {
     display: block;
     content: "";
@@ -264,16 +292,6 @@ img {
 .tab-menu02 {
     background-color: #013ae1;
     height: 400px;
-}
-
-@media all and (max-width: 750px) {
-    .text-tab .mySwiper_01 .swiper-slide {
-        padding: 4.267vw 0 5.067vw;
-    }
-    .text-tab .mySwiper_01 .swiper-slide.current:after {
-        bottom: 3.200vw;
-        height: 0.533vw;
-    }
 }
 
 .img-box_26 {
@@ -374,18 +392,18 @@ img {
 
 
 /* .section04
-      .benefit-area
-      .benefit_tab-content
-      .benefit_tab-content_item
-      .img-box_31
-      a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 4px;
-      padding: 40px 0;
-      background: #001e6c;
-    } */
+    .benefit-area
+    .benefit_tab-content
+    .benefit_tab-content_item
+    .img-box_31
+    a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 40px 0;
+    background: #001e6c;
+} */
 
 
 /* section04 benefit01 */
@@ -427,5 +445,36 @@ img {
 @media all and (min-width: 750px) {
     .section04 .benefit-area .benefit_tab-content {
         margin: 0 80px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .text-tab .mySwiper_01 .swiper-slide {
+        padding: 4.267vw 0 5.067vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(1) {
+        width: 18.133vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(2) {
+        width: 15.867vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(3) {
+        width: 19.600vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(4) {
+        width: 26.933vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(5) {
+        width: 15.867vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(6) {
+        width: 23.200vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide:nth-child(7) {
+        width: 16.667vw;
+    }
+    .text-tab .mySwiper_01 .swiper-slide.current:after {
+        bottom: 3.200vw;
+        height: 0.533vw;
     }
 }
