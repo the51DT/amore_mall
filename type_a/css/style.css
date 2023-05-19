@@ -43,7 +43,7 @@ img {
     width: 100%;
 }
 
-.splash{
+.splash {
     position: fixed;
     top: 0;
     left: 50%;
@@ -54,7 +54,7 @@ img {
     z-index: 99;
     max-width: 750px;
     width: calc(100vw * 750 / 750);
-    background: #1B0E56;
+    background: #1b0e56;
     transition: all ease-in-out 0.5s;
 }
 
@@ -1057,29 +1057,31 @@ img {
     position: relative;
 }
 .cont07 .bg_img_wrap {
-    padding-top: calc(100vw * 150 / 750);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .cont07 .light_img {
     animation: flicker_tit-effect 1.2s linear alternate;
     transition: opacity 0.8s;
 }
 .cont07 .bg_img {
-    position: absolute;
+    /* position: absolute;
     top: 17%;
-    left: 21%;
+    left: 21%; */
+    margin: 0 auto;
     max-width: 419px;
     width: calc(100vw * 419 / 750);
     animation: heart 2s ease-in-out infinite;
 }
 .cont07 .tit_area {
-    position: absolute;
-    top: 24%;
-    left: 0;
+    margin-top: calc(100vw * 80 / 750);
+    padding-top: calc(100vw * 80 / 750);
 }
 .cont07 .tab_wrap {
     max-width: 407px;
     width: calc(100vw * 407 / 750);
-    margin: calc(100vw * 400 / 750) auto 0;
+    margin: calc(100vw * 75 / 750) auto 0;
 }
 .cont07 .tab_wrap > .tab_inn {
     position: relative;
@@ -1124,6 +1126,7 @@ img {
 }
 .cont07 .tab_cont {
     position: relative;
+    margin-top: calc(100vw * 40 / 750);
 }
 .cont07 .tab_cont > div {
     width: calc(100vw * 600 / 750);
@@ -1560,6 +1563,14 @@ img {
     }
 
     .cont07 .tab_wrap {
-        margin-top: 750px;
+        margin-top: 75px;
+    }
+    .cont07 .tit_area {
+        margin-top: 80px;
+        padding-top: 80px;
+    }
+
+    .cont07 .tab_cont {
+        margin-top: 40px;
     }
 }
