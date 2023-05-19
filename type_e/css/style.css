@@ -59,14 +59,14 @@ img {
 }
 
 .section_05_content {
-    margin: 0 60px;
+    margin: 0 calc(100vw * 60 / 750);
     padding-bottom: 50px;
 }
 
 .section05 .keyframe01 {
     /* margin-top: 36px; */
-    width: 100vw;
-    width: clamp(1px, calc(100vw * 630 / 750), 630px);
+    /* width: 100vw;
+  width: clamp(1px, calc(100vw * 630 / 750), 630px); */
     height: clamp(1px, calc(100vw * 550 / 750), 550px);
     background-image: url(../img/sec_05_con_01.png);
     background-size: cover;
@@ -103,7 +103,7 @@ img {
 
 .section05 .keyframe02 {
     /* margin-top: 36px; */
-    width: clamp(1px, calc(100vw * 630 / 750), 630px);
+    /* width: clamp(1px, calc(100vw * 630 / 750), 630px); */
     height: clamp(1px, calc(100vw * 550 / 750), 550px);
     background-image: url(../img/section_05_con02_02.png);
     animation: img2 10s linear infinite;
@@ -273,5 +273,159 @@ img {
     .text-tab .mySwiper_01 .swiper-slide.current:after {
         bottom: 3.200vw;
         height: 0.533vw;
+    }
+}
+
+.img-box_26 {
+    height: 0;
+}
+
+
+/* section04 */
+
+.section04 {
+    /* padding: 100px 0 200px; */
+    background: #013ae1;
+}
+
+.section04 .benefit-area .benefit_tab-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    width: calc(100% - 160px);
+    margin: 0 auto;
+}
+
+.section04 .benefit-area .benefit_tab-btn li {
+    /* border-radius: 5% 5% 0 0; */
+    background: #001d6c;
+}
+
+.section04 .benefit-area .benefit_tab-btn li.current {
+    background: #fff;
+    /* padding: 22px 22px; */
+    /* border-radius: 5% 5% 0 0; */
+}
+
+
+/* .section04 .benefit-area .benefit_tab-btn li.current {
+      background: #001e6c;
+    } */
+
+.section04 .benefit-area .benefit_tab-btn li a {
+    display: block;
+    padding: 25px 36px;
+}
+
+.section04 .benefit-area .benefit_tab-btn .img-box.img-box_27 {
+    width: 223px;
+}
+
+.section04 .benefit-area .benefit_tab-btn .img-box.img-box_28 {
+    width: 223px;
+}
+
+.section04 .benefit-area .benefit_tab-btn .img-box .btn_benefit_current {
+    display: none;
+}
+
+.section04 .benefit-area .benefit_tab-btn .current .img-box .btn_benefit {
+    display: none;
+}
+
+.section04 .benefit-area .benefit_tab-btn .current .img-box .btn_benefit_current {
+    display: block;
+}
+
+.section04 .benefit-area .benefit_tab-content {
+    margin: calc(100vw * 80 / 750);
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item {
+    display: none;
+    position: relative;
+    /* border-radius: 32px; */
+    overflow: hidden;
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item.current {
+    display: block;
+    background: url(../img/sec04_tab-btn1_2.png) center/cover no-repeat;
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .benefit_tab-content_item_text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 0 24px 440px 40px;
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_29 {
+    margin: 40px 0 0;
+    width: 260px;
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_30 {
+    margin: 24px 0 0;
+    width: 180px;
+    height: 180px;
+}
+
+
+/* .section04
+      .benefit-area
+      .benefit_tab-content
+      .benefit_tab-content_item
+      .img-box_31
+      a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      padding: 40px 0;
+      background: #001e6c;
+    } */
+
+
+/* section04 benefit01 */
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item.benefit_tab-content_item01 .benefit_tab-content_item_text-box {
+    background: url(../img/section_06_con01.png) center/cover no-repeat;
+    animation: benefit01 3s ease-in infinite normal;
+}
+
+@keyframes benefit01 {
+    50% {
+        background: url(../img/section_06_con01.png) center/cover no-repeat;
+    }
+    100% {
+        background: url(../img/section_06_con02.png) center/cover no-repeat;
+    }
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item.benefit_tab-content_item02 .benefit_tab-content_item_text-box {
+    background: url(../img/section_06_con03.png) center/cover no-repeat;
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_31 img:nth-child(1) {
+    width: 401px;
+}
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_31 img:nth-child(2) {
+    width: 48px;
+}
+
+
+/* section04 benefit02 */
+
+.section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_32 {
+    margin: 40px 0 0;
+    width: 146px;
+}
+
+@media all and (min-width: 750px) {
+    .section04 .benefit-area .benefit_tab-content {
+        margin: 0 80px;
     }
 }

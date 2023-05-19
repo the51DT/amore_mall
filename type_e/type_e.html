@@ -27,33 +27,26 @@
                     <!-- Swiper -->
                     <div class="swiper mySwiper mySwiper_01">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide current">
-                                <img src="./img/pop-menu-tab01.png" style="display: none;" />
-                                <img src="./img/pop-menu-tab01_current.png" class="current" style="display: block;" />
+                            <div class="swiper-slide">
+                                <img src="./img/pop-menu-tab01.png" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="./img/pop-menu-tab02.png" />
-                                <img src="./img/pop-menu-tab02_current.png" class="current" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="./img/pop-menu-tab03.png" />
-                                <img src="./img/pop-menu-tab03_current.png" class="current" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="./img/pop-menu-tab04.png" />
-                                <img src="./img/pop-menu-tab04_current.png" class="current" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="./img/pop-menu-tab05.png" />
-                                <img src="./img/pop-menu-tab05_current.png" class="current" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="./img/pop-menu-tab06.png" />
-                                <img src="./img/pop-menu-tab06_current.png" class="current" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="./img/pop-menu-tab07.png" />
-                                <img src="./img/pop-menu-tab07_current.png" class="current" />
                             </div>
                         </div>
                     </div>
@@ -106,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section04">
+                <div class="section04_">
                     <img src="./img/section_04.png" />
                 </div>
                 <div class="section05">
@@ -121,9 +114,67 @@
                         </div>
                     </div>
                 </div>
-                <div class="section06">
+                <div class="section04">
                     <img src="./img/section_06_top.png" />
-                    <div class="tab-menu02"></div>
+                    <!-- <div class="tab-menu02"></div> -->
+                    <div class="img-box img-box_26">
+                        <!-- 파랑색 탭 -->
+                        <img src="./img/sec04_text1.svg" alt="" />
+                    </div>
+                    <div class="benefit-area">
+                        <ul class="benefit_tab-btn">
+                            <li class="current">
+                                <a href="#none">
+                                    <div class="img-box img-box_27">
+                                        <img src="./img/sec04_tab-btn1.svg" alt="" class="btn_benefit" />
+                                        <img src="./img/sec04_tab-btn1_current.svg" alt="" class="btn_benefit_current" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <div class="img-box img-box_28">
+                                        <img src="./img/sec04_tab-btn2.svg" alt="" class="btn_benefit" />
+                                        <img src="./img/sec04_tab-btn2_current.svg" alt="" class="btn_benefit_current" />
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="benefit_tab-content">
+                            <div class="benefit_tab-content_item benefit_tab-content_item01 current">
+                                <div class="benefit_tab-content_item_text-box">
+                                    <div class="img-box img-box_29">
+                                        <img src="./img/sec04_text2.svg" alt="" />
+                                    </div>
+                                    <div class="img-box img-box_30">
+                                        <img src="./img/sec04_text3.png" alt="" />
+                                    </div>
+                                </div>
+                                <!-- <div class="img-box img-box_31">
+                    <a href="#">
+                      <img src="./img/sec04_text4.svg" alt="" />
+                      <img src="./img/sec04_arrow.svg" alt="" />
+                    </a>
+                  </div> -->
+                            </div>
+                            <div class="benefit_tab-content_item benefit_tab-content_item02">
+                                <div class="benefit_tab-content_item_text-box">
+                                    <div class="img-box img-box_32">
+                                        <img src="./img/sec04_text5.svg" alt="" />
+                                    </div>
+                                    <div class="img-box img-box_30">
+                                        <img src="./img/sec04_text3.png" alt="" />
+                                    </div>
+                                </div>
+                                <!-- <div class="img-box img-box_31">
+                    <a href="#">
+                      <img src="./img/sec04_text4.svg" alt="" />
+                      <img src="./img/sec04_arrow.svg" alt="" />
+                    </a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
                     <img src="./img/section_06_bot.png" />
                 </div>
                 <div class="section07">
@@ -219,6 +270,27 @@
             slidesPerView: "auto",
             centeredSlides: true,
             spaceBetween: 5,
+        });
+        $(".benefit-area .benefit_tab-btn li a").click(function() {
+            $(".benefit-area .benefit_tab-btn li a")
+                .parent()
+                .removeClass("current");
+            $(this).parent().addClass("current");
+            if ($(this).parent().index() == 0) {
+                $(
+                    ".benefit-area .benefit_tab-content .benefit_tab-content_item"
+                ).removeClass("current");
+                $(
+                    ".benefit-area .benefit_tab-content .benefit_tab-content_item01"
+                ).addClass("current");
+            } else if ($(this).parent().index() == 1) {
+                $(
+                    ".benefit-area .benefit_tab-content .benefit_tab-content_item"
+                ).removeClass("current");
+                $(
+                    ".benefit-area .benefit_tab-content .benefit_tab-content_item02"
+                ).addClass("current");
+            }
         });
         // text-tab click
         $(".text-tab .mySwiper_01 .swiper-slide").click(function() {
