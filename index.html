@@ -1,145 +1,214 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Amore Mall Gate</title>
-    <link rel="stylesheet" href="../asseets/css/reset.css">
-    <style>
-        html,body{ 
-            height: 100%;
-            margin: 0;
-        }
-        .wrap{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            overflow: hidden;
-            margin: 0 auto;
-            max-width: 768px;
-        }
-        .header{
-            flex: 0 0 60px;
-            padding: 60px 0 0 30px;
-        }
-        .footer{
-            flex: 0 0 40px;
-            padding:0 30px;
-            margin-top: 50px;
-        }
-        .wrap{
-            height: 100%;
-            overflow-y: auto;
-        }
-        .containel{
-            padding: 0 30px;
-        }
-        /* .type_box ul li a{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding: 18px 0 19px;
-            border-radius: 8px;
-            color: #fff;
-            font-weight: bold;
-            margin-top: 15px;
-            background: #242D3C;
-        }
-        .type_box ul li a.b{
-            background: #D71921;
-        }
-        .top_menu{
-            display: flex;
-            justify-content: space-between;
-            padding: 60px 20px 0;
-        } */
-        .type_container{
-            margin-top: 105px;
-        }
-        .flex{
-            display: flex;
-            flex-flow: column;
-        }
-        .title{
-            margin-bottom: 59px;
-        }
-        .type_box{
-            text-align: center;
-            margin-top: 10px;
-            width: 100%;
-            background: #FFFFFF;
-            box-shadow: 0px 4px 16px rgba(36, 45, 60, 0.08);
-            border-radius: 16px;
-        }
-        .flex a:nth-of-type(1) div{
-            padding: 21px 79px 38px;
-        }
-        .flex a:nth-of-type(2) div{
-            padding: 21px 73px 38px;
-        }
-    </style>
-</head>
-<body>
-    <div class="wrap">
-        <div class="header">
-            <header>
-                <div class="top_menu">
-                    <div class="logo">
-                        <img src="./assets/img/ico_top_logo.svg">
-                    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Amore Mall Gate</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+            }
+            .wrap {
+                width: 100%;
+                max-width: 750px;
+                height: calc(100vw * 4370 / 750);
+                max-height: 4370px;
+                margin: 0 auto;
+                background-image: url(./img/bg.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .container {
+                padding: calc(100vw * 65 / 750) calc(100vw * 58 / 750) 0;
+            }
+            .main_txt {
+                width: calc(100vw * 551 / 750);
+                max-width: 551px;
+            }
+            .main_txt img {
+                width: 100%;
+            }
+            .special {
+                margin-top: calc(100vw * 118 / 750);
+            }
+            .special_txt {
+                width: calc(100vw * 366 / 750);
+                max-width: 366px;
+            }
+            .matching_txt {
+                width: calc(100vw * 359 / 750);
+                max-width: 359px;
+            }
+            .charm_txt {
+                width: calc(100vw * 391 / 750);
+                max-width: 391px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: calc(100vw * 40 / 750);
+                row-gap: calc(100vw * 64 / 750);
+                margin-top: calc(100vw * 70 / 750);
+            }
+            ul li {
+                width: calc(100vw * 280 / 750);
+                max-width: 280px;
+            }
+            ul li a {
+                display: block;
+                width: 100%;
+            }
+            ul li a img {
+                width: 100%;
+            }
+            .matching,
+            .charm {
+                margin-top: calc(100vw * 168 / 750);
+            }
+            @media (min-width: 750px) {
+                .container {
+                    padding: 65px 58px 0;
+                }
+                .special {
+                    margin-top: 118px;
+                }
+                ul {
+                    column-gap: 40px;
+                    row-gap: 64px;
+                    margin-top: 70px;
+                }
+                .matching,
+                .charm {
+                    margin-top: 168px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="main_txt">
+                    <img src="./img/main_txt.png" alt="main_txt" />
                 </div>
-            </header>  
-        </div>
-        <div class="containel">
-            <section>
-                <div class="type_container">
-                    <div class="flex">
-                        <div class="title">
-                            <img src="./assets/img/title.svg">
-                        </div>
-                        <a href="./type_a/sub1_sms_send.html">
-                            <div class="type_box">
-                                <img src="./assets/img/type_a.svg">
-                            </div>
-                        </a>
-                        <a href="./type_b/index_default.html">
-                            <div class="type_box">
-                                <img src="./assets/img/type_b.svg">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- <div class="type_box">
+                <div class="special">
+                    <img
+                        class="special_txt"
+                        src="./img/special_txt.png"
+                        alt="special_txt"
+                    />
                     <ul>
                         <li>
-                            <span style="font-weight: bold;">BNK 캐피탈 Type A</span>
-                            <a class="a" href="https://the51uid.github.io/BNK_Capital/type_a/index.html">
-                                Main
+                            <a href="./type_b/01_atype.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_a.png"
+                                    alt="special_a"
+                                />
                             </a>
                         </li>
                         <li>
-                            <span style="font-weight: bold; margin-top:20px; display:inline-block;">BNK 캐피탈 Type B</span>
-                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/index_logout.html">
-                                Main (로그인전)
+                            <a href="./type_a/01_btype.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_b.png"
+                                    alt="special_b"
+                                />
                             </a>
-                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/index_login.html">
-                                Main (로그인후)
+                        </li>
+                        <li>
+                            <a href="./type_c/01_ctype.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_c.png"
+                                    alt="special_c"
+                                />
                             </a>
-                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/sub1_sms_send.html">
-                                문자인증
+                        </li>
+                        <li>
+                            <a href="./type_d/01_dtype.html" target="_blank">
+                                <img
+                                    class="special_img"
+                                    src="./img/special_d.png"
+                                    alt="special_d"
+                                />
                             </a>
                         </li>
                     </ul>
-                </div> -->
-            </section>
+                </div>
+                <div class="matching">
+                    <img
+                        class="matching_txt"
+                        src="./img/universal_txt.png"
+                        alt="matching_txt"
+                    />
+                    <ul>
+                        <li>
+                            <a href="./type_h/02_atype.html" target="_blank">
+                                <img
+                                    class="matching_img"
+                                    src="./img/matching_a.png"
+                                    alt="matching_a"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_g/02_btype.html" target="_blank">
+                                <img
+                                    class="matching_img"
+                                    src="./img/matching_b.png"
+                                    alt="matching_b"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="charm">
+                    <img
+                        class="charm_txt"
+                        src="./img/additional_txt.png"
+                        alt="charm_txt"
+                    />
+                    <ul>
+                        <li>
+                            <a href="./type_f/03_atype.html" target="_blank">
+                                <img
+                                    class="charm_img"
+                                    src="./img/charm_a.png"
+                                    alt="charm_a"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_e/03_btype.html" target="_blank">
+                                <img
+                                    class="charm_img"
+                                    src="./img/charm_b.png"
+                                    alt="charm_b"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type_c/03_ctype.html" target="_blank">
+                                <img
+                                    class="charm_img"
+                                    src="./img/charm_c.png"
+                                    alt="charm_c"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer">
-            <footer>
-                <img src="./assets/img/footer.svg">
-            </footer>
-        </div>
-    </div>
-    </div>
-  </body>
+    </body>
 </html>
