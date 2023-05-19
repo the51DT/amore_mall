@@ -439,6 +439,7 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </section>
             <!-- // cont06 --> 
@@ -629,11 +630,21 @@
 
     // evSwiper
     var swiper = new Swiper(".evSwiper", {
-        slidesPerView : 1,
-        spaceBetween: 10,
-        pagination : { 
-            el : '.swiper-pagination02',
-            clickable : true
+        autoplay: {
+            delay: 0,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+            },
+        slidesPerView : 3,
+        speed: 3000,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loopedSlides: 3, 
+        observer: true, observeParents: true,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: false
         },
     });
 </script>

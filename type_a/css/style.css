@@ -250,6 +250,8 @@ img {width: 100%;}
 .cont06 .bg_img_01 {position: absolute; top: 0; left: 0;}
 .cont06 .tit_area {position: absolute; top: 220px; left: 0;}
 .cont06 .swiper.evSwiper {padding-top: 410px;}
+.cont06 .swiper-scrollbar.swiper-scrollbar-horizontal {background: #888;}
+.cont06 .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {background: #fff;}
 
 @keyframes bal1 {
     20%{rotate:-30deg;}
@@ -280,7 +282,8 @@ img {width: 100%;}
 .cont07 .tab_wrap > .tab_inn > li:nth-child(2) a {color: #000;}
 .cont07 .tab_wrap > .tab_inn.active > li:nth-child(1) a {color: #000;}
 .cont07 .tab_wrap > .tab_inn.active > li:nth-child(2) a {color: #fff;}
-.cont07 .btn {padding: 40px 0 115px; max-width: 350px; width: calc(100vw * 350 / 750); margin: 0 auto;}
+.cont07 .btn {padding: 40px 0 115px; max-width: 350px; width: calc(100vw * 350 / 750); margin: 0 auto;} 
+
 
 @keyframes heart {
     0% { transform: scale(1)}
