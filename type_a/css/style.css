@@ -41,18 +41,18 @@ img {width: 100%;}
 .main .carrousel_wrap::after {content: ""; position: absolute; display: block; top: 21.4%; left: 28%; width: calc(100vw * 330 / 750); height: calc(100vw * 86 / 750);  background: url(../img/main/sign.gif) no-repeat center center / auto 100%;}
 .main .carrousel_wrap .carrousel {margin-top: calc(100vw * 83 / 750); margin-bottom: calc(100vw * 47 / 750);} 
 .main .carrousel_wrap .carrousel img {max-width: calc(100vw * 677 / 750); width: 100%;}
-.main .carrousel_wrap .horse01 {position: absolute; bottom: 26%; left: 14%; animation: horse-effect 1.5s linear infinite alternate;}
-.main .carrousel_wrap .horse02 {position: absolute; bottom: 30%; left: 42%; animation: horse-effect_b 1.5s linear infinite alternate;}
-.main .carrousel_wrap .horse03 {position: absolute; bottom: 26%; right: 14%; animation: horse-effect 1.5s linear infinite alternate;}
+.main .carrousel_wrap .horse01 {position: absolute; bottom: 27%; left: 14%; animation: horse-effect 1.5s linear infinite alternate;}
+.main .carrousel_wrap .horse02 {position: absolute; bottom: 32%; left: 42%; animation: horse-effect_b 1.5s linear infinite alternate;}
+.main .carrousel_wrap .horse03 {position: absolute; bottom: 27%; right: 14%; animation: horse-effect 1.5s linear infinite alternate;}
 .main .carrousel_wrap .horse01 img,
 .main .carrousel_wrap .horse02 img,
 .main .carrousel_wrap .horse03 img {max-width: 152px; width: calc(100vw * 152 / 750);}
 
 /* main_animation */
 @keyframes flicker-effect {
-    0% {opacity: 0; transform: scale(0)}
-    50% {opacity: .4; transform: scale(1)}
-    100% {opacity: 1; transform: scale(0)}
+    0% {opacity: 0;}
+    50% {opacity: .4;}
+    100% {opacity: 1;}
 }
 @keyframes float-effect {
     0% {margin-top: 0px;}
@@ -221,7 +221,7 @@ img {width: 100%;}
 .cont04 .bg_img_01 img {max-width: 577px; width: calc(100vw * 577 / 750);}
 .cont04 .bg_img_02 {position: absolute; bottom: 0; right: -35%; max-width: 388px; width: calc(100vw * 388 / 750);}
 .cont04 .bg_img_02 img {max-width: 388px; width: calc(100vw * 388 / 750); z-index: 0;}
-.cont04 .tit_area {position: absolute; top: 20%; left: 0;}
+.cont04 .tit_area {position: absolute; top: 15%; left: 0;}
 .cont04 .img_list_wrap {position: relative; padding-top: calc(100vw * 804 / 750); z-index: 0;}
 .cont04 .img_list_wrap .img_list {padding-top: calc(100vw * 30 / 750); max-width: 681px; width: calc(100vw * 681 / 750); margin: 0 auto;}
 .cont04 .btn {padding-top: calc(100vw * 62.5 / 750); max-width: 300px; width: calc(100vw * 300 / 750); margin: 0 auto;} 
@@ -280,9 +280,9 @@ img {width: 100%;}
 .cont07 {position: relative;}
 .cont07 .bg_img_wrap {padding-top: calc(100vw * 150 / 750);} 
 .cont07 .light_img {animation: flicker_tit-effect 1.2s linear alternate; transition: opacity .8s}
-.cont07 .bg_img {position: absolute; top: 150px; left: 123px; max-width: 419px; width: calc(100vw * 419 / 750); animation: heart 2s ease-in-out infinite}
-.cont07 .tit_area {position: absolute; top: 28%; left: 0;}
-.cont07 .tab_wrap {padding: calc(100vw * 70 / 750) calc(100vw * 171 / 750) calc(100vw * 50 / 750); margin-top: calc(100vw * 410 / 750);}
+.cont07 .bg_img {position: absolute; top: 17%; left: 21%; max-width: 419px; width: calc(100vw * 419 / 750); animation: heart 2s ease-in-out infinite}
+.cont07 .tit_area {position: absolute; top: 24%; left: 0;}
+.cont07 .tab_wrap {padding: calc(100vw * 70 / 750) calc(100vw * 171 / 750) calc(100vw * 50 / 750); margin-top: calc(100vw * 750 / 750);}
 .cont07 .tab_wrap > .tab_inn {position: relative; display: flex; align-items: center; justify-content: space-between; border: calc(100vw * 1.5 / 750) solid #fff; border-radius: calc(100vw * 50 / 750);}
 .cont07 .tab_wrap > .tab_inn::before {content: ""; position: absolute; top: 0; left: 50%; width: 50%; height: 100%; border-radius: calc(100vw * 50 / 750); background-color: #fff; transition: all .4s ease-in;}
 .cont07 .tab_wrap > .tab_inn.active::before {left: 0;}
@@ -323,9 +323,9 @@ img {width: 100%;}
 .footer .fck_img_04 {position: absolute; top: 23%; right: 11%; animation: fck04 2s ease-in-out infinite;}
 .footer .fck_img_04 img {max-width: 82px; width: calc(100vw * 82 / 750);}
 .footer .txt {position: absolute; top: 31%; left: 50%; max-width: 324px; width: calc(100vw * 324 / 750); transform: translateX(-50%);}
-.footer .man {position: absolute; bottom: 25%; left: 10%; max-width: 153px; width: calc(100vw * 153 / 750); animation: man 1.5s ease-in-out infinite;}
+.footer .man {position: absolute; bottom: 25%; left: 10%; max-width: 153px; width: calc(100vw * 153 / 750); animation: man 2s ease-in-out infinite;}
 .footer .box {position: absolute; bottom: 23%; left: 32%; max-width: 260px; width: calc(100vw * 260 / 750);}
-.footer .woman {position: absolute; bottom: 22%; left: 69%; max-width: 230px; width: calc(100vw * 230 / 750); animation: woman 1.2s ease-in-out infinite;}
+.footer .woman {position: absolute; bottom: 22%; left: 69%; max-width: 230px; width: calc(100vw * 230 / 750); animation: woman 2s ease-in-out infinite;}
 
 @keyframes fck01 {
     0% { opacity: 0; transform: scale(0)}
@@ -348,12 +348,12 @@ img {width: 100%;}
     100% { opacity: 1; transform: scale(1)}
 }
 @keyframes man {
-    0% { margin-bottom: 0;}
-    50% { margin-bottom: 40px;}
+    0% { bottom: 32%;}
+    50% { bottom: 25%;}
+    100% { bottom: 32%; }
 }
 @keyframes woman {
-    0% { margin-bottom: 0;}
-    50% { margin-bottom: 40px;}
+    50% { bottom: 30%;}
 }
 
 @media (min-width: 750px) {
@@ -568,14 +568,6 @@ img {width: 100%;}
     }
 
     .cont07 .tab_wrap {
-        padding: 70px 171px 50px; margin-top: 700px;
-    }
-
-    .cont07 .tab_wrap > .tab_inn > li {
-        padding: 24px 36.5px;
-    }
-    
-    .cont07 #tab01 .tab_tit {
-        margin: 46px auto;
+        padding: 70px 171px 50px; margin-top: 750px;
     }
 }
