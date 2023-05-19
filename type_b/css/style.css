@@ -28,7 +28,7 @@ body {
     max-width: 750px;
 }
 .container {
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
     opacity: 0;
 }
 
