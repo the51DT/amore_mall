@@ -1476,12 +1476,15 @@ img {
     }
 
     .cont03 .tab_wrap {
-        padding: 70px 171px 50px;
-        margin-top: 410px;
+        /* padding: 70px 171px 50px; */
+        margin-top: 400px;
     }
 
     .cont03 .tab_wrap > .tab_inn > li {
         padding: 24px 36.5px;
+    }
+    .cont03 .tab_wrap > .tab_inn > li a {
+        font-size: 28px;
     }
 
     .cont03 #tab01 .tab_tit {
