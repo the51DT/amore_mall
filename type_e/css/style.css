@@ -272,12 +272,8 @@ img {
   max-width: 750px;
   margin: 0 auto;
   position: relative;
-  /* background-color: #2a4abf; */
+  background-color: #2a3fb7;
 }
-/* 
-.header {
-  background-color: #eee;
-} */
 
 .text-tab {
   background-color: #001d6c;
