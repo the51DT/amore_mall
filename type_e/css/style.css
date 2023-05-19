@@ -37,6 +37,14 @@ img {
   position: relative;
 }
 
+.splash {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw * 750 / 750);
+  max-width: 750px;
+}
 .section03 .swiper_coupon {
   background-image: url(../img/section_03_con03.jpg);
   /* padding-bottom: 80px; */
@@ -218,10 +226,10 @@ img {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
-  background-color: #ccc;
   max-width: 750px;
   margin: 0 auto;
   position: relative;
+  background-color: #2a4abf;
 }
 
 .header {
@@ -292,7 +300,9 @@ img {
   height: 4px;
   background: #a4e4ff;
 }
-
+.splash-container {
+  opacity: 0;
+}
 .container {
   background-color: #222;
 }
@@ -396,7 +406,6 @@ img {
   .benefit_tab-content
   .benefit_tab-content_item.current {
   display: block;
-  background: url(../img/sec04_tab-btn1_2.png) center/cover no-repeat;
 }
 
 .section04
