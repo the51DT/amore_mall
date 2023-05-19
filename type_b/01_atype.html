@@ -496,7 +496,7 @@
                                             class="swiper-slide"
                                             data-tab="weekTab01"
                                         >
-                                            <div class="week_box">
+                                            <div class="week_box active">
                                                 <p class="week">MON</p>
                                                 <p class="cal">12</p>
                                             </div>
@@ -662,18 +662,19 @@
 
         setTimeout(() => {
             const splash = document.querySelector(".splash");
+            const body = document.querySelector("body");
+            body.style.backgroundColor = "transparent";
             splash.style.opacity = "0";
-        }, 5000);
+        }, 1000);
         setTimeout(() => {
             const container = document.querySelector(".container");
             const body = document.querySelector("body");
             const splash = document.querySelector(".splash");
             container.style.opacity = "1";
-            body.style.backgroundColor = "transparent";
             body.style.overflowY = "initial";
             body.style.overflowX = "hidden";
             splash.style.display = "none";
-        }, 5500);
+        }, 1100);
 
         const navFunction = () => {
             const navLi = document.querySelectorAll(".nav li");

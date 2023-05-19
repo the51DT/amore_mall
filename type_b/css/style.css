@@ -5,7 +5,7 @@ html {
 body {
     overflow: hidden;
     background-color: #030165;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 .wrap {
     width: calc(100vw * 750 / 750);
@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 .flex {
     display: flex;
@@ -28,7 +29,7 @@ body {
     max-width: 750px;
 }
 .container {
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
     opacity: 0;
 }
 
@@ -126,6 +127,7 @@ img {
 
 /* cont01 */
 .cont01_1 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 2035 / 750);
     max-height: 2035px;
@@ -174,6 +176,7 @@ img {
 .cont01_3 {
     height: calc(100vw * 2446 / 750);
     max-height: 2446px;
+    overflow: hidden;
     background: url(../img/content/cont01_3.png) no-repeat center center / 100%;
 }
 .cont01_3 .cont01_tit_03 {
@@ -203,7 +206,7 @@ img {
     position: absolute;
     display: block;
     top: calc(100vw * -100 / 750);
-    right: calc(100vw * -30 / 750);
+    right: calc(100vw * -100 / 750);
     width: calc(100vw * 248 / 750);
     max-width: 248px;
     height: calc(100vw * 134 / 750);
@@ -488,8 +491,6 @@ img {
 }
 .cont07 .swiper-wrapper .swiper-slide {
     flex-shrink: inherit;
-    /* width: calc(100vw * 121 / 750) !important;
-    max-width: 121px; */
 }
 .cont07 .week_box {
     padding: calc(100vw * 24 / 750) 0;
@@ -500,7 +501,7 @@ img {
     cursor: pointer;
 }
 .cont07 .week_box:hover,
-.cont07 .week_box.active {
+.cont07 .bg_swiper ul li.active .week_box {
     background-color: #ffa2d1;
     border-radius: calc(100vw * 16 / 750);
 }
@@ -570,7 +571,7 @@ img {
     }
     .cont01 .cont01_cp .badge::before {
         top: -100px;
-        right: -30px;
+        right: -100px;
     }
     .cont01 .cont01_list_03 {
         margin-top: 60px;
