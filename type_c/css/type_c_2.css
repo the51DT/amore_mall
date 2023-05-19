@@ -119,6 +119,7 @@ main{
 }
 .sec3 .con2 .title{
     margin-top: clamp(1px, calc(100vw * 109 / 750), 109px);
+    width: clamp(1px, calc(100vw * 228 / 750), 228px);
 }
 .sec3 .con2 .con2_swiper{
     margin-top: clamp(1px, calc(100vw * 50 / 750), 50px);
