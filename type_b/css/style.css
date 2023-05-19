@@ -126,6 +126,7 @@ img {
 
 /* cont01 */
 .cont01_1 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 2035 / 750);
     max-height: 2035px;
