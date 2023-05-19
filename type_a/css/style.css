@@ -619,6 +619,7 @@ img {
 }
 .cont03 .tab_cont {
     position: relative;
+    margin-top: calc(100vw * 50 / 750);
 }
 .cont03 .tab_cont > div {
     width: calc(100vw * 600 / 750);
@@ -1411,6 +1412,9 @@ img {
 
     .cont03 .bg_img_wrap {
         padding-top: 142px;
+    }
+    .cont03 .tab_cont {
+        margin-top: 50px;
     }
 
     .cont04 .bg_img_wrap {
