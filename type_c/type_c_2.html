@@ -155,13 +155,31 @@
                             <img class="img1" src="./img/type_c_1/sec8_img_1.png">
                         </div>
                         <div class="swiper-slide">
-                            <img class="img2" src="./img/type_c_1/sec8_img_2.svg">
+                            <img class="img2" src="./img/type_c_1/sec8_img_2.png">
                         </div>
                         <div class="swiper-slide">
                             <img class="img3" src="./img/type_c_1/sec8_img_3.png">
                         </div>
                         <div class="swiper-slide">
                             <img class="img4" src="./img/type_c_1/sec8_img_4.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img4" src="./img/type_c_1/sec8_img_5.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img4" src="./img/type_c_1/sec8_img_6.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img4" src="./img/type_c_1/sec8_img_7.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img4" src="./img/type_c_1/sec8_img_8.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img4" src="./img/type_c_1/sec8_img_9.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img4" src="./img/type_c_1/sec8_img_10.png">
                         </div>
                     </div>
                 </div>
@@ -172,6 +190,12 @@
                     <img class="live" src="./img/type_c_1/sec8_live_2.svg">
                     <img class="live" src="./img/type_c_1/sec8_live_3.svg">
                     <img class="live" src="./img/type_c_1/sec8_live_4.svg">
+                    <img class="live" src="./img/type_c_1/sec8_live_5.svg">
+                    <img class="live" src="./img/type_c_1/sec8_live_6.svg">
+                    <img class="live" src="./img/type_c_1/sec8_live_7.svg">
+                    <img class="live" src="./img/type_c_1/sec8_live_8.svg">
+                    <img class="live" src="./img/type_c_1/sec8_live_9.svg">
+                    <img class="live" src="./img/type_c_1/sec8_live_10.svg">
                 </div>
                 <img class="btn" src="./img/type_c_1/sec8_btn.svg">
             </div>
@@ -200,7 +224,7 @@
                     slideChange: function () {
                         $('.live').removeClass('active');
                         $('.live').eq(this.realIndex).addClass('active')
-                        $('.live_list').css('margin-right', `${this.realIndex*40}px`)
+                        $('.live_list').css('margin-right', `clamp(1px, calc(100vw * ${this.realIndex*300} / 750), ${this.realIndex*300}px)`)
                     }
                 },
                 autoplay: {

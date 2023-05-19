@@ -373,7 +373,7 @@ main{
 .sec8 .live_list{
     display: flex;
     margin-top: clamp(1px, calc(100vw * 21 / 750), 21px);
-    margin-left: clamp(1px, calc(100vw * 60 / 750), 60px);
+    margin-left: clamp(1px, calc(100vw * 1350 / 750), 1350px);
     transition: margin 0.3s ease-in-out;
 }
 .sec8 .live_list img{
