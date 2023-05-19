@@ -8,8 +8,8 @@
             content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
         />
         <title>Type B</title>
-        <link rel="stylesheet" href="/asseets/css/reset.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../asseets/css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link
             rel="stylesheet"
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
@@ -25,11 +25,38 @@
             <div class="container">
                 <section>
                     <div class="bg_img">
+                        <img
+                            class="character"
+                            src="./img/main/character_carpet.gif"
+                            alt=""
+                        />
+                        <img
+                            class="ballon"
+                            src="./img/main/balloon.gif"
+                            alt=""
+                        />
+                        <img
+                            class="fire1"
+                            src="./img/main/fire_mint_100.gif"
+                            alt=""
+                        />
+                        <img
+                            class="fire2"
+                            src="./img/main/fire_pink_50.gif"
+                            alt=""
+                        />
+                        <img
+                            class="airballoon"
+                            src="./img/main/airballoon.gif"
+                            alt=""
+                        />
+                        <img
+                            class="fire3"
+                            src="./img/main/fire_mint_50.gif"
+                            alt=""
+                        />
                         <div class="main_tit">
-                            <img src="./img/main/tit_main.svg" alt="" />
-                        </div>
-                        <div class="sub_tit">
-                            <img src="./img/main/sub_tit_main.svg" alt="" />
+                            <img src="./img/main/main_txt.png" alt="" />
                         </div>
                     </div>
                 </section>
@@ -37,7 +64,7 @@
                 <!-- nav -->
                 <nav class="nav_wrap">
                     <ul class="nav flex">
-                        <li>
+                        <li class="active">
                             <a href="#nav01">7종<br />쿠폰팩</a>
                         </li>
                         <li>
@@ -65,83 +92,103 @@
                 <div class="content">
                     <!-- 7종 쿠폰팩 -->
                     <section class="section">
-                        <div id="nav01" class="cont01">
-                            <div class="cont01_tit_01">
-                                <img
-                                    src="./img/content/cont01_tit_01.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="coupon_img">
-                                <img src="./img/content/coupon01.svg" alt="" />
-                            </div>
-                            <div class="cont01_list_01">
-                                <img
-                                    src="./img/content/cont01_list_01.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="cont01_tit_02">
-                                <img
-                                    src="./img/content/cont01_tit_02.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="payback_img">
-                                <img src="./img/content/payback01.svg" alt="" />
-                            </div>
-                            <div class="cont01_list_02">
-                                <img
-                                    src="./img/content/cont01_list_02.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="cont01_tit_03">
-                                <img
-                                    src="./img/content/cont01_tit_03.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="cont01_cp">
-                                <ul>
-                                    <li class="badge" data-aos="fade-down">
-                                        <img
-                                            src="./img/content/cont01_cp_01.svg"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li data-aos="fade-down">
-                                        <img
-                                            src="./img/content/cont01_cp_02.svg"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li data-aos="fade-down">
-                                        <img
-                                            src="./img/content/cont01_cp_03.svg"
-                                            alt=""
-                                        />
-                                    </li>
-                                    <li data-aos="fade-down">
-                                        <img
-                                            src="./img/content/cont01_cp_04.svg"
-                                            alt=""
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont01_btn">
-                                <a href="#none"
-                                    ><img
-                                        src="./img/content/cont01_btn.svg"
+                        <div id="nav01">
+                            <div class="cont01 cont01_1">
+                                <div class="cont01_tit_01">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/cont01_tit_01.png"
                                         alt=""
-                                /></a>
+                                    />
+                                </div>
+                                <div class="coupon_img">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/coupon01.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont01_list_01">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/cont01_list_01.svg"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
-                            <div class="cont01_list_03">
-                                <img
-                                    src="./img/content/cont01_list_03.svg"
-                                    alt=""
-                                />
+                            <div class="cont01 cont01_2">
+                                <div class="cont01_tit_02">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/cont01_tit_02.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="payback_img">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/payback01.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont01_list_02">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/cont01_list_02.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="cont01 cont01_3">
+                                <div class="cont01_tit_03">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/cont01_tit_03.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont01_cp" data-aos="fade-up">
+                                    <ul>
+                                        <li class="badge" data-aos="fade-down">
+                                            <img
+                                                src="./img/content/cont01_cp_01.svg"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li data-aos="fade-down">
+                                            <img
+                                                src="./img/content/cont01_cp_02.svg"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li data-aos="fade-down">
+                                            <img
+                                                src="./img/content/cont01_cp_03.svg"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li data-aos="fade-down">
+                                            <img
+                                                src="./img/content/cont01_cp_04.svg"
+                                                alt=""
+                                            />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont01_btn" data-aos="fade-up">
+                                    <a href="#none"
+                                        ><img
+                                            src="./img/content/cont01_btn.svg"
+                                            alt=""
+                                    /></a>
+                                </div>
+                                <div class="cont01_list_03">
+                                    <img
+                                        data-aos="fade-up"
+                                        src="./img/content/cont01_list_03.svg"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -152,26 +199,68 @@
                         <div id="nav02" class="cont02">
                             <div class="cont02_tit_01">
                                 <img
-                                    src="./img/content/cont02_tit_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont02_tit_01.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="cont02_img_01" data-aos="fade-down">
+                            <div class="cont02_img_01">
                                 <img
-                                    src="./img/content/cont02_img_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont02_img_01.png"
                                     alt=""
                                 />
+                                <div class="cont02_swiper_container">
+                                    <div class="cont02_swiper">
+                                        <div class="swiper eventSwiper1">
+                                            <ul class="swiper-wrapper flex">
+                                                <li
+                                                    class="swiper-slide"
+                                                    class="badge"
+                                                >
+                                                    <img
+                                                        src="./img/content/cont02_swiper1.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <img
+                                                        src="./img/content/cont02_swiper2.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <img
+                                                        src="./img/content/cont02_swiper3.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <img
+                                                        src="./img/content/cont02_swiper4.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="swiper-pagination"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="cont02_btn">
                                 <a href=""
                                     ><img
+                                        data-aos="fade-up"
                                         src="./img/content/cont02_btn.svg"
                                         alt=""
                                 /></a>
                             </div>
-                            <div class="cont02_img_02" data-aos="fade-down">
+                            <div class="cont02_img_02">
                                 <img
-                                    src="./img/content/cont02_img_02.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont02_img_02.png"
                                     alt=""
                                 />
                             </div>
@@ -184,22 +273,23 @@
                         <div id="nav03" class="cont03">
                             <div class="cont03_tit_01">
                                 <img
-                                    src="./img/content/cont03_tit_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont03_tit_01.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="cont03_tab tab">
+                            <div class="cont03_tab tab" data-aos="fade-up">
                                 <ul class="tab_inn">
                                     <li><a href="#tab01">2만원 이상</a></li>
                                     <li class="tab_line"></li>
                                     <li><a href="#tab02">4만원 이상</a></li>
                                 </ul>
                             </div>
-                            <div class="tab_cont">
+                            <div class="tab_cont" data-aos="fade-up">
                                 <div id="tab01">
                                     <div class="cont03_img badge">
                                         <img
-                                            src="./img/content/cont03_img.svg"
+                                            src="./img/content/cont03_img1.png"
                                             alt=""
                                         />
                                     </div>
@@ -213,13 +303,13 @@
                                 <div id="tab02">
                                     <div class="cont03_img">
                                         <img
-                                            src="./img/content/cont03_img.svg"
+                                            src="./img/content/cont03_img2.png"
                                             alt=""
                                         />
                                     </div>
                                     <div class="cont03_sub_tit">
                                         <img
-                                            src="./img/content/cont03_sub_tit.svg"
+                                            src="./img/content/cont03_sub_tit2.png"
                                             alt=""
                                         />
                                     </div>
@@ -228,6 +318,7 @@
                             <div class="cont03_btn">
                                 <a href=""
                                     ><img
+                                        data-aos="fade-up"
                                         src="./img/content/cont03_btn.svg"
                                         alt=""
                                 /></a>
@@ -241,19 +332,20 @@
                         <div id="nav04" class="cont04">
                             <div class="cont04_tit_01">
                                 <img
-                                    src="./img/content/cont04_tit_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont04_tit_01.png"
                                     alt=""
                                 />
                             </div>
                             <div class="cont04_img">
                                 <ul>
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont04_img_01.svg"
                                             alt=""
                                         />
                                     </li>
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont04_img_02.svg"
                                             alt=""
@@ -264,6 +356,7 @@
                             <div class="cont04_btn">
                                 <a href=""
                                     ><img
+                                        data-aos="fade-up"
                                         src="./img/content/cont04_btn.svg"
                                         alt=""
                                 /></a>
@@ -277,25 +370,26 @@
                         <div id="nav05" class="cont05">
                             <div class="cont05_tit_01">
                                 <img
-                                    src="./img/content/cont05_tit_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont05_tit_01.png"
                                     alt=""
                                 />
                             </div>
                             <div class="cont05_img">
                                 <ul>
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont05_img_01.svg"
                                             alt=""
                                         />
                                     </li>
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont05_img_02.svg"
                                             alt=""
                                         />
                                     </li>
-                                    <li data-aos="fade-down">
+                                    <li data-aos="fade-up">
                                         <img
                                             src="./img/content/cont05_img_03.svg"
                                             alt=""
@@ -306,6 +400,7 @@
                             <div class="cont05_btn">
                                 <a href=""
                                     ><img
+                                        data-aos="fade-up"
                                         src="./img/content/cont05_btn.svg"
                                         alt=""
                                 /></a>
@@ -319,12 +414,14 @@
                         <div id="nav06" class="cont06">
                             <div class="cont06_tit_01">
                                 <img
-                                    src="./img/content/cont06_tit_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont06_tit_01.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="cont06_img" data-aos="fade-down">
+                            <div class="cont06_img">
                                 <img
+                                    data-aos="fade-up"
                                     src="./img/content/cont06_img.svg"
                                     alt=""
                                 />
@@ -338,50 +435,74 @@
                         <div id="nav07" class="cont07">
                             <div class="cont07_tit_01">
                                 <img
-                                    src="./img/content/cont07_tit_01.svg"
+                                    data-aos="fade-up"
+                                    src="./img/content/cont07_tit_01.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="bg_swiper">
-                                <div class="swiper calSwiper">
-                                    <ul class="swiper-wrapper flex">
-                                        <li class="swiper-slide">
+                            <div class="bg_swiper" data-aos="fade-up">
+                                <div class="swiper calSwiper cont07_tab">
+                                    <ul
+                                        class="swiper-wrapper flex cont07_tab_inn"
+                                    >
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab01"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">MON</p>
                                                 <p class="cal">12</p>
                                             </div>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab02"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">TUE</p>
                                                 <p class="cal">13</p>
                                             </div>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab03"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">WED</p>
                                                 <p class="cal">14</p>
                                             </div>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab04"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">THU</p>
                                                 <p class="cal">15</p>
                                             </div>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab05"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">FRI</p>
                                                 <p class="cal">16</p>
                                             </div>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab06"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">SAT</p>
                                                 <p class="cal">17</p>
                                             </div>
                                         </li>
-                                        <li class="swiper-slide">
+                                        <li
+                                            class="swiper-slide"
+                                            href="#weekTab07"
+                                        >
                                             <div class="week_box">
                                                 <p class="week">SUN</p>
                                                 <p class="cal">18</p>
@@ -390,15 +511,54 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="cont07_img" data-aos="fade-down">
-                                <img
-                                    src="./img/content/cont07_img.svg"
-                                    alt=""
-                                />
+                            <div class="tab_content" data-aos="fade-up">
+                                <div class="cont07_img active" id="weekTab01">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont07_img" id="weekTab02">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont07_img" id="weekTab03">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont07_img" id="weekTab04">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont07_img" id="weekTab05">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont07_img" id="weekTab06">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="cont07_img" id="weekTab07">
+                                    <img
+                                        src="./img/content/cont07_img1.png"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
                             <div class="cont07_btn">
                                 <a href=""
                                     ><img
+                                        data-aos="fade-up"
                                         src="./img/content/cont07_btn.svg"
                                         alt=""
                                 /></a>
@@ -429,7 +589,29 @@
                 .click();
         });
 
+        const navFunction = () => {
+            const navLi = document.querySelectorAll(".nav li");
+            navLi.forEach((el) => {
+                el.addEventListener("click", () => {
+                    for (let i = 0; i < navLi.length; i++) {
+                        navLi[i].classList.remove("active");
+                    }
+                    el.classList.add("active");
+                });
+            });
+        };
+        navFunction();
+
         // swiper
+        var swiper = new Swiper(".eventSwiper1", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: true,
+        });
+
         var swiper = new Swiper(".calSwiper", {
             slidesPerView: 1,
             spaceBetween: 10,
