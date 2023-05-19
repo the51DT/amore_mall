@@ -37,7 +37,7 @@ body {
     background: #161D30;
 }
 
-.nav .swiper-slide a {
+.nav .swiper-slide div {
     display: block;
     padding: 30px 40px 28px;
 }
@@ -718,28 +718,28 @@ section {
     .splash {
         display: block;
     }
-    .nav .swiper-slide a {
+    .nav .swiper-slide div {
         padding: 4vw 5.333vw 3.733vw;
     }
-    .nav .swiper-slide:nth-child(1) a img {
+    .nav .swiper-slide:nth-child(1) div img {
         width: 16.933vw;
     }
-    .nav .swiper-slide:nth-child(2) a img {
+    .nav .swiper-slide:nth-child(2) div img {
         width: 15.067vw;
     }
-    .nav .swiper-slide:nth-child(3) a img {
+    .nav .swiper-slide:nth-child(3) div img {
         width: 18.533vw;
     }
-    .nav .swiper-slide:nth-child(4) a img {
+    .nav .swiper-slide:nth-child(4) div img {
         width: 25.600vw;
     }
-    .nav .swiper-slide:nth-child(5) a img {
+    .nav .swiper-slide:nth-child(5) div img {
         width: 15.067vw;
     }
-    .nav .swiper-slide:nth-child(6) a img {
+    .nav .swiper-slide:nth-child(6) div img {
         width: 22vw;
     }
-    .nav .swiper-slide:nth-child(7) a img {
+    .nav .swiper-slide:nth-child(7) div img {
         width: 15.467vw;
     }
     /* splash */
