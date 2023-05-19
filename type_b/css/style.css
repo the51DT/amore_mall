@@ -45,9 +45,9 @@ body {
 .character {
     position: absolute;
     left: 0;
-    top: -6%;
-    width: calc(100vw * 439 / 750);
-    max-width: 439px;
+    top: 0;
+    width: calc(100vw * 365 / 750);
+    max-width: 365px;
 }
 .ballon {
     position: absolute;
@@ -59,8 +59,8 @@ body {
     position: absolute;
     right: -5%;
     top: 17%;
-    width: calc(100vw * 232 / 750);
-    max-width: 232px;
+    width: calc(100vw * 180 / 750);
+    max-width: 180px;
 }
 .fire2 {
     position: absolute;
@@ -461,8 +461,8 @@ img {
 }
 .cont06 .cont06_tit_01 {
     margin: 0 auto;
-    width: calc(100vw * 590 / 750);
-    max-width: 590px;
+    width: calc(100vw * 482 / 750);
+    max-width: 482px;
     padding-top: calc(100vw * 200 / 750);
     margin-bottom: calc(100vw * 60 / 750);
 }
