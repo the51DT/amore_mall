@@ -855,7 +855,7 @@ img {
     position: absolute;
     top: 16%;
     right: 18%;
-    animation: float-effect .8s linear infinite alternate;
+    animation: float-effect 0.8s linear infinite alternate;
 }
 .cont05 .money_img_03 img {
     max-width: 87px;
@@ -980,11 +980,26 @@ img {
 .cont06 .swiper.evSwiper ul li {
     margin-right: calc(100vw * 20 / 750);
 }
-.cont06 .swiper-scrollbar.swiper-scrollbar-horizontal {
-    background: #888;
+.cont06 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    max-width: 620px;
+    width: calc(100vw * 620 / 750);
+    height: 2px;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #888888;
+    overflow: hidden;
+    display: flex;
+    opacity: 1;
 }
-.cont06 .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
-    background: #fff;
+.cont06 .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 !important;
+    border-radius: 0;
+    width: 100%;
+    opacity: 1;
+}
+.cont06 .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: transparent;
 }
 
 @keyframes bal1 {

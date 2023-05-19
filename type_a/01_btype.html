@@ -589,19 +589,37 @@
                             </div>
                         </div>
                         <div class="card_list flex">
-                            <div class="kakao" data-aos="fade-left" data-aos-duration="500" data-aos-offset="500" data-aos-delay="0">
+                            <div
+                                class="kakao"
+                                data-aos="fade-left"
+                                data-aos-duration="500"
+                                data-aos-offset="500"
+                                data-aos-delay="0"
+                            >
                                 <img
                                     src="./img/cont05/cont05_kakao.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="samsung" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="500" data-aos-delay="100">
+                            <div
+                                class="samsung"
+                                data-aos="fade-left"
+                                data-aos-duration="1000"
+                                data-aos-offset="500"
+                                data-aos-delay="100"
+                            >
                                 <img
                                     src="./img/cont05/cont05_samsung.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="shinhan" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="500" data-aos-delay="200">
+                            <div
+                                class="shinhan"
+                                data-aos="fade-left"
+                                data-aos-duration="1500"
+                                data-aos-offset="500"
+                                data-aos-delay="200"
+                            >
                                 <img
                                     src="./img/cont05/cont05_shinhan.png"
                                     alt=""
@@ -682,7 +700,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="swiper-scrollbar"></div>
+                        <div
+                            class="swiper-pagination swiper-pagination06"
+                        ></div>
                     </div>
                 </section>
                 <!-- // cont06 -->
@@ -930,18 +950,28 @@
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
             },
+            pagination: {
+                el: ".swiper-pagination06",
+                clickable: true,
+                type: "bullets",
+                renderBullet: function () {
+                    return (
+                        "<span >" +
+                        "<em>" +
+                        "</em>" +
+                        "<i></i>" +
+                        "<b></b>" +
+                        "</span>"
+                    );
+                },
+            },
             slidesPerView: 3,
-            speed: 3000,
+            speed: 4000,
             loop: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            loopedSlides: 3,
             observer: true,
             observeParents: true,
-            scrollbar: {
-                el: ".swiper-scrollbar",
-                hide: false,
-            },
         });
     </script>
 </html>
