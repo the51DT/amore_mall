@@ -15,7 +15,7 @@
 /* commmon */
 html, body {margin: 0; padding: 0; font-family: "Pretendard-Bold", "Pretendard-ExtraBold";}
 section {overflow: hidden;}
-.wrap {max-width: 750px; width: 100%; margin: 0 auto; text-align: center;}
+.wrap {max-width: 750px; width: 100%; margin: 0 auto; background-color: #1B0E56; text-align: center;}
 .flex {display: flex; align-items: center; justify-content: space-between;}
 .bg {background-color: #1B0E56;}
 img {width: 100%;}
@@ -314,5 +314,5 @@ img {width: 100%;}
     }
 
     .cont01 .cp_pack01 {}
-
+        margin-top: 363px;
 }
