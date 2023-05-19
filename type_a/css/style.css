@@ -251,7 +251,7 @@ img {width: 100%;}
 .cont06 .tit_area {position: absolute; top: 220px; left: 0;}
 .cont06 .swiper.evSwiper {padding-top: 410px;}
 
-/* @keyframes bal1 {
+@keyframes bal1 {
     20%{rotate:-30deg;}
     30%{ top: 15%;}
     40%{rotate:-10deg;}
@@ -263,7 +263,7 @@ img {width: 100%;}
     30%{rotate:20deg; top: 8%;}
     50%{rotate:-10deg; top: 5%;}
     80%{rotate:25deg; top: 8%;}
-} */
+}
 
 /* cont07 */
 .cont07 {position: relative;}
