@@ -97,7 +97,7 @@ section {
 
 .section01 .img-box_02 {
     position: absolute;
-    top: 114px;
+    top: 76px;
     left: 50%;
     transform: translateX(-50%);
     width: 444px;
@@ -753,7 +753,7 @@ section {
     }
     /* section01 */
     .section01 .img-box_02 {
-        top: 15.200vw;
+        top: 10.133vw;
         width: 59.200vw;
     }
     /* section02 */
