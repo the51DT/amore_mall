@@ -103,7 +103,7 @@ img {
     top: 0;
     left: 0;
     align-self: flex-start;
-    padding: calc(100vw * 20 / 750) calc(100vw * 12 / 750);
+    padding: calc(100vw * 20 / 750) calc(100vw * 40 / 750);
     background-color: #070042;
     z-index: 100;
 }
@@ -174,6 +174,7 @@ img {
 }
 
 .cont01_3 {
+    margin-top: -1px;
     height: calc(100vw * 2446 / 750);
     max-height: 2446px;
     overflow: hidden;
@@ -299,6 +300,7 @@ img {
 
 /* cont03 */
 .cont03 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 2604 / 750);
     max-height: 2604px;
@@ -357,6 +359,10 @@ img {
     width: calc(100vw * 419 / 750);
     max-width: 419px;
     margin-bottom: calc(100vw * 86 / 750);
+}
+.cont03 .cont03_sub_tit.cont03_sub_tit2 {
+    width: calc(100vw * 312 / 750);
+    max-width: 312px;
 }
 .cont03_btn {
     margin: 0 auto;
@@ -445,6 +451,7 @@ img {
 
 /* cont06 */
 .cont06 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 2292 / 750);
     max-height: 2292px;
@@ -485,9 +492,9 @@ img {
     padding: calc(100vw * 12 / 750);
     border-radius: calc(100vw * 24 / 750);
     background-color: #192a4f;
-    width: calc(100vw * 697 / 750);
+    width: calc(100vw * 670 / 750);
     text-align: center;
-    max-width: 697px;
+    max-width: 670px;
 }
 .cont07 .swiper-wrapper .swiper-slide {
     flex-shrink: inherit;
@@ -543,7 +550,7 @@ img {
 
 @media (min-width: 750px) {
     .nav_wrap {
-        padding: 20px 12px;
+        padding: 20px 40px;
     }
     .nav li a {
         font-size: 30px;
@@ -658,7 +665,7 @@ img {
         padding: 24px 0;
     }
     .cont07 .week_box:hover,
-    .cont07 .week_box.active {
+    .cont07 .bg_swiper ul li.active .week_box {
         border-radius: 16px;
     }
     .cont07 .week_box .week {
