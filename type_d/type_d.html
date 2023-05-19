@@ -49,6 +49,10 @@
             <img class="char" src="./img/main_char.svg">
             <img class="img" src="./img/main.svg">
             <p>올 한 해 사랑받은 아모레퍼시픽의 대표 상품들을<br>오직 2주간 가장 큰 혜택으로 만날 수 있는 쇼핑 대축제</p>
+            <img class="star" src="./img/main_star.svg">
+            <img class="star2" src="./img/main_star_2.svg">
+            <img class="star3" src="./img/main_star_3.svg">
+            <img class="blue" src="./img/main_blue.svg">
             <img class="back" src="./img/main_back.svg">
         </div>
 
@@ -135,7 +139,7 @@
                     </div>
                     <div class="flex img">
                         <img class="img1" src="./img/sec4_img_1.png">
-                        <img class="img2" src="./img/sec4_img_2.png">
+                        <img class="img2" src="./img/sec4_img_2_off.png">
                     </div>
                     <img class="btn" src="./img/sec4_btn.svg">
                 </section>
@@ -276,10 +280,14 @@
             $('.sec4 .tab .tab1').click(function(){
                 $('.sec4 .tab .tab2 img').attr('src', './img/sec4_tab_off.svg')
                 $('.sec4 .tab .tab1 img').attr('src', './img/sec4_tab_on.svg')
+                $('.sec4 .img1').attr('src', './img/sec4_img_1.png')
+                $('.sec4 .img2').attr('src', './img/sec4_img_2_off.png')
             })
             $('.sec4 .tab .tab2').click(function(){
                 $('.sec4 .tab .tab1 img').attr('src', './img/sec4_tab_off.svg')
                 $('.sec4 .tab .tab2 img').attr('src', './img/sec4_tab_on.svg')
+                $('.sec4 .img1').attr('src', './img/sec4_img_1_off.png')
+                $('.sec4 .img2').attr('src', './img/sec4_img_2.png')
             })
 
             var html2 = [`<p>19 (월)</p>
