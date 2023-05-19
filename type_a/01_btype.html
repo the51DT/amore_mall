@@ -861,16 +861,21 @@
 
         // nav
         $(function () {
-            $(".tab_cont > div").hide();
-            $(".tab_inn a")
+            $(".tab_cont > div + div").hide();
+            $(".cont03 .tab_inn a, .cont07 .tab_inn a")
                 .click(function () {
-                    $(".tab_cont > div").hide().filter(this.hash).fadeIn();
-                    $(".tab_inn a").removeClass("active");
+                    $(".cont03 .tab_cont > div, .cont07 .tab_cont > div")
+                        .hide()
+                        .filter(this.hash)
+                        .fadeIn();
+                    $(".cont03 .tab_inn a, .cont07 .tab_inn a").removeClass(
+                        "active"
+                    );
                     $(this).addClass("active");
                     return false;
                 })
-                .filter(":eq(0)")
-                .click();
+                .filter(":eq(0)");
+            // .click();
         });
 
         const scrollCheck = () => {
@@ -921,12 +926,12 @@
         const $tabMenu02 = $(".cont07 .tab_wrap > .tab_inn");
         $(function () {
             $(".tab_inn a").click(function () {
-                if ($tabMenu.hasClass("active")) {
-                    $tabMenu.removeClass("active");
+                if ($tabMenu02.hasClass("active")) {
+                    $tabMenu02.removeClass("active");
                     $("#tab04").show();
                     $("#tab03").hide();
                 } else {
-                    $tabMenu.addClass("active");
+                    $tabMenu02.addClass("active");
                     $("#tab04").hide();
                     $("#tab03").show();
                 }
