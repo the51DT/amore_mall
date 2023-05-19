@@ -86,7 +86,7 @@ img {
     display: none;
 }
 .nav_container {
-    width: calc(100vw * 1376 / 750);
+    width: calc(100vw * 1520 / 750);
     max-width: 1376px;
 }
 .nav .swiper-slide {
@@ -192,6 +192,7 @@ img {
     max-width: 630px;
 }
 .cont01 .cont01_cp {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 1372 / 750);
     max-height: 1372px;

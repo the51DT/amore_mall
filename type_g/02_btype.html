@@ -61,8 +61,8 @@
 
                 <div class="content">
                     <!-- 7종 쿠폰팩 -->
-                    <section class="section">
-                        <div id="nav01" class="cont01">
+                    <section class="section" id="nav01">
+                        <div class="cont01">
                             <div class="cont01_bg cont01_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -161,8 +161,8 @@
                     <!-- // 7종 쿠폰팩 -->
 
                     <!-- 구매혜택 -->
-                    <section class="section">
-                        <div id="nav02" class="cont02">
+                    <section id="nav02" class="section">
+                        <div class="cont02">
                             <img
                                 class="cont02_ball cont02_ball1"
                                 src="./img/content/cont02_ball1.png"
@@ -199,8 +199,8 @@
                     <!-- // 구매혜택 -->
 
                     <!-- 한정 사은품 -->
-                    <section class="section">
-                        <div id="nav03" class="cont03">
+                    <section id="nav03" class="section">
+                        <div class="cont03">
                             <div class="cont03_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -251,8 +251,8 @@
                     <!-- // 한정 사은품 -->
 
                     <!-- 아세페 소문내기 -->
-                    <section class="section">
-                        <div id="nav04" class="cont04">
+                    <section id="nav04" class="section">
+                        <div class="cont04">
                             <div class="cont04_tit_01">
                                 <img
                                     src="./img/content/cont04_txt.svg"
@@ -292,8 +292,8 @@
                     <!-- // 아세페 소문내기 -->
 
                     <!-- 결제 혜택 -->
-                    <section class="section">
-                        <div id="nav05" class="cont05">
+                    <section id="nav05" class="section">
+                        <div class="cont05">
                             <img
                                 class="cont05_coin cont05_coin1"
                                 src="./img/content/cont05_coin1.svg"
@@ -345,8 +345,8 @@
                     <!-- // 결제 혜택 -->
 
                     <!-- 아세페 이벤트 -->
-                    <section class="section">
-                        <div id="nav06" class="cont06">
+                    <section id="nav06" class="section">
+                        <div class="cont06">
                             <div class="cont06_tit_01">
                                 <img
                                     src="./img/content/cont06_txt.svg"
@@ -401,8 +401,8 @@
                     <!-- // 아세페 이벤트 -->
 
                     <!-- Live 방송 -->
-                    <section class="section">
-                        <div id="nav07" class="cont07">
+                    <section id="nav07" class="section">
+                        <div class="cont07">
                             <div class="cont07_tit_01">
                                 <img
                                     src="./img/content/cont07_txt.svg"
@@ -488,18 +488,28 @@
                 .click();
         });
 
-        const navFunction = () => {
-            const navLi = document.querySelectorAll('.nav li')
-            navLi.forEach(el => {
-                el.addEventListener('click', () => {
-                    for(let i = 0; i < navLi.length; i ++) {
-                        navLi[i].classList.remove('active')
-                    } 
-                    el.classList.add('active');
-                })
-            })
-        }
-        navFunction()
+        const scrollCheck = () => {
+            const currentScroll = $(window).scrollTop();
+            const section = document.querySelectorAll(".content section");
+            const navLi = document.querySelectorAll(".nav li");
+            section.forEach((el) => {
+                if (currentScroll > el.offsetTop - 100) {
+                    const target = el.getAttribute("id");
+                    for (let i = 0; i < navLi.length; i++) {
+                        navLi[i].classList.remove("active");
+                        if (
+                            navLi[i]
+                                .querySelector("a")
+                                .getAttribute("href")
+                                .replace("#", "") === target
+                        ) {
+                            navLi[i].classList.add("active");
+                        }
+                    }
+                }
+            });
+        };
+        window.addEventListener("scroll", scrollCheck);
 
         setTimeout(() => {
             const splash = document.querySelector(".splash");
