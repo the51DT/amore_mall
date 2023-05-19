@@ -94,8 +94,8 @@
 
                 <div class="content">
                     <!-- 7종 쿠폰팩 -->
-                    <section class="section">
-                        <div id="nav01">
+                    <section class="section" id="nav01">
+                        <div>
                             <div class="cont01 cont01_1">
                                 <div class="cont01_tit_01">
                                     <img
@@ -198,8 +198,8 @@
                     <!-- // 7종 쿠폰팩 -->
 
                     <!-- 구매혜택 -->
-                    <section class="section">
-                        <div id="nav02" class="cont02">
+                    <section class="section" id="nav02">
+                        <div class="cont02">
                             <div class="cont02_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -316,8 +316,8 @@
                     <!-- // 구매혜택 -->
 
                     <!-- 한정 사은품 -->
-                    <section class="section">
-                        <div id="nav03" class="cont03">
+                    <section class="section" id="nav03">
+                        <div class="cont03">
                             <div class="cont03_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -375,8 +375,8 @@
                     <!-- // 한정 사은품 -->
 
                     <!-- 아세페 알리기 -->
-                    <section class="section">
-                        <div id="nav04" class="cont04">
+                    <section class="section" id="nav04">
+                        <div class="cont04">
                             <div class="cont04_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -413,8 +413,8 @@
                     <!-- // 아세페 알리기 -->
 
                     <!-- 결제 혜택 -->
-                    <section class="section">
-                        <div id="nav05" class="cont05">
+                    <section class="section" id="nav05">
+                        <div class="cont05">
                             <div class="cont05_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -457,8 +457,8 @@
                     <!-- // 결제 혜택 -->
 
                     <!-- 아세페 이벤트 -->
-                    <section class="section">
-                        <div id="nav06" class="cont06">
+                    <section class="section" id="nav06">
+                        <div class="cont06">
                             <div class="cont06_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -478,8 +478,8 @@
                     <!-- // 아세페 이벤트 -->
 
                     <!-- Live 방송 -->
-                    <section class="section">
-                        <div id="nav07" class="cont07">
+                    <section class="section" id="nav07">
+                        <div class="cont07">
                             <div class="cont07_tit_01">
                                 <img
                                     data-aos="fade-up"
@@ -660,6 +660,29 @@
         };
         tabFn();
 
+        const scrollCheck = () => {
+            const currentScroll = $(window).scrollTop();
+            const section = document.querySelectorAll(".content section");
+            const navLi = document.querySelectorAll(".nav li");
+            section.forEach((el) => {
+                if (currentScroll > el.offsetTop - 100) {
+                    const target = el.getAttribute("id");
+                    for (let i = 0; i < navLi.length; i++) {
+                        navLi[i].classList.remove("active");
+                        if (
+                            navLi[i]
+                                .querySelector("a")
+                                .getAttribute("href")
+                                .replace("#", "") === target
+                        ) {
+                            navLi[i].classList.add("active");
+                        }
+                    }
+                }
+            });
+        };
+        window.addEventListener("scroll", scrollCheck);
+
         setTimeout(() => {
             const splash = document.querySelector(".splash");
             const body = document.querySelector("body");
@@ -675,19 +698,6 @@
             body.style.overflowX = "hidden";
             splash.style.display = "none";
         }, 1100);
-
-        const navFunction = () => {
-            const navLi = document.querySelectorAll(".nav li");
-            navLi.forEach((el) => {
-                el.addEventListener("click", () => {
-                    for (let i = 0; i < navLi.length; i++) {
-                        navLi[i].classList.remove("active");
-                    }
-                    el.classList.add("active");
-                });
-            });
-        };
-        navFunction();
 
         // swiper
         var swiper = new Swiper(".eventSwiper1", {
