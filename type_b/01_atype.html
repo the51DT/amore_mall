@@ -354,7 +354,7 @@
                                             alt=""
                                         />
                                     </div>
-                                    <div class="cont03_sub_tit">
+                                    <div class="cont03_sub_tit cont03_sub_tit2">
                                         <img
                                             src="./img/content/cont03_sub_tit2.png"
                                             alt=""
@@ -567,13 +567,13 @@
                                 </div>
                                 <div class="cont07_img" id="weekTab02">
                                     <img
-                                        src="./img/content/cont07_img1.png"
+                                        src="./img/content/cont07_img2.png"
                                         alt=""
                                     />
                                 </div>
                                 <div class="cont07_img" id="weekTab03">
                                     <img
-                                        src="./img/content/cont07_img1.png"
+                                        src="./img/content/cont07_img3.png"
                                         alt=""
                                     />
                                 </div>
@@ -585,13 +585,13 @@
                                 </div>
                                 <div class="cont07_img" id="weekTab05">
                                     <img
-                                        src="./img/content/cont07_img1.png"
+                                        src="./img/content/cont07_img2.png"
                                         alt=""
                                     />
                                 </div>
                                 <div class="cont07_img" id="weekTab06">
                                     <img
-                                        src="./img/content/cont07_img1.png"
+                                        src="./img/content/cont07_img3.png"
                                         alt=""
                                     />
                                 </div>
@@ -662,6 +662,8 @@
 
         setTimeout(() => {
             const splash = document.querySelector(".splash");
+            const body = document.querySelector("body");
+            body.style.backgroundColor = "transparent";
             splash.style.opacity = "0";
         }, 1000);
         setTimeout(() => {
@@ -669,11 +671,10 @@
             const body = document.querySelector("body");
             const splash = document.querySelector(".splash");
             container.style.opacity = "1";
-            body.style.backgroundColor = "transparent";
             body.style.overflowY = "initial";
             body.style.overflowX = "hidden";
             splash.style.display = "none";
-        }, 1500);
+        }, 1100);
 
         const navFunction = () => {
             const navLi = document.querySelectorAll(".nav li");

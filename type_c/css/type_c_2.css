@@ -98,7 +98,7 @@ main{
 }
 .sec3 .con1 .con1_swiper{
     margin-top: clamp(1px, calc(100vw * 62 / 750), 62px);
-    width: clamp(1px, calc(100vw * 524 / 750), 524px);
+    width: clamp(1px, calc(100vw * 516 / 750), 516px);
     height: clamp(1px, calc(100vw * 748 / 750), 748px);
 }
 .sec3 .con1 .con1_btn{
@@ -119,6 +119,7 @@ main{
 }
 .sec3 .con2 .title{
     margin-top: clamp(1px, calc(100vw * 109 / 750), 109px);
+    width: clamp(1px, calc(100vw * 228 / 750), 228px);
 }
 .sec3 .con2 .con2_swiper{
     margin-top: clamp(1px, calc(100vw * 50 / 750), 50px);
@@ -144,6 +145,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 .sec3 .sec3_swiper .swiper-slide img{
     width: 100%;

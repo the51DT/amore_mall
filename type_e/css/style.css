@@ -1,5 +1,4 @@
 /* common */
-
 body {
   margin: 0 auto;
 }
@@ -11,8 +10,6 @@ body {
 
 .swiper-slide {
   text-align: center;
-  /* font-size: 18px; */
-  /* background: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,43 +34,56 @@ img {
   position: relative;
 }
 
+.splash {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw * 750 / 750);
+  max-width: 750px;
+  transform: translateX(-50%);
+  transition: all ease-in-out 0.5s;
+}
 .section03 .swiper_coupon {
   background-image: url(../img/section_03_con03.jpg);
-  /* padding-bottom: 80px; */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: 0;
   background-color: #eff4fd;
 }
-/* 
-.mySwiper_03 .swiper-slide {
-  width: 80%;
-} */
 
-.mySwiper_03 .swiper-wrapper {
-  background-image: url(../img/section_03_con03.jpg);
-}
-
-.swiper-pagination {
+.swiper-pagination03 {
   bottom: -40px;
+  position: absolute;
+  text-align: center;
 }
-
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  text-align: center;
+}
 .section05 {
   background-color: #d9ebfa;
 }
 
 .section_05_content {
-  margin: 0 calc(100vw * 60 / 750);
+  width: clamp(1px, calc(100vw * 590 / 750), 590px);
+  margin: 0 auto;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .section05 .keyframe01 {
-  /* margin-top: 36px; */
-  /* width: 100vw;
-  width: clamp(1px, calc(100vw * 630 / 750), 630px); */
-  height: clamp(1px, calc(100vw * 550 / 750), 550px);
+  height: clamp(1px, calc(100vw * 590 / 750), 590px);
   background-image: url(../img/sec_05_con_01.png);
   background-size: cover;
   animation: img1 10s linear infinite;
 }
-
+.section05 .img_tag {
+  width: clamp(1px, calc(100vw * 100 / 750), 100px);
+}
+.section05 .img_tag02 {
+  width: clamp(1px, calc(100vw * 100 / 750), 100px);
+}
 @keyframes img1 {
   15% {
     background-image: url(../img/sec_05_con_01.png);
@@ -99,12 +109,11 @@ img {
 }
 
 .gift02 {
-  padding-top: 80px;
+  padding-top: clamp(1px, calc(100vw * 80 / 750), 80px);
+  position: relative;
 }
 
 .section05 .keyframe02 {
-  /* margin-top: 36px; */
-  /* width: clamp(1px, calc(100vw * 630 / 750), 630px); */
   height: clamp(1px, calc(100vw * 550 / 750), 550px);
   background-image: url(../img/section_05_con02_02.png);
   animation: img2 10s linear infinite;
@@ -145,6 +154,19 @@ img {
   margin-right: 5%;
 }
 
+.section05 .img_tag {
+  position: absolute;
+  z-index: 2;
+  top: clamp(1px, calc(100vw * 270 / 750), 270px);
+  right: clamp(1px, calc(100vw * 20 / 750), 20px);
+}
+
+.section05 .img_tag02 {
+  position: absolute;
+  z-index: 2;
+  top: clamp(1px, calc(100vw * 350 / 750), 350px);
+  right: clamp(1px, calc(100vw * 20 / 750), 20px);
+}
 .section08 {
   position: relative;
   background-color: #00a4ea;
@@ -164,7 +186,8 @@ img {
 }
 
 .mySwiper_09 .swiper-slide {
-  width: 70%;
+  width: 75%;
+  margin: 0 calc(100vw * 12 / 750) 12px;
 }
 
 .mySwiper_09 .swiper-card {
@@ -176,9 +199,7 @@ img {
   text-align: center;
   font-size: 30px;
   line-height: 42px;
-  /* background: #fff; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -193,21 +214,23 @@ img {
 
 .tabSwiper .swiper-slide img {
   display: block;
-  /* width: 100%; */
-  /* height: 100%; */
   object-fit: cover;
 }
-
-.swiper_coupon .swiper-wrapper {
-  padding-bottom: 90px;
+.swiper_coupon {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: 0;
 }
-.swiper_coupon .swiper-pagination-bullet {
+.swiper_coupon .swiper-wrapper {
+  padding-bottom: 50px;
+}
+.swiper_coupon .swiper-pagination03 .swiper-pagination-bullet {
   background: #00a4ea;
   opacity: 0.2;
   width: 16px;
   height: 16px;
 }
-.swiper_coupon .swiper-pagination-bullet-active {
+.swiper_coupon .swiper-pagination03 .swiper-pagination-bullet-active {
   background: #00a4ea;
   opacity: 1;
 }
@@ -217,10 +240,10 @@ img {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
-  background-color: #ccc;
   max-width: 750px;
   margin: 0 auto;
   position: relative;
+  background-color: #2a4abf;
 }
 
 .header {
@@ -229,7 +252,6 @@ img {
 
 .text-tab {
   background-color: #001d6c;
-  /* height: 112px; */
 }
 
 .text-tab.fixed {
@@ -242,7 +264,7 @@ img {
 }
 
 .text-tab .mySwiper_01 {
-  margin-left: 5%;
+  margin-left: clamp(1px, calc(100vw * 60 / 750), 60px);
   height: auto;
 }
 
@@ -291,7 +313,9 @@ img {
   height: 4px;
   background: #a4e4ff;
 }
-
+.splash-container {
+  opacity: 0;
+}
 .container {
   background-color: #222;
 }
@@ -321,7 +345,6 @@ img {
 
 /* section04 */
 .section04 {
-  /* padding: 100px 0 200px; */
   background: #013ae1;
 }
 
@@ -329,21 +352,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
-  /* width: calc(100% - 160px);
-  margin: 0 auto; */
-
   margin: 0 10.6%;
 }
 
 .section04 .benefit-area .benefit_tab-btn li {
-  /* border-radius: 5% 5% 0 0; */
   width: 50%;
-}
-
-.section04 .benefit-area .benefit_tab-btn li.current {
-  /* padding: 22px 22px; */
-  /* border-radius: 5% 5% 0 0; */
 }
 
 .section04 .benefit-area .benefit_tab-btn li a {
@@ -385,7 +398,6 @@ img {
 .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item {
   display: none;
   position: relative;
-  /* border-radius: 32px; */
   overflow: hidden;
   width: 100%;
 }
@@ -395,7 +407,6 @@ img {
   .benefit_tab-content
   .benefit_tab-content_item.current {
   display: block;
-  background: url(../img/sec04_tab-btn1_2.png) center/cover no-repeat;
 }
 
 .section04
@@ -428,22 +439,7 @@ img {
   height: 180px;
 }
 
-/* .section04
-    .benefit-area
-    .benefit_tab-content
-    .benefit_tab-content_item
-    .img-box_31
-    a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    padding: 40px 0;
-    background: #001e6c;
-} */
-
 /* section04 benefit01 */
-
 .section04
   .benefit-area
   .benefit_tab-content
@@ -495,7 +491,6 @@ img {
 }
 
 /* section04 benefit02 */
-
 .section04
   .benefit-area
   .benefit_tab-content
@@ -540,7 +535,7 @@ img {
     bottom: 3.2vw;
     height: 0.533vw;
   }
-  .swiper_coupon .swiper-pagination-bullet {
+  .swiper_coupon .swiper-pagination03 .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
   }
