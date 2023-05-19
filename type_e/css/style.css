@@ -198,8 +198,18 @@ img {
   object-fit: cover;
 }
 
-.coupon .swiper-pagination-bullet-active {
-  background: #0e1b92;
+.swiper_coupon .swiper-wrapper {
+  padding-bottom: 90px;
+}
+.swiper_coupon .swiper-pagination-bullet {
+  background: #00a4ea;
+  opacity: 0.2;
+  width: 16px;
+  height: 16px;
+}
+.swiper_coupon .swiper-pagination-bullet-active {
+  background: #00a4ea;
+  opacity: 1;
 }
 
 .wrap {
@@ -268,6 +278,7 @@ img {
 
 .text-tab .mySwiper_01 .swiper-slide:nth-child(7) {
   width: 125px;
+  margin-right: 60px;
 }
 
 .text-tab .mySwiper_01 .swiper-slide.current:after {
@@ -519,5 +530,9 @@ img {
   .text-tab .mySwiper_01 .swiper-slide.current:after {
     bottom: 3.2vw;
     height: 0.533vw;
+  }
+  .swiper_coupon .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
   }
 }
