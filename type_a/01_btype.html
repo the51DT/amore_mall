@@ -849,12 +849,14 @@
         const $tabMenu01 = $(".cont03 .tab_wrap > .tab_inn");
         $(function () {
             $(".tab_inn a").click(function () {
-                if ($tabMenu.hasClass("active")) {
-                    $tabMenu.removeClass("active");
+                if ($tabMenu01.hasClass("active")) {
+                    $tabMenu01.removeClass("active");
+                    $(this).removeClass("active");
                     $("#tab02").show();
                     $("#tab01").hide();
                 } else {
-                    $tabMenu.addClass("active");
+                    $tabMenu01.addClass("active");
+                    $(this).addClass("active");
                     $("#tab02").hide();
                     $("#tab01").show();
                 }
