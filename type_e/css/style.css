@@ -46,8 +46,10 @@ img {
   max-width: 750px;
 }
 .section03 .swiper_coupon {
-  background-image: url(../img/section_03_con03.jpg);
-  /* padding-bottom: 80px; */
+  /* background-image: url(../img/section_03_con03.jpg); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: 0;
   background-color: #eff4fd;
 }
 /* 
@@ -59,10 +61,15 @@ img {
   background-image: url(../img/section_03_con03.jpg);
 }
 
-.swiper-pagination {
+.swiper-pagination03 {
   bottom: -40px;
+  position: absolute;
+  text-align: center;
 }
-
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  text-align: center;
+}
 .section05 {
   background-color: #d9ebfa;
 }
@@ -206,17 +213,21 @@ img {
   /* height: 100%; */
   object-fit: cover;
 }
-
+.swiper_coupon {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+}
 .swiper_coupon .swiper-wrapper {
   padding-bottom: 90px;
 }
-.swiper_coupon .swiper-pagination-bullet {
+.swiper_coupon .swiper-pagination03 .swiper-pagination-bullet {
   background: #00a4ea;
   opacity: 0.2;
   width: 16px;
   height: 16px;
 }
-.swiper_coupon .swiper-pagination-bullet-active {
+.swiper_coupon .swiper-pagination03 .swiper-pagination-bullet-active {
   background: #00a4ea;
   opacity: 1;
 }
@@ -550,7 +561,7 @@ img {
     bottom: 3.2vw;
     height: 0.533vw;
   }
-  .swiper_coupon .swiper-pagination-bullet {
+  .swiper_coupon .swiper-pagination03 .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
   }
