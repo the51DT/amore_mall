@@ -88,7 +88,7 @@ img {width: 100%;}
 .cont01 .fck_img_01 img {max-width: 63px; width: calc(100vw * 63 / 750);}
 .cont01 .fck_img_02 {position: absolute; top: 1%; right: 7%; animation: flicker-effect 1.5s linear infinite alternate;}
 .cont01 .fck_img_02 img {max-width: 120px; width: calc(100vw * 120 / 750);}
-.cont01 .light_img {animation: flicker_tit-effect 1.2s linear alternate;}
+.cont01 .light_img {animation: flicker_tit-effect 1.2s linear alternate; transition: opacity .5s}
 .cont01 .cp_pack01 {margin-top: calc(100vw * 434 / 750); background: url(../img/cont01/cont01_cp_bg01.svg) no-repeat center top / 100% auto;}
 .cont01 .cp_pack01 .cp_tit {padding-top: calc(100vw * 73 / 750);}
 .cont01 .cp_pack01 .cp_tit img {max-width: calc(100vw * 484 / 750);}
