@@ -23,10 +23,10 @@
         </div>
         <div class="nav nav_swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide current">
+                <div class="swiper-slide">
                     <div data-href="#section01">
-                        <img src="./image/nav01.svg" alt="7종 쿠폰팩" class="nav_item" style="display: none;">
-                        <img src="./image/nav01_current.svg" alt="7종 쿠폰팩" class="nav_item_current" style="display: block;">
+                        <img src="./image/nav01.svg" alt="7종 쿠폰팩" class="nav_item">
+                        <img src="./image/nav01_current.svg" alt="7종 쿠폰팩" class="nav_item_current">
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -472,20 +472,82 @@
         // nav
         const $root = $('html, body');
         $(".nav .swiper-slide div").click(function() {
-            console.log(this);
-            $(".nav .swiper-slide div").parent().removeClass('current');
-            $(this).parent().addClass('current');
-            $(".nav .swiper-slide div").children('.nav_item').show();
-            $(".nav .swiper-slide div").children('.nav_item_current').hide();
-            $(this).children('.nav_item').hide()
-            $(this).children('.nav_item_current').show()
-
-            // 이동
+            //이동
             $root.animate({
                 scrollTop: $($.attr(this, 'data-href')).offset().top
             }, 500);
             return false;
         });
+
+        function checkVisible(element, check = 'visible') {
+            const viewportHeight = $(window).height(); // Viewport Height
+            const scrolltop = $(window).scrollTop(); // Scroll Top
+            const y = $(element).offset().top;
+            const elementHeight = $(element).height();
+
+            if (check == "visible")
+                return ((y < (viewportHeight + scrolltop - 400)) && (y > (scrolltop - elementHeight)));
+        }
+
+        const func = function() {
+            if (checkVisible('#section01')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(0).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(0).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(0).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section03')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(1).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(1).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(1).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section04')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(2).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(2).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(2).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section05')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(3).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(3).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(3).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section06')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(4).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(4).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(4).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section07')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(5).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(5).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(5).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section08')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(6).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(6).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(6).find('.nav_item_current').css("display", "block");
+            }
+        }
+        window.addEventListener('scroll', func);
 
         // section04
         $(".benefit-area .benefit_tab-btn li a").click(function() {
