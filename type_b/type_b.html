@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Type B</title>
-    <link rel="stylesheet" href="/asseets/css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <div class="wrap">
+
+        <!-- <div class="splash">
+            <img src="./img/main/splash.png" alt="splash"></img>
+        </div> -->
+
         <!-- container -->
         <div class="container">
             <section>          
@@ -23,22 +28,18 @@
                         <img src="./img/main/sub_tit_main.svg" alt="">
                     </div>
                 </div>     
+                <nav class="nav_wrap">
+                    <ul class="nav flex">
+                        <li><a href="#nav01">7종<br>쿠폰팩</a></li>
+                        <li><a href="#nav02">구매<br>혜택</a></li>
+                        <li><a href="#nav03">한정<br>사은품</a></li>
+                        <li><a href="#nav04">아세페<br>알리기</a></li>
+                        <li><a href="#nav05">결제<br>혜택</a></li>
+                        <li><a href="#nav06">아세페<br>이벤트</a></li>
+                        <li><a href="#nav07">LIVE<br>방송</a></li>
+                    </ul>
+                </nav>
             </section>
-
-            <!-- nav -->
-            <nav class="nav_wrap">
-                <ul class="nav flex">
-                    <li><a href="#nav01">7종<br>쿠폰팩</a></li>
-                    <li><a href="#nav02">구매<br>혜택</a></li>
-                    <li><a href="#nav03">한정<br>사은품</a></li>
-                    <li><a href="#nav04">아세페<br>알리기</a></li>
-                    <li><a href="#nav05">결제<br>혜택</a></li>
-                    <li><a href="#nav06">아세페<br>이벤트</a></li>
-                    <li><a href="#nav07">LIVE<br>방송</a></li>
-                </ul>
-            </nav>
-            <!-- // nav -->
-
             <div class="content">
 
                 <!-- 7종 쿠폰팩 -->
@@ -278,15 +279,24 @@
 
     // swiper
     var swiper = new Swiper(".calSwiper", {
-        slidesPerView : 1,
+        speed: 1000,
+        longSwipes: false,
+        slidesPerView : 5,
         spaceBetween: 10,
 
-        on: {
-            slideChange: function () {
-                $('.week_box').removeClass('active');
-                $('.week_box').eq(this.realIndex).addClass('active');
-            }
-        }
+        // on: {
+        //     slideChange: function () {
+        //         $('.week_box').removeClass('active');
+        //         $('.week_box').eq(this.realIndex).addClass('active');
+        //     }
+        // }
+    });
+
+    $('.week_box').on('click', function() {
+        const type = $(this).text();
+        
+        $('.week_box').removeClass('active');
+        $(this).addClass('active');
     });
     
     // aos

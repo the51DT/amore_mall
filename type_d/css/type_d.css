@@ -13,19 +13,24 @@
     top: clamp(1px, calc(100vw * 240 / 750), 240px);
     width: clamp(1px, calc(100vw * 405 / 750), 405px);
     margin-left: 0;
-    animation: wave 1s ease-in infinite reverse;
+    animation: wave 1.3s ease-in infinite reverse;
 }
 @keyframes wave {
+    10%{
+        margin-left: clamp(1px, calc(100vw * 10 / 750), 10px);
+    }
     30%{
         margin-left: clamp(1px, calc(100vw * 50 / 750), 50px);
     }
     50%{
         top: clamp(1px, calc(100vw * 270 / 750), 270px);
         transform: rotateX(10deg);
-        transform: rotateZ(3deg);
+        transform: rotateZ(1.5deg);
     }
     70%{
-        margin-left: clamp(1px, calc(100vw * -100 / 750), -100px);
+        margin-left: clamp(1px, calc(100vw * 40 / 750), 40px);
+        transform: rotateX(-8deg);
+        transform: rotateZ(-1deg);
     }
 }
 .main .img{
@@ -41,13 +46,74 @@
     color: #001FFE;
     text-align: center;
 }
+.main .star{
+    position: absolute;
+    width: clamp(1px, calc(100vw * 565 / 750), 565px);
+    top: clamp(1px, calc(100vw * 236 / 750), 236px);
+    left: clamp(1px, calc(100vw * 101 / 750), 101px);
+    animation: star1 1s ease-in-out infinite;
+}
+@keyframes star1 {
+    50%{
+        opacity: 0;
+    }
+}
+.main .star2{
+    position: absolute;
+    width: clamp(1px, calc(100vw * 547 / 750), 547px);
+    top: clamp(1px, calc(100vw * 713 / 750), 713px);
+    left: clamp(1px, calc(100vw * 169 / 750), 169px);
+    opacity: 0;
+    animation: star2 1.5s ease-in infinite;
+}
+@keyframes star2 {
+    70%{
+        opacity: 1;
+    }
+}
+.main .star3{
+    position: absolute;
+    width: clamp(1px, calc(100vw * 28 / 750), 28px);
+    top: clamp(1px, calc(100vw * 600 / 750), 600px);
+    left: clamp(1px, calc(100vw * 384 / 750), 384px);
+    opacity: 0;
+    animation: star3 1s ease-in-out infinite;
+}
+@keyframes star3 {
+    30%{
+        opacity: 1;
+    }
+}
+.main .blue{
+    position: absolute;
+    width: clamp(1px, calc(100vw * 685 / 750), 685px);
+    top: clamp(1px, calc(100vw * 37 / 750), 37px);
+    left: clamp(1px, calc(100vw * 36 / 750), 36px);
+}
 .main .back{
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    animation: scale 0.5s ease-out;
 }
+@keyframes scale {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+main{
+    margin-top: clamp(1px, calc(100vw * 130 / 750), 130px);
+}
+
 
 .menu{
     position: sticky;
@@ -62,11 +128,13 @@
 }
 .menu ul li{
     width: calc(100vw * 150 / 750);
-    height: calc(100% - 18px);
-    padding-top: 18px;
+    height: 100%;
     position: relative;
     background: #4C5EF0;
     opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu ul li::after{
     content: "";
@@ -84,7 +152,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: clamp(1px, calc(100vw * 24 / 750), 24px);
-    line-height: 133%;
+    line-height: 120%;
     color: #FFFFFF;
 }
 .menu ul li.active{
@@ -436,6 +504,16 @@
     padding-left: clamp(1px, calc(100vw * 27 / 750), 27px);
     padding-top: clamp(1px, calc(100vw * 5 / 750), 5px);
     animation: up1 0.3s ease-in-out;
+}
+@media (max-width:500px) {
+    .sec7 .live{
+        padding-top: clamp(1px, calc(100vw * 20 / 750), 20px);
+    }
+}
+@media (max-width:400px) {
+    .sec7 .live{
+        padding-top: clamp(1px, calc(100vw * 26 / 750), 26px);
+    }
 }
 @keyframes up1 {
     0%{

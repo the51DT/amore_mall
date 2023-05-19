@@ -5,226 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Type A</title>
-    <link rel="stylesheet" href="/asseets/css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
-
-<style>
-    @font-face {
-        font-family: 'Pretendard-Bold';
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Pretendard-ExtraBold';
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
-        font-weight: 900;
-        font-style: normal;
-    }
-
-    /* commmon */
-    html, body {margin: 0; padding: 0; font-size: 10px; font-family: "Pretendard-Bold", "Pretendard-ExtraBold";}
-    section {overflow: hidden;}
-    .wrap {max-width: 750px; margin: 0 auto; text-align: center;}
-    .flex {display: flex; align-items: center; justify-content: space-between;}
-    .bg {background-color: #1B0E56;}
-    
-    /* main */
-    .main .bg_img {position: relative; width:100%; background: url(../type_a/img/main/main_bg.svg) no-repeat center center / 100% auto;}
-    .main .bg_img_wrap .fck_img_01 {position: absolute; top: -2.7rem; left: -4rem; animation: flicker-effect .8s linear infinite alternate;}
-    .main .bg_img_wrap .fck_img_01 img {max-width: 20.6rem; width: 100%;}
-    .main .bg_img_wrap .fck_img_02 {position: absolute; top: 4rem; right: 4.6rem; animation: flicker-effect 1.2s linear infinite alternate;}
-    .main .bg_img_wrap .fck_img_02 img {max-width: 13.6rem; width: 100%;}
-    .main .bg_img_wrap .fck_img_03 {position: absolute; top: 52.3rem; left: 1.3rem; animation: flicker-effect 1s linear infinite alternate;}
-    .main .bg_img_wrap .fck_img_04 {position: absolute; top: 68.5rem; right: 2.1rem; animation: flicker-effect 1.5s linear infinite alternate;}
-    .main .bg_img_wrap .balloon_img_01 {position: absolute; top: 73.8rem; left: 7.6rem; animation: float-effect 1.5s linear infinite alternate;}
-    .main .main_tit {position: relative; padding-top: 10rem;}
-    .main .main_tit img {max-width: 45.5rem; width: 100%;}
-    .main .main_tit::after {content: ""; display: block; position: absolute; top: 55%; left: 43.5%; width: 100%; max-width: 10rem; min-height: 10rem; background: url(./img/main/main_ico.svg) no-repeat 0 0 / auto auto; animation: ico-ani 5s infinite steps(7);}
-    .main .sub_tit {padding-top: 2.5rem;}
-    .main .sub_tit img {max-width: 31.6rem; width: 100%;}
-    .main .carrousel_wrap {position: relative; margin-top: 8.3rem;}
-    .main .carrousel_wrap::after {content: ""; position: absolute; display: block; top: 17.3rem; left: 22rem; max-width: 33rem; height: 8.6rem; width: 100%; background: url(./img/main/sign.gif) no-repeat center center / 100% auto;}
-    .main .carrousel_wrap .carrousel img {width: 100%; max-width: 75rem;}
-    .main .carrousel_wrap .horse01 {position: absolute; bottom: 18.1rem; left: 10.5rem; animation: horse-effect 1.5s linear infinite alternate;}
-    .main .carrousel_wrap .horse02 {position: absolute; bottom: 22.5rem; left: 31.5rem; animation: horse-effect_b 1.5s linear infinite alternate;}
-    .main .carrousel_wrap .horse03 {position: absolute; bottom: 18.1rem; right: 10.5rem; animation: horse-effect 1.5s linear infinite alternate;}
-    .main .carrousel_wrap .horse01 img,
-    .main .carrousel_wrap .horse02 img,
-    .main .carrousel_wrap .horse03 img {max-width: 152px; width: 100%;}
-
-    /* main_animation */
-    @keyframes flicker-effect {
-        0% {opacity: 0;}
-        50% {opacity: .4;}
-        100% {opacity: 1;}
-    }
-    @keyframes float-effect {
-        0% {margin-top: 0px;}
-        100% {margin-top: 20px;}
-    }
-    @keyframes horse-effect {
-        0% {margin-bottom: 0px;}
-        100% {margin-bottom: 30px;}
-    }
-    @keyframes horse-effect_b {
-        0% {margin-bottom: 30px;}
-        100% {margin-bottom: 0px;}
-    }
-    @keyframes ico-ani {
-        100% {
-    	    background-position: -700px 0;
-        }
-    }
-
-    /* nav */
-    .nav_wrap {display: none; position: sticky; top: 0; left: 0; width: 100%; height: 100%; padding: 3rem 3.5rem; background-color: #c51e26; z-index: 100;}
-    .nav li a {display: block; font-size: 3rem; color: rgba(255, 255, 255, .5); font-weight: bold; line-height: 4rem;}
-    .nav li a:hover {top: 0; color: #fff; background: url(./img/main/nav_act.svg) no-repeat center top / 100% 100%;}
-    .nav_wrap img {width: 10.7rem; height: 10rem;}
-
-    /* cont01 */
-    .cont01 {position: relative;}
-    .cont01 .bg_img_wrap {padding-top: 16.2rem;}
-    .cont01 .tit_area {position: absolute; top: 20.9rem; left: 0;}
-    .cont01 .fck_img_01 {position: absolute; top: 8.3rem; left: 28.3rem;}
-    .cont01 .fck_img_02 {position: absolute; top: 6.5rem; right: 5.8rem;}
-    .cont01 .tit_inn {margin-top: 10rem;}
-    .cont01 .cp_pack01 {width: 100%; margin-top: 36.3rem; background: url(../type_a/img/cont01/cont01_cp_bg01.svg) no-repeat center top / 100% auto;}
-    .cont01 .cp_pack01 .cp_tit {padding-top: 7.3rem;}
-    .cont01 .cp_pack01 .cp_img {padding-top: 4.5rem;}
-    .cont01 .cp_pack01 .cp_btn {padding-top: 6.2rem;}
-    .cont01 .cp_pack01 .cp_list {padding: 4.1rem 0;}
-    .cont01 .cp_pack02 {width: 100%; background: url(../type_a/img/cont01/cont01_cp_bg02.svg) no-repeat center top / 100% auto;}
-    .cont01 .cp_pack02 .cp_tit {padding-top: 10.9rem;}
-    .cont01 .cp_pack02 .cp_img {padding-top: 6.1rem;}
-    .cont01 .cp_pack02 .cp_list {padding: 75px 0 86px;}
-    .cont01 .cp_pack03 {width: 100%; background: url(../type_a/img/cont01/cont01_cp_bg03.svg) no-repeat center top / 100% auto;}
-    .cont01 .cp_pack03 .cp_tit {padding-top: 75px;}
-    .cont01 .cp_pack03 .cp_img {padding-top: 61px;}
-    .cont01 .cp_pack03 .cpSwiper {padding-top: 75px;}
-    .cont01 .cp_pack03 .cp_list {padding: 82.5px 0 96px;}
-
-    /* cont02 */
-    .cont02 {position: relative;}
-    .cont02 .bg_img_wrap {padding-top: 108px;}
-    .cont02 .tit_area {position: absolute; top: 280.5px; left: 0;}
-    .cont02 .txt_area01 {margin-top: 101px;}
-    .cont02 .swiper_wrap01 {margin-top: 610px;}
-    .cont02 .swiper_border {width: 600px; margin: 0 auto; border: 2px solid #fff; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-left-radius: 150px; border-bottom-right-radius: 150px; overflow: hidden;}
-    .cont02 .txt01 {margin-top: 31px;}
-    .cont02 .btn {margin-top: 35px;}
-    .cont02 .txt_area02 {margin-top: 135px;}
-    .cont02 .swiper_wrap02 {margin-top: 45px;}
-    .cont02 .txt02 {margin-top: 43px;}
-    .cont02 .swiper_wrap01.badge,
-    .cont02 .swiper_wrap02.badge {position: relative;}
-    .cont02 .swiper_wrap01.badge::before {content: ""; position: absolute; display: block; top: 0; right: 73px; width: 120px; height: 120px; background: url(./img/cont02/cont02_slide01_badge.svg) no-repeat center center / 100% 100%; z-index: 100;}
-    .cont02 .swiper_wrap02.badge::before {content: ""; position: absolute; display: block; top: 0; right: 73px; width: 120px; height: 120px; background: url(./img/cont02/cont02_slide02_badge.svg) no-repeat center center / 100% 100%; z-index: 100;}
-
-    /* cont03 */
-    .cont03 {position: relative;}
-    .cont03 .bg_img_wrap {padding-top: 142px;} 
-    .cont03 .tit_area {position: absolute; top: 236px; left: 0;}
-    .cont03 .tab_wrap {padding: 70px 171px 50px; margin-top: 410px;}
-    .cont03 .tab_wrap > .tab_inn {position: relative; display: flex; align-items: center; justify-content: space-between; border: 1.5px solid #fff; border-radius: 50px;}
-    .cont03 .tab_wrap > .tab_inn::before {content: ""; position: absolute; top: 0; left: 50%; width: 50%; height: 100%; border-radius: 50px; background-color: #fff; transition: all .4s ease-in;}
-    .cont03 .tab_wrap > .tab_inn.active::before {left: 0;}
-    .cont03 .tab_wrap > .tab_inn > li {position: relative; padding: 24px 36.5px;}
-    .cont03 .tab_wrap > .tab_inn > li a {display: block; font-size: 28px; color: #fff; font-weight: 900;}
-    .cont03 .tab_wrap > .tab_inn > li:nth-child(2) a {color: #000;}
-    .cont03 .tab_wrap > .tab_inn.active > li:nth-child(1) a {color: #000;}
-    .cont03 .tab_wrap > .tab_inn.active > li:nth-child(2) a {color: #fff;}
-    .cont03 .tab_cont .tab_img.badge,
-    .cont03 .tab_cont .tab_img.badge {position: relative;}
-    .cont03 .tab_cont .tab_img.badge::before {content: ""; position: absolute; display: block; top: 0; right: 73px; width: 120px; height: 120px; background: url(./img/cont03/cont03_badge.svg) no-repeat center center / 100% 100%; z-index: 100;}
-    .cont03  #tab02 {display: none;}
-    .cont03 .tab_tit {margin-top: 46px;}
-    .cont03 .btn {margin-top: 46px;}
-
-    @keyframes test01 {
-        0% {
-            left: 0;
-        }
-        100% {
-            left: 100%;
-        }
-    }
-
-    @keyframes test02 {
-        0% {
-            left: 100%;
-        }
-        100% {
-            left: 0;
-        }
-    }
-
-    /* cont04 */
-    .cont04 {position: relative;}
-    .cont04 .bg_img_wrap {padding-top: 149px;} 
-    .cont04 .fck_img_01 {position: absolute; top: 492px; left: 0; z-index: 1;}
-    .cont04 .fck_img_02 {position: absolute; top: 295px; left: 108px;}
-    .cont04 .fck_img_03 {position: absolute; top: 194px; right: 55px;} 
-    .cont04 .fck_img_04 {position: absolute; top: 390px; right: 25px;}
-    .cont04 .bg_img_01 {position: absolute; top: 149px; left: 30px;}
-    .cont04 .bg_img_02 {position: absolute; bottom: 149px; right: 30px;}
-    .cont04 .tit_area {position: absolute; top: 313px; left: 0;}
-    .cont04 .img_list_wrap {padding-top: 804px;}
-    .cont04 .img_list_wrap .img_list {padding-top: 30px;}
-    .cont04 .btn {padding-top: 62.5px;} 
-
-    /* cont05 */
-    .cont05 {position: relative;}
-    .cont05 .bg_img_wrap {padding-top: 149px;} 
-    .cont05 .money_img_01 {position: absolute; top: 145px; left: 220px; width: 69px; height: 69px;}
-    .cont05 .money_img_01 img {width: 69px; height: 69px;}
-    .cont05 .money_img_02 {position: absolute; top: 300px; left: 141px;}
-    .cont05 .money_img_02 img {width: 75.5px; height: 75.5px;}
-    .cont05 .money_img_03 {position: absolute; top: 297px; right: 126px;} 
-    .cont05 .money_img_03 img {width: 87px; height: 87px;}
-    .cont05 .bg_img {position: absolute; top: 128px; left: 0;}
-    .cont05 .tit_area {position: absolute; top: 284px; left: 0;}
-    .cont05 .card_list {padding-top: 500px;}
-    .cont05 .btn {padding-top: 30px;}
-
-    /* cont06 */
-    .cont06 {position: relative;}
-    .cont06 .bg_img_wrap {padding-top: 135px;} 
-    .cont06 .bal_img_01 {position: absolute; top: 285px; left: 112px;}
-    .cont06 .bal_img_02 {position: absolute; top: 165px; right: 120px;}
-    .cont06 .bg_img_01 {position: absolute; top: 0; left: 0;}
-    .cont06 .tit_area {position: absolute; top: 220px; left: 0;}
-    .cont06 .swiper.evSwiper {padding-top: 410px;}
-
-    /* cont07 */
-    .cont07 {position: relative;}
-    .cont07 .bg_img_wrap {padding-top: 150px;} 
-    .cont07 .bg_img {position: absolute; top: 150px; left: 123px;}
-    .cont07 .tit_area {position: absolute; top: 270px; left: 0;}
-    .cont07 .tab_wrap {padding: 852px 0 40px;}
-    .cont07 .tab_cont {}
-    .cont07 .btn {padding: 40px 0 115px;}
-
-    /* footer */
-    .footer {position: relative;}
-    .footer .footer_bg {position: relative;}
-    .footer .fck_img_01 {position: absolute; top: 11.7rem; left: 8.8rem;}
-    .footer .fck_img_02 {position: absolute; top: 5.1rem; left: 23.3rem;}
-    .footer .fck_img_03 {position: absolute; top: 5.6rem; right: 10.4rem;} 
-    .footer .fck_img_04 {position: absolute; top: 21.4rem; right: 7.3rem;}
-    .footer .txt {position: absolute; top: 26.8rem; left: 21.3rem;}
-    .footer .man {position: absolute; bottom: 17.2rem; left: 7.7rem;}
-    .footer .box {position: absolute; bottom: 17.5rem; left: 24.8rem;}
-    .footer .woman {position: absolute; bottom: 16.5rem; right: 1.8rem;}
-
-</style>
-
 <body>
      <div class="wrap">
+
+        <!-- <div class="splash">
+            <img src="./img/main/splash.png" alt="splash"></img>
+        </div> -->
+
         <!-- container -->
         <div class="container">
             <!-- main -->
@@ -251,9 +43,6 @@
                         <div class="main_tit">
                             <img src="./img/main/main_tit.svg" alt="">
                         </div>
-                        <!-- <div class="main_ico">
-                            <img src="./img/main/main_ico.svg" alt="">
-                        </div> -->
                         <div class="sub_tit">
                             <img src="./img/main/main_sub_tit.svg" alt="">
                         </div>
@@ -278,15 +67,17 @@
 
             <!-- nav -->
             <nav class="nav_wrap">
-                <ul class="nav flex">
-                    <li><a href="#nav01">7종<br>쿠폰팩</a></li> 
-                    <li><a href="#nav02">구매<br>혜택</a></li>
-                    <li><a href="#nav03">한정<br>사은품</a></li>
-                    <li><a href="#nav04">아세페<br>알리기</a></li>
-                    <li><a href="#nav05">결제<br>혜택</a></li>
-                    <li><a href="#nav06">아세페<br>이벤트</a></li>
-                    <li><a href="#nav07">LIVE<br>방송</a></li> 
-                </ul>
+                <div class="nav_inn navSwiper">
+                    <ul class="nav swiper-wrapper flex">
+                        <li class="swiper-slide active"><a href="#nav01">7종<br>쿠폰팩</a></li> 
+                        <li class="swiper-slide"><a href="#nav02">구매<br>혜택</a></li>
+                        <li class="swiper-slide"><a href="#nav03">한정<br>사은품</a></li>
+                        <li class="swiper-slide"><a href="#nav04">아세페<br>알리기</a></li>
+                        <li class="swiper-slide"><a href="#nav05">결제<br>혜택</a></li>
+                        <li class="swiper-slide"><a href="#nav06">아세페<br>이벤트</a></li>
+                        <li class="swiper-slide"><a href="#nav07">LIVE<br>방송</a></li> 
+                    </ul>
+                </div>
             </nav>
             <!-- // nav -->
 
@@ -311,7 +102,7 @@
                         </div>
                     </div>
                     <div class="cp_pack01">
-                        <div class="cp_tit">
+                        <div class="cp_tit"> 
                             <img src="./img/cont01/cont01_tit01.svg" alt="">
                         </div>
                         <div class="cp_img">
@@ -420,6 +211,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                     <div class="txt01">
@@ -462,6 +254,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </div>
                     <div class="txt02">
@@ -664,9 +457,9 @@
                         </div>
                     </div>
                     <div class="tab_wrap">
-                        <ul class="tab_inn">
-                            <li><a href="#tab03">2만원 이상</a></li>
-                            <li><a href="#tab04">4만원 이상</a></li>
+                        <ul class="tab_inn flex">
+                            <li><a href="#tab03">이번 주</a></li>
+                            <li><a href="#tab04">다음 주</a></li>
                         </ul>
                      </div>
                      <div class="tab_cont flex">
@@ -677,7 +470,7 @@
                         </div>
                         <div id="tab04">
                             <div class="tab_img">
-                                <img src="./img/cont07/cont07_img02.svg" alt="">
+                                <img src="./img/cont07/cont07_img02.svg" alt=""> 
                              </div>
                         </div>
                      </div>
@@ -728,9 +521,23 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    // nav
-    const $tabMenu = $('.cont03 .tab_wrap > .tab_inn');
 
+    // nav
+    $(function () {
+        $(".tab_cont > div").hide();
+        $(".tab_inn a")
+            .click(function () {
+                $(".tab_cont > div").hide().filter(this.hash).fadeIn();
+                $(".tab_inn a").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            })
+            .filter(":eq(0)")
+            .click();
+    });
+
+    // cont03 nav
+    const $tabMenu01 = $('.cont03 .tab_wrap > .tab_inn');
     $(function(){
         $('.tab_inn a').click(function () {
             if ($tabMenu.hasClass('active')) {
@@ -748,10 +555,49 @@
         })
     });
 
-    // swiper
-    var swiper = new Swiper(".cpSwiper", {
+    // cont07 nav
+    const $tabMenu02 = $('.cont07 .tab_wrap > .tab_inn');
+    $(function(){
+        $('.tab_inn a').click(function () {
+            if ($tabMenu.hasClass('active')) {
+                $tabMenu.removeClass('active');
+                $('#tab04').show();
+                $('#tab03').hide();
+            } else {
+                $tabMenu.addClass('active');
+                $('#tab04').hide();
+                $('#tab03').show();
+            }
+            // $('.tab_inn a').removeClass('active');
+            // $(this).addClass('active');
+            return false;
+        })
+    });
+
+    // cpSwiper
+    var swiper = new Swiper(".cpSwiper", {      
+        autoplay: {
+            delay: 0,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+            },
         slidesPerView : 3,
+        speed: 3000,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loopedSlides: 3, 
+        observer: true, observeParents: true,
+    });
+
+    // swiper
+    var swiper = new Swiper(".bfSwiper", {
+        slidesPerView : 1,
         spaceBetween: 10,
+        pagination : { 
+            el : '.swiper-pagination',
+            clickable : true
+        },
     });
 </script>
 </html>
