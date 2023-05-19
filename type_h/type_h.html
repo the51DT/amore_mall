@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./css/type_h.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>type_h</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body{
+            max-width: 750px;
+            margin: 0 auto;
+            height: 100%;
+            overflow: hidden;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            background: #F5F0E2;
+        }
+        .flex{
+            display: flex;
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="splash">
+        <img src="./img/splash.png">
+    </div>
+    <div class="wrap">
+        <section class="flex main">
+            <div class="con">
+                <img class="title" src="./img/main_title.svg">
+            </div>
+            <img class="aside" src="./img/main_aside.svg">
+        </section>
+    
+        <main>
+            <aside class="menu">
+                <div class="flex">
+                    <ul class="flex">
+                        <li><a href="#con1"><img src="./img/menu_1_on.svg"></a></li>
+                        <li><a href="#con2"><img src="./img/menu_2_off.svg"></a></li>
+                        <li><a href="#con3"><img src="./img/menu_3_off.svg"></a></li>
+                        <li><a href="#con4"><img src="./img/menu_4_off.svg"></a></li>
+                        <li><a href="#con5"><img src="./img/menu_5_off.svg"></a></li>
+                        <li><a href="#con6"><img src="./img/menu_6_off.svg"></a></li>
+                        <li><a href="#con7"><img src="./img/menu_7_off.svg"></a></li>
+                    </ul>
+                </div>
+                <div class="toggle"></div>
+            </aside>
+            <section class="sec1" id="con1">
+                <div class="con">
+                    <img class="num" src="./img/sec1_num.svg">
+                    <img class="title" src="./img/sec1_title.svg">
+                    <img class="con1" src="./img/sec1_con_1.svg">
+                    <img class="con2" src="./img/sec1_con_2.svg">
+                    <div class="line"></div>
+                    <img class="slide_title" src="./img/sec1_slide_title.svg">
+                        <div class="swiper_coupon">
+                            <div class="swiper-container coupon">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_1.svg"></div>
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_2.svg"></div>
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_3.svg"></div>
+                                    <div class="swiper-slide"><img src="./img/sec1_slide_4.svg"></div>
+                                </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <img class="aside" src="./img/sec1_aside.svg">
+                </div>
+            </section>
+
+            <section class="sec2" id="con2">
+                <div class="con">
+                    <img class="num" src="./img/sec2_num.svg">
+                    <img class="title" src="./img/sec2_title.svg">
+                    <img class="text1" src="./img/sec2_text_1.svg">
+                    <div class="con1"></div>
+                    <img class="text2" src="./img/sec2_text_2.svg">
+                    <div class="con2"></div>
+                    <img class="aside" src="./img/sec2_aside.svg">
+                </div>
+            </section>
+    
+            <section class="sec3" id="con3">
+                <div class="con">
+                    <img class="num" src="./img/sec3_num.svg">
+                    <img class="title" src="./img/sec3_title_1.svg">
+                    <div class="flex">
+                        <img class="btn1" src="./img/sec3_btn_1_on.svg">
+                        <img class="btn2" src="./img/sec3_btn_2_off.svg">
+                    </div>
+                    <img class="text" src="./img/sec3_text_1.svg">
+                    <img class="btn" src="./img/sec3_btn.svg">
+                    <img class="aside" src="./img/sec3_aside.svg">
+                </div>
+            </section>
+    
+            <section class="sec4" id="con4">
+                <div class="con">
+                    <img class="num" src="./img/sec4_num.svg">
+                    <img class="title" src="./img/sec4_title.svg">
+                    <img class="con1" src="./img/sec4_con.svg">
+                    <img class="btn" src="./img/sec4_btn.svg">
+                    <img class="aside" src="./img/sec4_aside.svg">
+                </div>
+            </section>
+    
+            <section class="sec5" id="con5">
+                <div class="con">
+                    <img class="num" src="./img/sec5_num.svg">
+                    <img class="title" src="./img/sec5_title.svg">
+                    <img class="con1" src="./img/sec5_con.svg">
+                    <img class="btn" src="./img/sec5_btn.svg">
+                    <img class="aside" src="./img/sec5_aside.svg">
+                </div>
+            </section>
+    
+            <section class="sec6" id="con6">
+                <div class="con">
+                    <img class="num" src="./img/sec6_num.svg">
+                    <img class="title" src="./img/sec6_title.svg">
+                    <div class="swiper-container live">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/sec6_con1.png"></div>
+                            <div class="swiper-slide"><img src="./img/sec6_con2.png"></div>
+                            <div class="swiper-slide"><img src="./img/sec6_con3.png"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <img class="btn" src="./img/sec6_btn.svg">
+                    <img class="aside" src="./img/sec6_aside.svg">
+                </div>
+            </section>
+    
+            <section class="sec7" id="con7">
+                <div class="con">
+                    <img class="num" src="./img/sec7_num.svg">
+                    <img class="title" src="./img/sec7_title.svg">
+                    <img class="aside" src="./img/sec7_aside.svg">
+                </div>
+                <div class="swiper-container sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/sec7_con1.png"></div>
+                        <div class="swiper-slide"><img src="./img/sec7_con2.png"></div>
+                        <div class="swiper-slide"><img src="./img/sec7_con3.png"></div>
+                    </div>
+                </div>
+            </section>
+    
+            <footer class="flex">
+                <img src="./img/footer.svg">
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            setTimeout(() => {
+                $('.splash').css('opacity', '0')
+            }, 3000);
+            setTimeout(() => {
+                $('body').css({'overflow': 'initial'})
+                $('.splash').css('display', 'none')
+            }, 3500);
+
+            var siwper1 = new Swiper('.coupon', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 4000,
+                },
+            })
+
+            var siwper2 = new Swiper('.live', {
+                slidesPerView: 1,
+                spaceBetween: 2,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 4000,
+                },
+            })
+            var siwper3 = new Swiper('.sale', {
+                slidesPerView: 1.6,
+                spaceBetween: 40,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 4000,
+                },
+            })
+
+            $('.menu').click(function(){
+                $(this).toggleClass('active')
+            })
+
+            $('.sec3 .btn1').click(function(){
+                $(this).attr('src', './img/sec3_btn_1_on.svg')
+                $('.sec3 .btn2').attr('src', './img/sec3_btn_2_off.svg')
+                $('.sec3').css('backgroundImage', 'url(./img/sec3_back_1.png)')
+                $('.sec3 .title').attr('src', './img/sec3_title_1.svg')
+                $('.sec3 .text').attr('src', './img/sec3_text_1.svg')
+                $('.sec3 .btn').css('margin-top', `clamp(1px, calc(100vw * 543 / 750), 543px)`)
+            })
+            $('.sec3 .btn2').click(function(){
+                $('.sec3 .btn1').attr('src', './img/sec3_btn_1_off.svg')
+                $(this).attr('src', './img/sec3_btn_2_on.svg')
+                $('.sec3').css('backgroundImage', 'url(./img/sec3_back_2.png)')
+                $('.sec3 .title').attr('src', './img/sec3_title_2.svg')
+                $('.sec3 .text').attr('src', './img/sec3_text_2.svg')
+                $('.sec3 .btn').css('margin-top', `clamp(1px, calc(100vw * 593 / 750), 593px)`)
+            })
+
+            
+            $('.menu ul li a').eq(0).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${1}_on.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(1).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${2}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(2).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${3}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(3).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${4}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(4).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${5}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(5).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${6}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(6).attr('src', `./img/menu_${7}_off.svg`)
+            })
+            $('.menu ul li a').eq(6).click(function(){
+                $(this).children('img').attr('src', `./img/menu_${7}_on.svg`)
+                $(`.menu ul li a img`).eq(0).attr('src', `./img/menu_${1}_off.svg`)
+                $(`.menu ul li a img`).eq(1).attr('src', `./img/menu_${2}_off.svg`)
+                $(`.menu ul li a img`).eq(2).attr('src', `./img/menu_${3}_off.svg`)
+                $(`.menu ul li a img`).eq(3).attr('src', `./img/menu_${4}_off.svg`)
+                $(`.menu ul li a img`).eq(4).attr('src', `./img/menu_${5}_off.svg`)
+                $(`.menu ul li a img`).eq(5).attr('src', `./img/menu_${6}_off.svg`)
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="455" height="497.209" viewBox="0 0 455 497.209">
   <defs>
-    <filter id="패스_2524" x="165.98" y="313.557" width="224.819" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2524" x="165.98" y="313.557" width="224.82" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2523" x="165.98" y="123.861" width="216.989" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2523" x="165.98" y="123.861" width="216.99" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2519" x="268.36" y="219.709" width="115.109" height="120.06" filterUnits="userSpaceOnUse">
+    <filter id="패스_2519" x="268.36" y="219.709" width="115.11" height="120.06" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-3"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-3"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2524-2" x="165.98" y="313.557" width="224.819" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2524-2" x="165.98" y="313.557" width="224.82" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-4"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-4"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2523-2" x="165.98" y="123.861" width="216.989" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2523-2" x="165.98" y="123.861" width="216.99" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-5"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-5"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2519-2" x="268.36" y="219.709" width="115.109" height="120.06" filterUnits="userSpaceOnUse">
+    <filter id="패스_2519-2" x="268.36" y="219.709" width="115.11" height="120.06" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-6"/>
       <feFlood flood-color="#4d95ff"/>
@@ -105,7 +105,7 @@
       <feComposite operator="in" in2="blur-15"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="아">
+    <filter id="패스_2537">
       <feOffset dx="1" dy="2" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="1.5" result="blur-16"/>
       <feFlood flood-opacity="0" result="color"/>
@@ -113,7 +113,7 @@
       <feComposite operator="in" in="color"/>
       <feComposite operator="in" in2="SourceGraphic"/>
     </filter>
-    <filter id="세">
+    <filter id="패스_2536">
       <feOffset dx="1" dy="2" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="1.5" result="blur-17"/>
       <feFlood flood-opacity="0" result="color-2"/>
@@ -121,7 +121,7 @@
       <feComposite operator="in" in="color-2"/>
       <feComposite operator="in" in2="SourceGraphic"/>
     </filter>
-    <filter id="페">
+    <filter id="패스_2535">
       <feOffset dx="1" dy="2" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="1.5" result="blur-18"/>
       <feFlood flood-opacity="0" result="color-3"/>
@@ -157,42 +157,42 @@
       <feComposite operator="in" in2="blur-22"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2524-3" x="165.98" y="313.557" width="224.819" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2524-3" x="165.98" y="313.557" width="224.82" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-23"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-23"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2523-3" x="165.98" y="123.861" width="216.989" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2523-3" x="165.98" y="123.861" width="216.99" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-24"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-24"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2519-3" x="268.36" y="219.709" width="115.109" height="120.06" filterUnits="userSpaceOnUse">
+    <filter id="패스_2519-3" x="268.36" y="219.709" width="115.11" height="120.06" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-25"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-25"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2524-4" x="165.98" y="313.557" width="224.819" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2524-4" x="165.98" y="313.557" width="224.82" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-26"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-26"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2523-4" x="165.98" y="123.861" width="216.989" height="121.86" filterUnits="userSpaceOnUse">
+    <filter id="패스_2523-4" x="165.98" y="123.861" width="216.99" height="121.86" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-27"/>
       <feFlood flood-color="#4d95ff"/>
       <feComposite operator="in" in2="blur-27"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="패스_2519-4" x="268.36" y="219.709" width="115.109" height="120.06" filterUnits="userSpaceOnUse">
+    <filter id="패스_2519-4" x="268.36" y="219.709" width="115.11" height="120.06" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="7.5" result="blur-28"/>
       <feFlood flood-color="#4d95ff"/>
@@ -291,21 +291,21 @@
           </g>
           <g id="그룹_886" data-name="그룹 886">
             <g data-type="innerShadowGroup">
-              <text id="아-2" data-name="아" transform="translate(275 320)" fill="#31fa2b" font-size="90" font-family="MalgunGothic, Malgun Gothic"><tspan x="-45" y="0">아</tspan></text>
-              <g transform="matrix(1, 0, 0, 1, 147.5, 106)" filter="url(#아)">
-                <text id="아-3" data-name="아" transform="translate(127.5 214)" fill="#fff" font-size="90" font-family="MalgunGothic, Malgun Gothic"><tspan x="-45" y="0">아</tspan></text>
+              <path id="패스_2537-2" data-name="패스 2537" d="M42.03-36.36H31.23V-67.5H22.32V9.36h8.91V-27.81h10.8ZM-12.96-65.7c-13.5,0-22.95,11.34-22.95,35.73S-26.46,5.76-12.96,5.76C.45,5.76,9.9-5.58,9.9-29.97S.45-65.7-12.96-65.7Zm0,63.27C-20.97-2.43-27-10.44-27-29.97c0-19.44,6.03-27.54,14.04-27.54,7.92,0,13.95,8.1,13.95,27.54C.99-10.44-5.04-2.43-12.96-2.43Z" transform="translate(275 320)" fill="#31fa2b"/>
+              <g transform="matrix(1, 0, 0, 1, 147.5, 106)" filter="url(#패스_2537)">
+                <path id="패스_2537-3" data-name="패스 2537" d="M42.03-36.36H31.23V-67.5H22.32V9.36h8.91V-27.81h10.8ZM-12.96-65.7c-13.5,0-22.95,11.34-22.95,35.73S-26.46,5.76-12.96,5.76C.45,5.76,9.9-5.58,9.9-29.97S.45-65.7-12.96-65.7Zm0,63.27C-20.97-2.43-27-10.44-27-29.97c0-19.44,6.03-27.54,14.04-27.54,7.92,0,13.95,8.1,13.95,27.54C.99-10.44-5.04-2.43-12.96-2.43Z" transform="translate(127.5 214)" fill="#fff"/>
               </g>
             </g>
             <g data-type="innerShadowGroup">
-              <text id="세-2" data-name="세" transform="translate(275 415)" fill="#31fa2b" font-size="90" font-family="MalgunGothic, Malgun Gothic"><tspan x="-45" y="0">세</tspan></text>
-              <g transform="matrix(1, 0, 0, 1, 147.5, 106)" filter="url(#세)">
-                <text id="세-3" data-name="세" transform="translate(127.5 309)" fill="#fff" font-size="90" font-family="MalgunGothic, Malgun Gothic"><tspan x="-45" y="0">세</tspan></text>
+              <path id="패스_2536-2" data-name="패스 2536" d="M27.09-67.5V9.36h8.46V-67.5ZM7.74-41.22H-4.41v8.46H7.74V8.01H16.2V-67.05H7.74ZM-12.78-65.25l-8.55-.36c-.09,34.29-4.23,57.42-16.38,61.38v9C-27.45,2.61-20.7-6.03-16.83-21.42l13.5,25.2L4.14-.18-14.49-34.02A260.652,260.652,0,0,0-12.78-65.25Z" transform="translate(275 415)" fill="#31fa2b"/>
+              <g transform="matrix(1, 0, 0, 1, 147.5, 106)" filter="url(#패스_2536)">
+                <path id="패스_2536-3" data-name="패스 2536" d="M27.09-67.5V9.36h8.46V-67.5ZM7.74-41.22H-4.41v8.46H7.74V8.01H16.2V-67.05H7.74ZM-12.78-65.25l-8.55-.36c-.09,34.29-4.23,57.42-16.38,61.38v9C-27.45,2.61-20.7-6.03-16.83-21.42l13.5,25.2L4.14-.18-14.49-34.02A260.652,260.652,0,0,0-12.78-65.25Z" transform="translate(127.5 309)" fill="#fff"/>
               </g>
             </g>
             <g data-type="innerShadowGroup">
-              <text id="페-2" data-name="페" transform="translate(274.5 510)" fill="#31fa2b" font-size="90" font-family="MalgunGothic, Malgun Gothic"><tspan x="-45" y="0">페</tspan></text>
-              <g transform="matrix(1, 0, 0, 1, 147.5, 106)" filter="url(#페)">
-                <text id="페-3" data-name="페" transform="translate(127 404)" fill="#fff" font-size="90" font-family="MalgunGothic, Malgun Gothic"><tspan x="-45" y="0">페</tspan></text>
+              <path id="패스_2535-2" data-name="패스 2535" d="M27.36-67.5V9.36h8.19V-67.5ZM9.81-36.27H.54v8.37H9.81V8.01H18V-67.05H9.81ZM-5.31-56.79H1.26v-7.92H-38.25v7.92h6.3V-3.15h-6.84V4.77h18.45C-9.63,4.77-.72,3.6,4.23,1.17V-6.84A34.062,34.062,0,0,1-5.31-4.05ZM-23.94-3.15V-56.79h10.62V-3.33c-2.07.18-4.32.18-6.75.18Z" transform="translate(274.5 510)" fill="#31fa2b"/>
+              <g transform="matrix(1, 0, 0, 1, 147.5, 106)" filter="url(#패스_2535)">
+                <path id="패스_2535-3" data-name="패스 2535" d="M27.36-67.5V9.36h8.19V-67.5ZM9.81-36.27H.54v8.37H9.81V8.01H18V-67.05H9.81ZM-5.31-56.79H1.26v-7.92H-38.25v7.92h6.3V-3.15h-6.84V4.77h18.45C-9.63,4.77-.72,3.6,4.23,1.17V-6.84A34.062,34.062,0,0,1-5.31-4.05ZM-23.94-3.15V-56.79h10.62V-3.33c-2.07.18-4.32.18-6.75.18Z" transform="translate(127 404)" fill="#fff"/>
               </g>
             </g>
           </g>
