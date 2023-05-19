@@ -187,7 +187,7 @@
                             <img src="./img/cont02/cont02_ribbon.svg" alt="">
                         </div>
                         <div class="swiper_border">
-                            <div class="swiper bfSwiper">
+                            <div class="swiper bfSwiper01">
                                 <ul class="swiper-wrapper flex">
                                     <li class="swiper-slide">
                                         <div class="bf_img">
@@ -211,7 +211,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination swiper-pagination01"></div>
                         </div>
                     </div>
                     <div class="txt01">
@@ -230,7 +230,7 @@
                             <img src="./img/cont02/cont02_ribbon.svg" alt="">
                         </div>
                         <div class="swiper_border">
-                            <div class="swiper bfSwiper">
+                            <div class="swiper bfSwiper02">
                                 <ul class="swiper-wrapper flex">
                                     <li class="swiper-slide">
                                         <div class="bf_img">
@@ -254,7 +254,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- <div class="swiper-pagination"></div> -->
+                            <div class="swiper-pagination swiper-pagination02"></div>
                         </div>
                     </div>
                     <div class="txt02">
@@ -590,12 +590,21 @@
         observer: true, observeParents: true,
     });
 
-    // swiper
-    var swiper = new Swiper(".bfSwiper", {
+    // bfswiper
+    var swiper = new Swiper(".bfSwiper01", {
         slidesPerView : 1,
         spaceBetween: 10,
         pagination : { 
-            el : '.swiper-pagination',
+            el : '.swiper-pagination01',
+            clickable : true
+        },
+    });
+
+    var swiper = new Swiper(".bfSwiper02", {
+        slidesPerView : 1,
+        spaceBetween: 10,
+        pagination : { 
+            el : '.swiper-pagination02',
             clickable : true
         },
     });
