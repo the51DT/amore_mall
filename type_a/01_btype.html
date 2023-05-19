@@ -521,6 +521,24 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    //anim
+    function checkVisible( element, check = 'visible' ) {
+                const viewportHeight = $(window).height(); // Viewport Height
+                const scrolltop = $(window).scrollTop(); // Scroll Top
+                const y = $(element).offset().top;
+                const elementHeight = $(element).height();   
+
+                if (check == "visible") 
+                    return ((y < (viewportHeight + scrolltop -400)) && (y > (scrolltop - elementHeight)));
+            }
+
+            const func = function () {
+                if (checkVisible('') ) {
+                }
+            }
+
+            window.addEventListener('scroll', func);
+
 
     // nav
     $(function () {
