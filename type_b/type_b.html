@@ -7,7 +7,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
         />
-        <title>Type B</title>
+        <title>Type A</title>
         <link rel="stylesheet" href="../asseets/css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
@@ -21,6 +21,9 @@
     </head>
     <body>
         <div class="wrap">
+            <div class="splash">
+                <img src="./img/content/splash.png" alt="" />
+            </div>
             <!-- container -->
             <div class="container">
                 <section>
@@ -149,27 +152,27 @@
                                 </div>
                                 <div class="cont01_cp" data-aos="fade-up">
                                     <ul>
-                                        <li class="badge" data-aos="fade-down">
+                                        <li class="badge" data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_01.svg"
+                                                src="./img/content/cont01_cp_01.png"
                                                 alt=""
                                             />
                                         </li>
-                                        <li data-aos="fade-down">
+                                        <li data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_02.svg"
+                                                src="./img/content/cont01_cp_02.png"
                                                 alt=""
                                             />
                                         </li>
-                                        <li data-aos="fade-down">
+                                        <li data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_03.svg"
+                                                src="./img/content/cont01_cp_03.png"
                                                 alt=""
                                             />
                                         </li>
-                                        <li data-aos="fade-down">
+                                        <li data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_04.svg"
+                                                src="./img/content/cont01_cp_04.png"
                                                 alt=""
                                             />
                                         </li>
@@ -263,6 +266,44 @@
                                     src="./img/content/cont02_img_02.png"
                                     alt=""
                                 />
+                                <div class="cont02_swiper_container">
+                                    <div class="cont02_swiper">
+                                        <div class="swiper eventSwiper2">
+                                            <ul class="swiper-wrapper flex">
+                                                <li
+                                                    class="swiper-slide"
+                                                    class="badge"
+                                                >
+                                                    <img
+                                                        src="./img/content/cont02_2_swiper1.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <img
+                                                        src="./img/content/cont02_2_swiper2.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <img
+                                                        src="./img/content/cont02_2_swiper3.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <img
+                                                        src="./img/content/cont02_2_swiper4.png"
+                                                        alt=""
+                                                    />
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="swiper-pagination"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -301,7 +342,7 @@
                                     </div>
                                 </div>
                                 <div id="tab02">
-                                    <div class="cont03_img">
+                                    <div class="cont03_img badge">
                                         <img
                                             src="./img/content/cont03_img2.png"
                                             alt=""
@@ -447,7 +488,7 @@
                                     >
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab01"
+                                            data-tab="weekTab01"
                                         >
                                             <div class="week_box">
                                                 <p class="week">MON</p>
@@ -456,7 +497,7 @@
                                         </li>
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab02"
+                                            data-tab="weekTab02"
                                         >
                                             <div class="week_box">
                                                 <p class="week">TUE</p>
@@ -465,7 +506,7 @@
                                         </li>
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab03"
+                                            data-tab="weekTab03"
                                         >
                                             <div class="week_box">
                                                 <p class="week">WED</p>
@@ -474,7 +515,7 @@
                                         </li>
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab04"
+                                            data-tab="weekTab04"
                                         >
                                             <div class="week_box">
                                                 <p class="week">THU</p>
@@ -483,7 +524,7 @@
                                         </li>
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab05"
+                                            data-tab="weekTab05"
                                         >
                                             <div class="week_box">
                                                 <p class="week">FRI</p>
@@ -492,7 +533,7 @@
                                         </li>
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab06"
+                                            data-tab="weekTab06"
                                         >
                                             <div class="week_box">
                                                 <p class="week">SAT</p>
@@ -501,7 +542,7 @@
                                         </li>
                                         <li
                                             class="swiper-slide"
-                                            href="#weekTab07"
+                                            data-tab="weekTab07"
                                         >
                                             <div class="week_box">
                                                 <p class="week">SUN</p>
@@ -589,6 +630,41 @@
                 .click();
         });
 
+        const tabFn = () => {
+            const tabLi = document.querySelectorAll(".cont07_tab li");
+            const tabContent = document.querySelectorAll(
+                ".cont07 .tab_content div"
+            );
+            tabLi.forEach((el) => {
+                el.addEventListener("click", () => {
+                    const targetHash = el.getAttribute("data-tab");
+                    console.log(targetHash);
+                    for (let i = 0; i < tabContent.length; i++) {
+                        tabContent[i].classList.remove("active");
+                        if (tabContent[i].getAttribute("id") === targetHash) {
+                            tabContent[i].classList.add("active");
+                        }
+                    }
+                });
+            });
+        };
+        tabFn();
+
+        setTimeout(() => {
+            const splash = document.querySelector(".splash");
+            splash.style.opacity = "0";
+        }, 5000);
+        setTimeout(() => {
+            const container = document.querySelector(".container");
+            const body = document.querySelector("body");
+            const splash = document.querySelector(".splash");
+            container.style.opacity = "1";
+            body.style.backgroundColor = "transparent";
+            body.style.overflowY = "initial";
+            body.style.overflowX = "hidden";
+            splash.style.display = "none";
+        }, 5500);
+
         const navFunction = () => {
             const navLi = document.querySelectorAll(".nav li");
             navLi.forEach((el) => {
@@ -612,10 +688,19 @@
             autoplay: true,
         });
 
-        var swiper = new Swiper(".calSwiper", {
+        var swiper = new Swiper(".eventSwiper2", {
             slidesPerView: 1,
             spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: true,
+        });
 
+        var swiper = new Swiper(".calSwiper", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            loop: false,
             on: {
                 slideChange: function () {
                     $(".week_box").removeClass("active");
