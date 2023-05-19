@@ -7,7 +7,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
         />
-        <title>Type G</title>
+        <title>MATCHING | B TYPE</title>
         <link rel="stylesheet" href="../asseets/css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link
@@ -502,18 +502,20 @@
         navFunction()
 
         setTimeout(() => {
-            const splash= document.querySelector('.splash');
-            splash.style.opacity = '0';
-        }, 5000);
+            const splash = document.querySelector(".splash");
+            const body = document.querySelector("body");
+            body.style.backgroundColor = "transparent";
+            splash.style.opacity = "0";
+        }, 1000);
         setTimeout(() => {
-            const container = document.querySelector('.container');
-            const body = document.querySelector('body');
-            const splash= document.querySelector('.splash');
-            container.style.opacity = '1';
-            body.style.overflow = 'initial'
-            body.style.backgroundColor = 'transparent'
-            splash.style.display = 'none';
-        }, 5500);
+            const container = document.querySelector(".container");
+            const body = document.querySelector("body");
+            const splash = document.querySelector(".splash");
+            container.style.opacity = "1";
+            body.style.overflowY = "initial";
+            body.style.overflowX = "hidden";
+            splash.style.display = "none";
+        }, 1100);
 
         // swiper
         var swiper = new Swiper(".tabSwiper", {
