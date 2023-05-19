@@ -139,7 +139,7 @@ img {width: 100%;}
 .cont02 .fck_img_01 img {max-width: 656px; width: calc(100vw * 656 / 750);}
 .cont02 .light_img {animation: flicker_tit-effect 1.2s linear alternate;}
 .cont02 .tit_area {position: absolute; top: 6.5%; left: 0;}
-.cont02 .txt_area01 {margin-top: calc(100vw * 101 / 750);}
+.cont02 .txt_area01 {margin-top: calc(100vw * 101 / 750); animation: flicker-effect 0.5s}
 .cont02 .txt_area01 img {max-width: 411px; width: calc(100vw * 411 / 750);}
 .cont02 .ribbon img {max-width: 200px; width: calc(100vw * 200 / 750);} 
 .cont02 .swiper_wrap01 {margin-top: calc(100vw * 610 / 750);}
@@ -238,17 +238,31 @@ img {width: 100%;}
 .cont06 {position: relative;}
 .cont06 .bg_img_wrap {padding-top: calc(100vw * 135 / 750);} 
 .cont06 .light_img {animation: flicker_tit-effect 1.2s linear alternate;}
-.cont06 .bal_img_01 {position: absolute; top: 285px; left: 112px;}
-.cont06 .bal_img_02 {position: absolute; top: 165px; right: 120px;}
+.cont06 .bal_img_01 {position: absolute; top: 285px; left: 112px; animation: bal1 2s ease-in-out infinite;}
+.cont06 .bal_img_02 {position: absolute; top: 165px; right: 120px; animation: bal2 2s ease-in-out infinite;}
 .cont06 .bg_img_01 {position: absolute; top: 0; left: 0;}
 .cont06 .tit_area {position: absolute; top: 220px; left: 0;}
 .cont06 .swiper.evSwiper {padding-top: 410px;}
+
+/* @keyframes bal1 {
+    20%{rotate:-30deg;}
+    30%{ top: 15%;}
+    40%{rotate:-10deg;}
+    50%{ top: 12%;}
+    60%{rotate:-35deg;}
+    70%{ top: 15%;}
+}
+@keyframes bal2 {
+    30%{rotate:20deg; top: 8%;}
+    50%{rotate:-10deg; top: 5%;}
+    80%{rotate:25deg; top: 8%;}
+} */
 
 /* cont07 */
 .cont07 {position: relative;}
 .cont07 .bg_img_wrap {padding-top: calc(100vw * 150 / 750);} 
 .cont07 .light_img {animation: flicker_tit-effect 1.2s linear alternate;}
-.cont07 .bg_img {position: absolute; top: 150px; left: 123px;}
+.cont07 .bg_img {position: absolute; top: 150px; left: 123px; animation: heart 2s ease-in-out infinite}
 .cont07 .tit_area {position: absolute; top: 270px; left: 0;}
 .cont07 .tab_wrap {padding: 852px 175px 40px;}
 .cont07 .tab_wrap > .tab_inn {position: relative; display: flex; align-items: center; justify-content: space-around; border: 1.5px solid #fff; border-radius: 50px;}
@@ -261,17 +275,54 @@ img {width: 100%;}
 .cont07 .tab_wrap > .tab_inn.active > li:nth-child(2) a {color: #fff;}
 .cont07 .btn {padding: 40px 0 115px; max-width: 350px; width: calc(100vw * 350 / 750); margin: 0 auto;}
 
+@keyframes heart {
+    0% { transform: scale(1)}
+    20% {transform: scale(0.95)}
+    50% {transform: scale(1)}
+    80% {transform: scale(0.9)}
+    100% {transform: scale(1)}
+}
+
 /* footer */
 .footer {position: relative;}
 .footer .footer_bg {position: relative;}
-.footer .fck_img_01 {position: absolute; top: 11.7px; left: 8.8px;}
-.footer .fck_img_02 {position: absolute; top: 5.1px; left: 23.3px;}
-.footer .fck_img_03 {position: absolute; top: 5.6px; right: 10.4px;} 
-.footer .fck_img_04 {position: absolute; top: 21.4px; right: 7.3px;}
+.footer .fck_img_01 {position: absolute; top: 11.7px; left: 8.8px; animation: fck01 2s ease-in-out infinite;}
+.footer .fck_img_02 {position: absolute; top: 5.1px; left: 23.3px; animation: fck02 2s ease-in-out infinite;}
+.footer .fck_img_03 {position: absolute; top: 5.6px; right: 10.4px; animation: fck03 2s ease-in-out infinite;} 
+.footer .fck_img_04 {position: absolute; top: 21.4px; right: 7.3px; animation: fck04 2s ease-in-out infinite;}
 .footer .txt {position: absolute; top: 31%; left: 50%; max-width: 324px; width: calc(100vw * 324 / 750); transform: translateX(-50%);}
-.footer .man {position: absolute; bottom: 25%; left: 10%; max-width: 153px; width: calc(100vw * 153 / 750);}
+.footer .man {position: absolute; bottom: 25%; left: 10%; max-width: 153px; width: calc(100vw * 153 / 750); animation: man 1s ease-in-out infinite;}
 .footer .box {position: absolute; bottom: 23%; left: 32%; max-width: 260px; width: calc(100vw * 260 / 750);}
-.footer .woman {position: absolute; bottom: 22%; left: 69%; max-width: 230px; width: calc(100vw * 230 / 750);}
+.footer .woman {position: absolute; bottom: 22%; left: 69%; max-width: 230px; width: calc(100vw * 230 / 750); animation: woman 1s ease-in-out infinite;}
+
+@keyframes fck01 {
+    0% { opacity: 0; transform: scale(0)}
+    60% { opacity: 1; transform: scale(1)}
+    100% { opacity: 0; transform: scale(0)}
+}
+@keyframes fck02 {
+    0% { opacity: 1; transform: scale(1)}
+    30% { opacity: 0; transform: scale(0)}
+    100% { opacity: 1; transform: scale(1)}
+}
+@keyframes fck03 {
+    0% { opacity: 0; transform: scale(0)}
+    30% { opacity: 1; transform: scale(1)}
+    100% { opacity: 0; transform: scale(0)}
+}
+@keyframes fck04 {
+    0% { opacity: 1; transform: scale(1)}
+    60% { opacity: 0; transform: scale(0)}
+    100% { opacity: 1; transform: scale(1)}
+}
+@keyframes man {
+    0% { bottom: 32%;}
+    50% { bottom: 25%;}
+    100% { bottom: 32%; }
+}
+@keyframes woman {
+    50% { bottom: 30%;}
+}
 
 @media (min-width: 750px) {
     .main .main_tit{
