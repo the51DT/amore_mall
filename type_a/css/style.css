@@ -1091,6 +1091,12 @@ img {
     border: calc(100vw * 1.5 / 750) solid #fff;
     border-radius: calc(100vw * 50 / 750);
 }
+.cont07 .tab_wrap > .tab_inn img {
+    max-width: 34px;
+    width: calc(100vw * 34 / 750);
+    margin-right: calc(100vw * 8 / 750);
+    display: none;
+}
 .cont07 .tab_wrap > .tab_inn::before {
     content: "";
     position: absolute;
@@ -1110,10 +1116,14 @@ img {
     padding: calc(100vw * 24 / 750) calc(100vw * 36.5 / 750);
 }
 .cont07 .tab_wrap > .tab_inn > li a {
-    display: block;
+    display: flex;
     font-size: calc(100vw * 28 / 750);
     color: #fff;
     font-weight: 900;
+    align-items: center;
+}
+.cont07 .tab_wrap > .tab_inn > li a.active img {
+    display: block;
 }
 .cont07 .tab_wrap > .tab_inn > li:nth-child(2) a {
     color: #000;

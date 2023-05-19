@@ -717,8 +717,12 @@
                         </div>
                         <div class="tab_wrap">
                             <ul class="tab_inn flex">
-                                <li><a href="#tab03">이번 주</a></li>
-                                <li><a href="#tab04">다음 주</a></li>
+                                <li><a href="#tab03">
+                                    <img src="./img/cont07/play-icon.png" alt="">
+                                    이번 주</a></li>
+                                <li><a href="#tab04">
+                                    <img src="./img/cont07/play-icon.png" alt="">
+                                    다음 주</a></li>
                             </ul>
                         </div>
                         <div class="tab_cont flex">
@@ -928,10 +932,12 @@
             $(".tab_inn a").click(function () {
                 if ($tabMenu02.hasClass("active")) {
                     $tabMenu02.removeClass("active");
+                    $(this).addClass("active");
                     $("#tab04").show();
                     $("#tab03").hide();
                 } else {
                     $tabMenu02.addClass("active");
+                    $(this).addClass("active");
                     $("#tab04").hide();
                     $("#tab03").show();
                 }
