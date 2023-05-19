@@ -590,7 +590,13 @@
                             </div>
                         </div>
                         <div class="card_list flex">
-                            <div class="kakao" data-aos="fade-left" data-aos-duration="500" data-aos-offset="500" data-aos-delay="0">
+                            <div
+                                class="kakao"
+                                data-aos="fade-left"
+                                data-aos-duration="500"
+                                data-aos-offset="500"
+                                data-aos-delay="0"
+                            >
                                 <img
                                     src="./img/cont05/cont05_kakao.png"
                                     alt=""
@@ -683,7 +689,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="swiper-scrollbar"></div>
+                        <div
+                            class="swiper-pagination swiper-pagination06"
+                        ></div>
                     </div>
                 </section>
                 <!-- // cont06 -->
@@ -892,12 +900,14 @@
         const $tabMenu01 = $(".cont03 .tab_wrap > .tab_inn");
         $(function () {
             $(".tab_inn a").click(function () {
-                if ($tabMenu.hasClass("active")) {
-                    $tabMenu.removeClass("active");
+                if ($tabMenu01.hasClass("active")) {
+                    $tabMenu01.removeClass("active");
+                    $(this).removeClass("active");
                     $("#tab02").show();
                     $("#tab01").hide();
                 } else {
-                    $tabMenu.addClass("active");
+                    $tabMenu01.addClass("active");
+                    $(this).addClass("active");
                     $("#tab02").hide();
                     $("#tab01").show();
                 }
@@ -969,12 +979,26 @@
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
             },
+            pagination: {
+                el: ".swiper-pagination06",
+                clickable: true,
+                type: "bullets",
+                renderBullet: function () {
+                    return (
+                        "<span >" +
+                        "<em>" +
+                        "</em>" +
+                        "<i></i>" +
+                        "<b></b>" +
+                        "</span>"
+                    );
+                },
+            },
             slidesPerView: 3,
-            speed: 3000,
+            speed: 4000,
             loop: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            loopedSlides: 3,
             observer: true,
             observeParents: true,
             scrollbar: {
