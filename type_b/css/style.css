@@ -173,6 +173,7 @@ img {
 }
 
 .cont01_3 {
+    overflow: hidden;
     height: calc(100vw * 2446 / 750);
     max-height: 2446px;
     background: url(../img/content/cont01_3.png) no-repeat center center / 100%;
@@ -204,7 +205,7 @@ img {
     position: absolute;
     display: block;
     top: calc(100vw * -100 / 750);
-    right: calc(100vw * -30 / 750);
+    right: calc(100vw * -100 / 750);
     width: calc(100vw * 248 / 750);
     max-width: 248px;
     height: calc(100vw * 134 / 750);
@@ -369,7 +370,7 @@ img {
     position: absolute;
     display: block;
     top: calc(100vw * -15 / 750);
-    right: calc(100vw * -30 / 750);
+    right: calc(100vw * -75 / 750);
     width: calc(100vw * 248 / 750);
     max-width: 248px;
     height: calc(100vw * 134 / 750);
@@ -501,7 +502,7 @@ img {
     cursor: pointer;
 }
 .cont07 .week_box:hover,
-.cont07 .week_box.active {
+.cont07 .calSwiper li.active .week_box {
     background-color: #ffa2d1;
     border-radius: calc(100vw * 16 / 750);
 }
@@ -571,7 +572,7 @@ img {
     }
     .cont01 .cont01_cp .badge::before {
         top: -100px;
-        right: -30px;
+        right: -100px;
     }
     .cont01 .cont01_list_03 {
         margin-top: 60px;
@@ -616,7 +617,7 @@ img {
     }
     .cont03 .badge::before {
         top: -15px;
-        right: -30px;
+        right: -75px;
     }
 
     .cont04 .cont04_tit_01 {
