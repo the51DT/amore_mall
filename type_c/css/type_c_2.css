@@ -231,7 +231,7 @@ main{
     background: #126C46;
     box-shadow: 3px 4px 4px rgba(17, 118, 162, 0.25);
     border-radius: 10px;
-    padding: clamp(1px, calc(100vw * 22 / 750),22 px) clamp(1px, calc(100vw *123  / 750), 123px) clamp(1px, calc(100vw * 28 / 750),28px) clamp(1px, calc(100vw * 144 / 750), 144px);
+    padding: clamp(1px, calc(100vw * 22 / 750),22px) clamp(1px, calc(100vw *123  / 750), 123px) clamp(1px, calc(100vw * 28 / 750),28px) clamp(1px, calc(100vw * 144 / 750), 144px);
     width: clamp(1px, calc(100vw * 216 / 750), 216px);
 }
 
@@ -373,22 +373,26 @@ main{
 .sec8 .live_list{
     display: flex;
     margin-top: clamp(1px, calc(100vw * 21 / 750), 21px);
-    margin-left: clamp(1px, calc(100vw * 60 / 750), 60px);
+    margin-left: clamp(1px, calc(100vw * 1350 / 750), 1350px);
     transition: margin 0.3s ease-in-out;
 }
 .sec8 .live_list img{
     height: clamp(1px, calc(100vw * 322 / 750), 322px);
 }
 .sec8 .live:not(.sec8 .live:nth-of-type(1)){
-    margin-left: clamp(1px, calc(100vw * -2 / 750), -2px);
+    margin-left: -2px;
+}
+.sec8 .live{
+    opacity: 0.6;
 }
 .sec8 .live.active{
     background: linear-gradient(180deg, #89BC78 0%, #DA9263 115.53%);
+    opacity: 1;
 }
 .sec8 .btn{
     margin-top: clamp(1px, calc(100vw * 52 / 750), 52px);
     width: clamp(1px, calc(100vw * 216 / 750), 216px);
-    padding: clamp(1px, calc(100vw * 22 / 750), 33px) clamp(1px, calc(100vw * 131 / 750), 131px) clamp(1px, calc(100vw * 28 / 750), 28px) clamp(1px, calc(100vw * 136 / 750), 136px);
+    padding: clamp(1px, calc(100vw * 22 / 750), 22px) clamp(1px, calc(100vw * 131 / 750), 131px) clamp(1px, calc(100vw * 28 / 750), 28px) clamp(1px, calc(100vw * 136 / 750), 136px);
     background: #312323;
     box-shadow: 3px 4px 4px rgba(162, 130, 17, 0.25);
     border-radius:clamp(1px, calc(100vw * 10 / 750), 10px);
