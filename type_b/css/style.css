@@ -3,8 +3,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #030165;
+    transition: all ease-in-out 0.5s;
 }
 .wrap {
     width: calc(100vw * 750 / 750);
@@ -26,7 +27,8 @@ body {
     max-width: 750px;
 }
 .container {
-    display: none;
+    transition: all ease-in-out 0.5s;
+    opacity: 0;
 }
 
 /* main */
@@ -484,6 +486,8 @@ img {
 }
 .cont07 .swiper-wrapper .swiper-slide {
     flex-shrink: inherit;
+    /* width: calc(100vw * 121 / 750) !important;
+    max-width: 121px; */
 }
 .cont07 .week_box {
     padding: calc(100vw * 24 / 750) 0;

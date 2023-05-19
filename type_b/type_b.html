@@ -7,7 +7,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
         />
-        <title>Type B</title>
+        <title>Type A</title>
         <link rel="stylesheet" href="../asseets/css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
@@ -154,25 +154,25 @@
                                     <ul>
                                         <li class="badge" data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_01.svg"
+                                                src="./img/content/cont01_cp_01.png"
                                                 alt=""
                                             />
                                         </li>
                                         <li data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_02.svg"
+                                                src="./img/content/cont01_cp_02.png"
                                                 alt=""
                                             />
                                         </li>
                                         <li data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_03.svg"
+                                                src="./img/content/cont01_cp_03.png"
                                                 alt=""
                                             />
                                         </li>
                                         <li data-aos="fade-up">
                                             <img
-                                                src="./img/content/cont01_cp_04.svg"
+                                                src="./img/content/cont01_cp_04.png"
                                                 alt=""
                                             />
                                         </li>
@@ -650,6 +650,21 @@
         };
         tabFn();
 
+        setTimeout(() => {
+            const splash = document.querySelector(".splash");
+            splash.style.opacity = "0";
+        }, 5000);
+        setTimeout(() => {
+            const container = document.querySelector(".container");
+            const body = document.querySelector("body");
+            const splash = document.querySelector(".splash");
+            container.style.opacity = "1";
+            body.style.backgroundColor = "transparent";
+            body.style.overflowY = "initial";
+            body.style.overflowX = "hidden";
+            splash.style.display = "none";
+        }, 5500);
+
         const navFunction = () => {
             const navLi = document.querySelectorAll(".nav li");
             navLi.forEach((el) => {
@@ -683,7 +698,7 @@
         });
 
         var swiper = new Swiper(".calSwiper", {
-            slidesPerView: 1,
+            slidesPerView: 5,
             spaceBetween: 10,
             loop: false,
             on: {
