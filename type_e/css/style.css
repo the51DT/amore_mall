@@ -46,7 +46,7 @@ img {
   max-width: 750px;
 }
 .section03 .swiper_coupon {
-  /* background-image: url(../img/section_03_con03.jpg); */
+  background-image: url(../img/section_03_con03.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position-y: 0;
@@ -58,7 +58,7 @@ img {
 } */
 
 .mySwiper_03 .swiper-wrapper {
-  background-image: url(../img/section_03_con03.jpg);
+  /* background-image: url(../img/section_03_con03.jpg); */
 }
 
 .swiper-pagination03 {
