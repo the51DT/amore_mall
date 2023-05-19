@@ -117,7 +117,7 @@ section {
 
 .section02 .section02_inner {
     padding-bottom: 200px;
-    background: url('/type_f/image/sec02_bg.jpg') top/cover no-repeat;
+    background: url('../image/sec02_bg.jpg') top/cover no-repeat;
 }
 
 .section02 .section02_inner .img-box_02 {
@@ -201,19 +201,19 @@ section {
 }
 
 .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .img-box_10 {
-    background: url(/type_f/image/sec02_coupon-bottom_01.svg) center/contain no-repeat;
+    background: url(../image/sec02_coupon-bottom_01.svg) center/contain no-repeat;
 }
 
 .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .img-box_11 {
-    background: url(/type_f/image/sec02_coupon-bottom_02.svg) center/contain no-repeat;
+    background: url(../image/sec02_coupon-bottom_02.svg) center/contain no-repeat;
 }
 
 .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .img-box_12 {
-    background: url(/type_f/image/sec02_coupon-bottom_03.svg) center/contain no-repeat;
+    background: url(../image/sec02_coupon-bottom_03.svg) center/contain no-repeat;
 }
 
 .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .img-box_13 {
-    background: url(/type_f/image/sec02_coupon-bottom_04.svg) center/contain no-repeat;
+    background: url(../image/sec02_coupon-bottom_04.svg) center/contain no-repeat;
 }
 
 .section02 .section02_inner .section02_inner_ticket-box .img-box_coupon-bottom .coupon_swiper .swiper-pagination {
@@ -235,7 +235,7 @@ section {
 
 .section03 {
     padding: 180px 0 280px;
-    background: url(/type_f/image/sec03_bg.jpg) top/cover no-repeat;
+    background: url(../image/sec03_bg.jpg) top/cover no-repeat;
 }
 
 .section03 .img-box_15 {
@@ -264,7 +264,7 @@ section {
     padding: 31px 38px;
     width: 130px;
     height: 130px;
-    background: url(/type_f/image/sec03_badge01.svg) center/cover no-repeat;
+    background: url(../image/sec03_badge01.svg) center/cover no-repeat;
     box-sizing: border-box;
 }
 
@@ -320,7 +320,7 @@ section {
 
 .section03 .img-box_gift.img-box_gift_01 .img-box_gift_bottom .img-box_gift-img {
     padding: 472px 0 28px 0;
-    background: url(/type_f/image/sec03_gift01.png) center/cover no-repeat;
+    background: url(../image/sec03_gift01.png) center/cover no-repeat;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     animation: gift01 10s ease-in infinite normal;
@@ -328,16 +328,16 @@ section {
 
 @keyframes gift01 {
     25% {
-        background: url(/type_f/image/sec03_gift01.png) center/cover no-repeat;
+        background: url(../image/sec03_gift01.png) center/cover no-repeat;
     }
     50% {
-        background: url(/type_f/image/sec03_gift02.png) center/cover no-repeat;
+        background: url(../image/sec03_gift02.png) center/cover no-repeat;
     }
     75% {
-        background: url(/type_f/image/sec03_gift03.png) center/cover no-repeat;
+        background: url(../image/sec03_gift03.png) center/cover no-repeat;
     }
     100% {
-        background: url(/type_f/image/sec03_gift04.png) center/cover no-repeat;
+        background: url(../image/sec03_gift04.png) center/cover no-repeat;
     }
 }
 
@@ -368,20 +368,20 @@ section {
 
 .section03 .img-box_gift.img-box_gift_02 .img-box_gift_bottom .img-box_gift-img {
     padding-top: 670px;
-    background: url(/type_f/image/sec03_gift05.png) center/cover no-repeat;
+    background: url(../image/sec03_gift05.png) center/cover no-repeat;
     border-radius: 32px;
     animation: gift02 10s ease-in infinite normal;
 }
 
 @keyframes gift02 {
     33% {
-        background: url(/type_f/image/sec03_gift05.png) center/cover no-repeat;
+        background: url(../image/sec03_gift05.png) center/cover no-repeat;
     }
     66% {
-        background: url(/type_f/image/sec03_gift06.png) center/cover no-repeat;
+        background: url(../image/sec03_gift06.png) center/cover no-repeat;
     }
     100% {
-        background: url(/type_f/image/sec03_gift07.png) center/cover no-repeat;
+        background: url(../image/sec03_gift07.png) center/cover no-repeat;
     }
 }
 
@@ -492,21 +492,21 @@ section {
 /* section04 benefit01 */
 
 .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item.benefit_tab-content_item01 .benefit_tab-content_item_text-box {
-    background: url(/type_f/image/sec04_benefit01.png) center/cover no-repeat;
+    background: url(../image/sec04_benefit01.png) center/cover no-repeat;
     animation: benefit01 3s ease-in infinite normal;
 }
 
 @keyframes benefit01 {
     50% {
-        background: url(/type_f/image/sec04_benefit01.png) center/cover no-repeat;
+        background: url(../image/sec04_benefit01.png) center/cover no-repeat;
     }
     100% {
-        background: url(/type_f/image/sec04_benefit02.png) center/cover no-repeat;
+        background: url(../image/sec04_benefit02.png) center/cover no-repeat;
     }
 }
 
 .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item.benefit_tab-content_item02 .benefit_tab-content_item_text-box {
-    background: url(/type_f/image/sec04_benefit03.png) center/cover no-repeat;
+    background: url(../image/sec04_benefit03.png) center/cover no-repeat;
 }
 
 .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item .img-box_31 img:nth-child(1) {
@@ -634,15 +634,15 @@ section {
 }
 
 .section06 .payment_swiper .swiper-slide.swiper-slide_bg1 {
-    background: url(/type_f/image/sec06_bg1.png) 0 100%/ 100% 486px no-repeat;
+    background: url(../image/sec06_bg1.png) 0 100%/ 100% 486px no-repeat;
 }
 
 .section06 .payment_swiper .swiper-slide.swiper-slide_bg2 {
-    background: url(/type_f/image/sec06_bg2.png) 0 100%/ 100% 486px no-repeat;
+    background: url(../image/sec06_bg2.png) 0 100%/ 100% 486px no-repeat;
 }
 
 .section06 .payment_swiper .swiper-slide.swiper-slide_bg3 {
-    background: url(/type_f/image/sec06_bg3.png) 0 100%/ 100% 486px no-repeat;
+    background: url(../image/sec06_bg3.png) 0 100%/ 100% 486px no-repeat;
 }
 
 .section06 .payment_swiper {
@@ -1015,13 +1015,13 @@ section {
         width: calc(100% - 33.600vw);
     }
     .section06 .payment_swiper .swiper-slide.swiper-slide_bg1 {
-        background: url(/type_f/image/sec06_bg1.png) 0 100%/ 100% 64.800vw no-repeat;
+        background: url(../image/sec06_bg1.png) 0 100%/ 100% 64.800vw no-repeat;
     }
     .section06 .payment_swiper .swiper-slide.swiper-slide_bg2 {
-        background: url(/type_f/image/sec06_bg2.png) 0 100%/ 100% 64.800vw no-repeat;
+        background: url(../image/sec06_bg2.png) 0 100%/ 100% 64.800vw no-repeat;
     }
     .section06 .payment_swiper .swiper-slide.swiper-slide_bg3 {
-        background: url(/type_f/image/sec06_bg3.png) 0 100%/ 100% 64.800vw no-repeat;
+        background: url(../image/sec06_bg3.png) 0 100%/ 100% 64.800vw no-repeat;
     }
     .section06 .payment_swiper .img-box_38,
     .section06 .payment_swiper .img-box_40,
