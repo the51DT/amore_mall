@@ -35,10 +35,11 @@ img {
 }
 .section03 .swiper_coupon {
   background-image: url(../img/section_03_con03.jpg);
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
+  background-color: #eff4fd;
 }
 .mySwiper_03 .swiper-slide {
-  width: 80%;
+  width: 90%;
 }
 .mySwiper_03 .swiper-wrapper {
   background-image: url(../img/section_03_con03.jpg);
@@ -171,9 +172,18 @@ img {
   /* height: 100%; */
   object-fit: cover;
 }
-
-.coupon .swiper-pagination-bullet-active {
-  background: #0e1b92;
+.swiper_coupon .swiper-wrapper {
+  padding-bottom: 90px;
+}
+.swiper_coupon .swiper-pagination-bullet {
+  background: #00a4ea;
+  opacity: 0.2;
+  width: 16px;
+  height: 16px;
+}
+.swiper_coupon .swiper-pagination-bullet-active {
+  background: #00a4ea;
+  opacity: 1;
 }
 
 .wrap {
