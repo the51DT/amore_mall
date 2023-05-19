@@ -86,8 +86,8 @@ img {
     display: none;
 }
 .nav_container {
-    width: calc(100vw * 1600 / 750);
-    max-width: 1600px;
+    width: calc(100vw * 1376 / 750);
+    max-width: 1376px;
 }
 .nav .swiper-slide {
     width: auto !important;

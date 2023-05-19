@@ -270,6 +270,7 @@ main{
     background: #4C5EF0;
     padding: clamp(1px, calc(100vw * 27 / 750), 27px) clamp(1px, calc(100vw * 158 / 750), 158px);
     width: clamp(1px, calc(100vw * 273 / 750), 273px);
+    border-radius: clamp(1px, calc(100vw * 43 / 750), 43px);
 }
 
 .sec3{
@@ -405,6 +406,7 @@ main{
     background: #4C5EF0;
     padding: clamp(1px, calc(100vw * 27 / 750), 27px) clamp(1px, calc(100vw * 158 / 750), 158px);
     width: clamp(1px, calc(100vw * 273 / 750), 273px);
+    border-radius: clamp(1px, calc(100vw * 43 / 750), 43px);
 }
 
 .sec5{
