@@ -44,6 +44,21 @@ img {
   transform: translateX(-50%);
   transition: all ease-in-out 0.5s;
 }
+
+.splash .splash_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: clamp(1px, calc(100vw * 134 / 750), 134px);
+  margin: 0 auto;
+}
+.mainvisual .splash_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: clamp(1px, calc(100vw * 134 / 750), 134px);
+  margin: 0 auto;
+}
 .section03 .swiper_coupon {
   background-image: url(../img/section_03_con03.jpg);
   background-size: 100% auto;
@@ -257,12 +272,12 @@ img {
   max-width: 750px;
   margin: 0 auto;
   position: relative;
-  background-color: #2a4abf;
+  /* background-color: #2a4abf; */
 }
-
+/* 
 .header {
   background-color: #eee;
-}
+} */
 
 .text-tab {
   background-color: #001d6c;
