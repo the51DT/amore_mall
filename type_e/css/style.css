@@ -41,6 +41,8 @@ img {
   transform: translateX(-50%);
   width: calc(100vw * 750 / 750);
   max-width: 750px;
+  transform: translateX(-50%);
+  transition: all ease-in-out 0.5s;
 }
 .section03 .swiper_coupon {
   background-image: url(../img/section_03_con03.jpg);
@@ -64,17 +66,24 @@ img {
 }
 
 .section_05_content {
-  margin: 0 calc(100vw * 60 / 750);
+  width: clamp(1px, calc(100vw * 590 / 750), 590px);
+  margin: 0 auto;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .section05 .keyframe01 {
-  height: clamp(1px, calc(100vw * 550 / 750), 550px);
+  height: clamp(1px, calc(100vw * 590 / 750), 590px);
   background-image: url(../img/sec_05_con_01.png);
   background-size: cover;
   animation: img1 10s linear infinite;
 }
-
+.section05 .img_tag {
+  width: clamp(1px, calc(100vw * 100 / 750), 100px);
+}
+.section05 .img_tag02 {
+  width: clamp(1px, calc(100vw * 100 / 750), 100px);
+}
 @keyframes img1 {
   15% {
     background-image: url(../img/sec_05_con_01.png);
@@ -100,7 +109,8 @@ img {
 }
 
 .gift02 {
-  padding-top: 80px;
+  padding-top: clamp(1px, calc(100vw * 80 / 750), 80px);
+  position: relative;
 }
 
 .section05 .keyframe02 {
@@ -144,6 +154,19 @@ img {
   margin-right: 5%;
 }
 
+.section05 .img_tag {
+  position: absolute;
+  z-index: 2;
+  top: clamp(1px, calc(100vw * 270 / 750), 270px);
+  right: clamp(1px, calc(100vw * 20 / 750), 20px);
+}
+
+.section05 .img_tag02 {
+  position: absolute;
+  z-index: 2;
+  top: clamp(1px, calc(100vw * 350 / 750), 350px);
+  right: clamp(1px, calc(100vw * 20 / 750), 20px);
+}
 .section08 {
   position: relative;
   background-color: #00a4ea;
@@ -164,7 +187,7 @@ img {
 
 .mySwiper_09 .swiper-slide {
   width: 75%;
-  margin: 0 calc(100vw * 24 / 750) 24px;
+  margin: 0 calc(100vw * 12 / 750) 12px;
 }
 
 .mySwiper_09 .swiper-card {
@@ -241,7 +264,7 @@ img {
 }
 
 .text-tab .mySwiper_01 {
-  margin-left: 5%;
+  margin-left: clamp(1px, calc(100vw * 60 / 750), 60px);
   height: auto;
 }
 
@@ -375,7 +398,6 @@ img {
 .section04 .benefit-area .benefit_tab-content .benefit_tab-content_item {
   display: none;
   position: relative;
-  /* border-radius: 32px; */
   overflow: hidden;
   width: 100%;
 }
