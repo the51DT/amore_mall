@@ -250,6 +250,8 @@ img {width: 100%;}
 .cont06 .bg_img_01 {position: absolute; top: 0; left: 0;}
 .cont06 .tit_area {position: absolute; top: 220px; left: 0;}
 .cont06 .swiper.evSwiper {padding-top: 410px;}
+.cont06 .swiper-scrollbar.swiper-scrollbar-horizontal {background: #888;}
+.cont06 .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {background: #fff;}
 
 @keyframes bal1 {
     20%{rotate:-30deg;}
