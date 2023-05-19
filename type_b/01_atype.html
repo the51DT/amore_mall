@@ -493,7 +493,7 @@
                                         class="swiper-wrapper flex cont07_tab_inn"
                                     >
                                         <li
-                                            class="swiper-slide"
+                                            class="swiper-slide active"
                                             data-tab="weekTab01"
                                         >
                                             <div class="week_box">
@@ -663,7 +663,7 @@
         setTimeout(() => {
             const splash = document.querySelector(".splash");
             splash.style.opacity = "0";
-        }, 5000);
+        }, 1000);
         setTimeout(() => {
             const container = document.querySelector(".container");
             const body = document.querySelector("body");
@@ -673,7 +673,7 @@
             body.style.overflowY = "initial";
             body.style.overflowX = "hidden";
             splash.style.display = "none";
-        }, 5500);
+        }, 1500);
 
         const navFunction = () => {
             const navLi = document.querySelectorAll(".nav li");
