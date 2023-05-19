@@ -1591,7 +1591,14 @@ img {
     .cont07 .tab_cont {
         margin-top: 40px;
     }
+    .cont07 .tab_wrap > .tab_inn > li {
+        padding: 24px 36px;
+    }
     .cont07 .tab_wrap > .tab_inn > li a {
         font-size: 28px;
+        padding: 0 0 0 36px;
+    }
+    .cont07 .tab_wrap > .tab_inn > li:last-child a {
+        padding: 0 14px 0 0;
     }
 }
