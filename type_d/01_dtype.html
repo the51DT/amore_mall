@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="./js/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <title>type_d</title>
+    <title>SPECIAL | D TYPE</title>
     <style>
         @font-face {
             font-family: 'Pretendard-Regular';
@@ -49,6 +49,7 @@
             <img class="char" src="./img/main_char.svg">
             <img class="img" src="./img/main.svg">
             <p>올 한 해 사랑받은 아모레퍼시픽의 대표 상품들을<br>오직 2주간 가장 큰 혜택으로 만날 수 있는 쇼핑 대축제</p>
+            <img class="box" src="./img/main_box.svg">
             <img class="star" src="./img/main_star.svg">
             <img class="star2" src="./img/main_star_2.svg">
             <img class="star3" src="./img/main_star_3.svg">
@@ -127,6 +128,7 @@
     
                 <section class="flex sec4">
                     <img class="title" src="./img/sec4_title.svg">
+                    <img class="box" src="./img/sec4_box.svg">
                     <div class="flex tab">
                         <div class="tab1">
                             <img src="./img/sec4_tab_on.svg">
@@ -175,7 +177,7 @@
                             <p>12 (월)</p>
                             <div>
                                 <p>오전 11시</p>
-                                <p>SK 구독 상품</p>
+                                <p>SK구독상품</p>
                                 <span>박문영/김진영</span>
                             </div>
                             <img class="live_back" src="./img/sec7_con_back_off.svg">
@@ -273,6 +275,12 @@
                     $('.menu ul li').eq(3).addClass('remove')
                     $('.menu ul li').eq(4).addClass('active')
                 }
+                if (checkVisible('.sec4') ) {
+                    $('.sec4 .box').css({'animation': 'box2 0.5s ease-in-out', 'opacity': 1})
+                }
+                else{
+                    $('.sec4 .box').css('opacity', 0)
+                }
             }
 
             window.addEventListener('scroll', func);
@@ -330,7 +338,7 @@
                         var html1 = [`<p>12 (월)</p>
                         <div>
                             <p>오전 11시</p>
-                            <p>SK 구독 상품</p>
+                            <p>SK구독상품</p>
                             <span>박문영/김진영</span>
                         </div>
                         <img class="live_back" src="./img/sec7_con_back_off.svg">`,

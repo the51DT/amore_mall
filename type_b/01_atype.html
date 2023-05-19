@@ -7,7 +7,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
         />
-        <title>Type A</title>
+        <title>SPECIAL | A TYPE</title>
         <link rel="stylesheet" href="../asseets/css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
@@ -213,7 +213,10 @@
                                     src="./img/content/cont02_img_01.png"
                                     alt=""
                                 />
-                                <div class="cont02_swiper_container">
+                                <div
+                                    class="cont02_swiper_container"
+                                    data-aos="fade-up"
+                                >
                                     <div class="cont02_swiper">
                                         <div class="swiper eventSwiper1">
                                             <ul class="swiper-wrapper flex">
@@ -266,7 +269,10 @@
                                     src="./img/content/cont02_img_02.png"
                                     alt=""
                                 />
-                                <div class="cont02_swiper_container">
+                                <div
+                                    class="cont02_swiper_container"
+                                    data-aos="fade-up"
+                                >
                                     <div class="cont02_swiper">
                                         <div class="swiper eventSwiper2">
                                             <ul class="swiper-wrapper flex">
@@ -637,8 +643,12 @@
             );
             tabLi.forEach((el) => {
                 el.addEventListener("click", () => {
+                    for (let i = 0; i < tabLi.length; i++) {
+                        tabLi[i].classList.remove("active");
+                    }
+                    el.classList.add("active");
                     const targetHash = el.getAttribute("data-tab");
-                    console.log(targetHash);
+
                     for (let i = 0; i < tabContent.length; i++) {
                         tabContent[i].classList.remove("active");
                         if (tabContent[i].getAttribute("id") === targetHash) {
@@ -701,12 +711,6 @@
             slidesPerView: 5,
             spaceBetween: 10,
             loop: false,
-            on: {
-                slideChange: function () {
-                    $(".week_box").removeClass("active");
-                    $(".week_box").eq(this.realIndex).addClass("active");
-                },
-            },
         });
 
         // aos

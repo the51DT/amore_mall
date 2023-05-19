@@ -19,12 +19,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: clamp(1px, calc(100vw), 750px);
     height: 100vh;
-    background: #0E1B92;
+    background: #F5F0E2;
     transition: all ease-in-out 0.5s;
 }
 .splash img{
