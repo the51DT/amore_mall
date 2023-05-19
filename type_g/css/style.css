@@ -36,7 +36,7 @@ img {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 .splash img {
     width: 100%;
@@ -86,8 +86,8 @@ img {
     display: none;
 }
 .nav_container {
-    width: calc(100vw * 1600 / 750);
-    max-width: 1600px;
+    width: calc(100vw * 1376 / 750);
+    max-width: 1376px;
 }
 .nav .swiper-slide {
     width: auto !important;

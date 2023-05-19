@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Type A</title>
+    <title>SPECIAL | B TYPE</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -133,22 +133,22 @@
                             </div>
                             <div class="swiper cpSwiper">
                                 <ul class="swiper-wrapper flex">
-                                    <li class="swiper-slide">
+                                    <li class="swiper-slide slide01">
                                         <div class="cp_pack">
                                             <a href="#"><img src="./img/cont01/cont01_cp01.png" alt=""></a>
                                         </div>
                                     </li>
-                                    <li class="swiper-slide">
+                                    <li class="swiper-slide slide02">
                                         <div class="cp_pack">
                                             <a href="#"><img src="./img/cont01/cont01_cp02.png" alt=""></a>
                                         </div>
                                     </li>
-                                    <li class="swiper-slide">
+                                    <li class="swiper-slide slide03">
                                         <div class="cp_pack">
                                             <a href="#"><img src="./img/cont01/cont01_cp03.png" alt=""></a>
                                         </div>
                                     </li>
-                                    <li class="swiper-slide">
+                                    <li class="swiper-slide slide04">
                                         <div class="cp_pack">
                                             <a href="#"><img src="./img/cont01/cont01_cp04.png" alt=""></a>
                                         </div>
@@ -187,7 +187,7 @@
                             <img src="./img/cont02/cont02_ribbon.svg" alt="">
                         </div>
                         <div class="swiper_border">
-                            <div class="swiper bfSwiper">
+                            <div class="swiper bfSwiper01">
                                 <ul class="swiper-wrapper flex">
                                     <li class="swiper-slide">
                                         <div class="bf_img">
@@ -211,7 +211,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination swiper-pagination01"></div>
                         </div>
                     </div>
                     <div class="txt01">
@@ -230,7 +230,7 @@
                             <img src="./img/cont02/cont02_ribbon.svg" alt="">
                         </div>
                         <div class="swiper_border">
-                            <div class="swiper bfSwiper">
+                            <div class="swiper bfSwiper02">
                                 <ul class="swiper-wrapper flex">
                                     <li class="swiper-slide">
                                         <div class="bf_img">
@@ -254,7 +254,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- <div class="swiper-pagination"></div> -->
+                            <div class="swiper-pagination swiper-pagination02"></div>
                         </div>
                     </div>
                     <div class="txt02">
@@ -521,6 +521,57 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    //anim
+    function checkVisible( element, check = 'visible' ) {
+                const viewportHeight = $(window).height(); // Viewport Height
+                const scrolltop = $(window).scrollTop(); // Scroll Top
+                const y = $(element).offset().top;
+                const elementHeight = $(element).height();
+
+                if (check == "visible") 
+                    return ((y < (viewportHeight + scrolltop -500)) && (y > (scrolltop - elementHeight)));
+            }
+
+            const func = function () {
+                if (checkVisible('.cont01') ) {
+                    $('.cont01 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont01 .light_img').css({'opacity': .3})
+                }
+                if (checkVisible('.cont02') ) {
+                    $('.cont02 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont02 .light_img').css({'opacity': .3})
+                }
+                if (checkVisible('.cont03') ) {
+                    $('.cont03 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont03 .light_img').css({'opacity': .3})
+                }
+                if (checkVisible('.cont04') ) {
+                    $('.cont04 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont04 .light_img').css({'opacity': .3})
+                }
+                if (checkVisible('.cont05') ) {
+                    $('.cont05 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont05 .light_img').css({'opacity': .3})
+                }
+                if (checkVisible('.cont06') ) {
+                    $('.cont06 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont06 .light_img').css({'opacity': .3})
+                }
+                if (checkVisible('.cont07') ) {
+                    $('.cont07 .light_img').css({'opacity': 1})
+                } else{
+                    $('.cont07 .light_img').css({'opacity': .3})
+                }
+            }
+
+            window.addEventListener('scroll', func);
+
 
     // nav
     $(function () {
@@ -590,12 +641,31 @@
         observer: true, observeParents: true,
     });
 
-    // swiper
-    var swiper = new Swiper(".bfSwiper", {
+    // bfswiper
+    var swiper = new Swiper(".bfSwiper01", {
         slidesPerView : 1,
         spaceBetween: 10,
         pagination : { 
-            el : '.swiper-pagination',
+            el : '.swiper-pagination01',
+            clickable : true
+        },
+    });
+
+    var swiper = new Swiper(".bfSwiper02", {
+        slidesPerView : 1,
+        spaceBetween: 10,
+        pagination : { 
+            el : '.swiper-pagination02',
+            clickable : true
+        },
+    });
+
+    // evSwiper
+    var swiper = new Swiper(".evSwiper", {
+        slidesPerView : 1,
+        spaceBetween: 10,
+        pagination : { 
+            el : '.swiper-pagination02',
             clickable : true
         },
     });

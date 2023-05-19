@@ -24,46 +24,46 @@
         <div class="nav nav_swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide current">
-                    <a href="#section01">
+                    <div data-href="#section01">
                         <img src="./image/nav01.svg" alt="7종 쿠폰팩" class="nav_item" style="display: none;">
                         <img src="./image/nav01_current.svg" alt="7종 쿠폰팩" class="nav_item_current" style="display: block;">
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#section03">
+                    <div data-href="#section03">
                         <img src="./image/nav02.svg" alt="구매 혜택" class="nav_item">
                         <img src="./image/nav02_current.svg" alt="구매 혜택" class="nav_item_current">
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#section04">
+                    <div data-href="#section04">
                         <img src="./image/nav03.svg" alt="한정사은품" class="nav_item">
                         <img src="./image/nav03_current.svg" alt="한정사은품" class="nav_item_current">
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#section05">
+                    <div data-href="#section05">
                         <img src="./image/nav04.svg" alt="아사페 소문내기" class="nav_item">
                         <img src="./image/nav04_current.svg" alt="아사페 소문내기" class="nav_item_current">
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#section06">
+                    <div data-href="#section06">
                         <img src="./image/nav05.svg" alt="결제 혜택" class="nav_item">
                         <img src="./image/nav05_current.svg" alt="결제 혜택" class="nav_item_current">
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#section07">
+                    <div data-href="#section07">
                         <img src="./image/nav06.svg" alt="아사페 이벤트" class="nav_item">
                         <img src="./image/nav06_current.svg" alt="아사페 이벤트" class="nav_item_current">
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#section08">
+                    <div data-href="#section08">
                         <img src="./image/nav07.svg" alt="LIVE 방송" class="nav_item">
                         <img src="./image/nav07_current.svg" alt="LIVE 방송" class="nav_item_current">
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -467,24 +467,87 @@
             splash.style.opacity = '0';
             splash.style.zIndex = '0';
             splash.style.display = 'none';
-        }, 5000);
+        }, 1000);
 
-        $(".nav .swiper-slide a").click(function() {
-            $(".nav .swiper-slide a").parent().removeClass('current');
-            $(this).parent().addClass('current');
-            $(".nav .swiper-slide a").children('.nav_item').show();
-            $(".nav .swiper-slide a").children('.nav_item_current').hide();
-            $(this).children('.nav_item').hide()
-            $(this).children('.nav_item_current').show()
-        });
-
+        // nav
         const $root = $('html, body');
-        $('.nav .swiper-slide a').click(function() {
+        $(".nav .swiper-slide div").click(function() {
+            //이동
             $root.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
+                scrollTop: $($.attr(this, 'data-href')).offset().top
             }, 500);
             return false;
         });
+
+        function checkVisible(element, check = 'visible') {
+            const viewportHeight = $(window).height(); // Viewport Height
+            const scrolltop = $(window).scrollTop(); // Scroll Top
+            const y = $(element).offset().top;
+            const elementHeight = $(element).height();
+
+            if (check == "visible")
+                return ((y < (viewportHeight + scrolltop - 400)) && (y > (scrolltop - elementHeight)));
+        }
+
+        const func = function() {
+            if (checkVisible('#section01')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(0).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(0).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(0).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section03')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(1).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(1).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(1).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section04')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(2).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(2).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(2).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section05')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(3).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(3).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(3).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section06')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(4).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(4).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(4).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section07')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(5).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(5).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(5).find('.nav_item_current').css("display", "block");
+            }
+            if (checkVisible('#section08')) {
+                $(".nav .swiper-slide").removeClass('current')
+                $(".nav .swiper-slide").eq(6).addClass('current')
+                $(".nav .swiper-slide div").children('.nav_item_current').css("display", "none");
+                $(".nav .swiper-slide div").children('.nav_item').css("display", "block");
+                $(".nav .swiper-slide").eq(6).find('.nav_item').css("display", "none");
+                $(".nav .swiper-slide").eq(6).find('.nav_item_current').css("display", "block");
+            }
+        }
+        window.addEventListener('scroll', func);
 
         // section04
         $(".benefit-area .benefit_tab-btn li a").click(function() {
