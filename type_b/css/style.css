@@ -474,6 +474,7 @@ img {
 
 /* cont07 */
 .cont07 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 2292 / 750);
     max-height: 2292px;
