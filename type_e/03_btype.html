@@ -130,7 +130,7 @@
                       <img src="./img/coupon_10.SVG" />
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-pagination03"></div>
                 </div>
               </div>
             </div>
@@ -287,7 +287,7 @@
         loop: true,
         centeredSlides: true,
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-pagination03",
           clickable: true,
         },
       });
@@ -349,10 +349,11 @@
 
       const $nav = $(".text-tab").offset().top;
       window.addEventListener("scroll", function () {
+        const headerHeight = $(".header").outerHeight();
         const currScroll = $(window).scrollTop();
-        if (currScroll >= $nav) {
+        if (currScroll >= headerHeight) {
           $(".text-tab").addClass("fixed");
-        } else if (currScroll <= $nav) {
+        } else if (currScroll <= headerHeight) {
           $(".text-tab").removeClass("fixed");
         }
       });
