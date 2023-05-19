@@ -43,6 +43,21 @@ img {
     width: 100%;
 }
 
+.splash{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(-50%);
+    z-index: 99;
+    max-width: 750px;
+    width: calc(100vw * 750 / 750);
+    background: #1B0E56;
+    transition: all ease-in-out 0.5s;
+}
+
 /* main */
 .main .bg_img {
     position: relative;
@@ -981,6 +996,9 @@ img {
     margin-right: calc(100vw * 20 / 750);
 }
 .cont06 .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: relative;
+    margin: 60px auto 0;
+    width: calc(100vw * 670 / 750);
     background: #888;
 }
 .cont06 .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
@@ -1461,8 +1479,7 @@ img {
     }
 
     .cont03 .tab_wrap {
-        padding: 70px 171px 50px;
-        margin-top: 410px;
+        margin: 400px auto 0;
     }
 
     .cont03 .tab_wrap > .tab_inn > li {

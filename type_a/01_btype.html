@@ -21,9 +21,10 @@
     </head>
     <body>
         <div class="wrap">
-            <!-- <div class="splash">
-            <img src="./img/main/splash.png" alt="splash"></img>
-        </div> -->
+
+            <div class="splash">
+                <img src="./Splash.png" alt="splash"></img>
+            </div>
 
             <!-- container -->
             <div class="container">
@@ -595,13 +596,13 @@
                                     alt=""
                                 />
                             </div>
-                            <div class="samsung" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="500" data-aos-delay="100">
+                            <div class="samsung" data-aos="fade-left" data-aos-duration="800" data-aos-offset="500" data-aos-delay="100">
                                 <img
                                     src="./img/cont05/cont05_samsung.png"
                                     alt=""
                                 />
                             </div>
-                            <div class="shinhan" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="500" data-aos-delay="200">
+                            <div class="shinhan" data-aos="fade-left" data-aos-duration="1100" data-aos-offset="500" data-aos-delay="200">
                                 <img
                                     src="./img/cont05/cont05_shinhan.png"
                                     alt=""
@@ -779,6 +780,23 @@
     <script>
         AOS.init();
 
+        // splash
+        setTimeout(() => {
+            const splash = document.querySelector(".splash");
+            const body = document.querySelector("body");
+            body.style.backgroundColor = "transparent";
+            splash.style.opacity = "0";
+        }, 1000);
+        setTimeout(() => {
+            const container = document.querySelector(".container");
+            const body = document.querySelector("body");
+            const splash = document.querySelector(".splash");
+            container.style.opacity = "1";
+            body.style.overflowY = "initial";
+            body.style.overflowX = "hidden";
+            splash.style.display = "none";
+        }, 1100);
+
         //anim
         function checkVisible(element, check = "visible") {
             const viewportHeight = $(window).height(); // Viewport Height
@@ -846,6 +864,29 @@
                 .filter(":eq(0)")
                 .click();
         });
+
+        const scrollCheck = () => {
+            const currentScroll = $(window).scrollTop();
+            const section = document.querySelectorAll(".content section");
+            const navLi = document.querySelectorAll(".nav li");
+            section.forEach((el) => {
+                if (currentScroll > el.offsetTop - 100) {
+                    const target = el.getAttribute("id");
+                    for (let i = 0; i < navLi.length; i++) {
+                        navLi[i].classList.remove("active");
+                        if (
+                            navLi[i]
+                                .querySelector("a")
+                                .getAttribute("href")
+                                .replace("#", "") === target
+                        ) {
+                            navLi[i].classList.add("active");
+                        }
+                    }
+                }
+            });
+        };
+        window.addEventListener("scroll", scrollCheck);
 
         // cont03 tab
         const $tabMenu01 = $(".cont03 .tab_wrap > .tab_inn");
@@ -939,6 +980,7 @@
             scrollbar: {
                 el: ".swiper-scrollbar",
                 hide: false,
+                draggable: true,
             },
         });
     </script>
