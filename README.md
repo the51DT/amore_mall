@@ -3,29 +3,29 @@
 
 [TYPE_List](https://the51dx.github.io/amore_mall/index.html "Type list link")
 
-##### Type A
-[TYPE_A](https://the51dx.github.io/amore_mall/type_a/type_a.html "Type a link")
+##### SPECIAL | A TYPE
+[SPECIAL | A TYPE](https://the51dx.github.io/amore_mall/type_b/01_atype.html "SPECIAL | A TYPE")
 
-##### Type B
-[TYPE_B](https://the51dx.github.io/amore_mall/type_b/type_b.html "Type b link")
+##### SPECIAL | B TYPE
+[SPECIAL | B TYPE](https://the51dx.github.io/amore_mall/type_a/01_btype.html "SPECIAL | B TYPE")
 
-##### Type C_1
-[TYPE_C_1](https://the51dx.github.io/amore_mall/type_c/type_c_1.html "Type c_1 link")
+##### SPECIAL | C TYPE
+[SPECIAL | C TYPE](https://the51dx.github.io/amore_mall/type_c/01_ctype.html "SPECIAL | C TYPE")
 
-##### Type C_2
-[TYPE_C_2](https://the51dx.github.io/amore_mall/type_c/type_c_2.html "Type c_2 link")
+##### SPECIAL | D TYPE
+[SPECIAL | D TYPE](https://the51dx.github.io/amore_mall/type_d/01_dtype.html "SPECIAL | D TYPE")
 
-##### Type D
-[TYPE_D](https://the51dx.github.io/amore_mall/type_d/type_d.html "Type d link")
+##### UNIVERSAL | A TYPE
+[UNIVERSAL | A TYPE](https://the51dx.github.io/amore_mall/type_h/02_atype.html "UNIVERSAL | A TYPE")
 
-##### Type E
-[TYPE_E](https://the51dx.github.io/amore_mall/type_e/type_e.html "Type e link")
+##### UNIVERSAL | B TYPE
+[UNIVERSAL | B TYPE](https://the51dx.github.io/amore_mall/type_g/02_btype.html "UNIVERSAL | B TYPE")
 
-##### Type F
-[TYPE_F](https://the51dx.github.io/amore_mall/type_f/type_f.html "Type f link")
+##### ADDITIONAL | A TYPE
+[ADDITIONAL | A TYPE](https://the51dx.github.io/amore_mall/type_f/03_atype.html "ADDITIONAL | A TYPE")
 
-##### Type G
-[TYPE_G](https://the51dx.github.io/amore_mall/type_g/type_g.html "Type g link")
+##### ADDITIONAL | B TYPE
+[ADDITIONAL | B TYPE](https://the51dx.github.io/amore_mall/type_e/03_btype.html "ADDITIONAL | B TYPE")
 
-##### Type H
-[TYPE_H](https://the51dx.github.io/amore_mall/type_h/type_h.html "Type h link")
+##### ADDITIONAL | C TYPE
+[ADDITIONAL | C TYPE](https://the51dx.github.io/amore_mall/type_c/03_ctype.html "ADDITIONAL | C TYPE")
