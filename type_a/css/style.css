@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Pretendard-Bold", "Pretendard-ExtraBold";
+    scroll-behavior: smooth;
 }
 section {
     overflow: hidden;
@@ -538,8 +539,10 @@ img {
     margin-bottom: calc(100vw * 20 / 750);
 }
 .cont02 .swiper-pagination .swiper-pagination-bullet {
-    width: 18px;
-    height: 18px;
+    max-width: 18px;
+    max-height: 18px;
+    width: calc(100vw * 18 / 750);
+    height: calc(100vw * 18 / 750);
     background-color: rgba(255, 255, 255, 0.5);
 }
 .cont02
@@ -952,22 +955,83 @@ img {
 }
 
 /* cont07 */
-.cont07 {position: relative;}
-.cont07 .bg_img_wrap {padding-top: calc(100vw * 150 / 750);} 
-.cont07 .light_img {animation: flicker_tit-effect 1.2s linear alternate; transition: opacity .8s}
-.cont07 .bg_img {position: absolute; top: 17%; left: 21%; max-width: 419px; width: calc(100vw * 419 / 750); animation: heart 2s ease-in-out infinite}
-.cont07 .tit_area {position: absolute; top: 24%; left: 0;}
-.cont07 .tab_wrap {padding: calc(100vw * 70 / 750) calc(100vw * 171 / 750) calc(100vw * 50 / 750); margin-top: calc(100vw * 750 / 750);}
-.cont07 .tab_wrap > .tab_inn {position: relative; display: flex; align-items: center; justify-content: space-between; border: calc(100vw * 1.5 / 750) solid #fff; border-radius: calc(100vw * 50 / 750);}
-.cont07 .tab_wrap > .tab_inn::before {content: ""; position: absolute; top: 0; left: 50%; width: 50%; height: 100%; border-radius: calc(100vw * 50 / 750); background-color: #fff; transition: all .4s ease-in;}
-.cont07 .tab_wrap > .tab_inn.active::before {left: 0;}
-.cont07 .tab_wrap > .tab_inn > li {position: relative; padding: calc(100vw * 24 / 750) calc(100vw * 36.5 / 750);}
-.cont07 .tab_wrap > .tab_inn > li a {display: block; font-size: calc(100vw * 28 / 750); color: #fff; font-weight: 900;}
-.cont07 .tab_wrap > .tab_inn > li:nth-child(2) a {color: #000;}
-.cont07 .tab_wrap > .tab_inn.active > li:nth-child(1) a {color: #000;}
-.cont07 .tab_wrap > .tab_inn.active > li:nth-child(2) a {color: #fff;}
-.cont07 .tab_cont {position: relative;}
-.cont07 .tab_cont > div{width: calc(100vw * 600 /750); max-width: 600px;margin: 0 auto;}
+.cont07 {
+    position: relative;
+}
+.cont07 .bg_img_wrap {
+    padding-top: calc(100vw * 150 / 750);
+}
+.cont07 .light_img {
+    animation: flicker_tit-effect 1.2s linear alternate;
+    transition: opacity 0.8s;
+}
+.cont07 .bg_img {
+    position: absolute;
+    top: 17%;
+    left: 21%;
+    max-width: 419px;
+    width: calc(100vw * 419 / 750);
+    animation: heart 2s ease-in-out infinite;
+}
+.cont07 .tit_area {
+    position: absolute;
+    top: 24%;
+    left: 0;
+}
+.cont07 .tab_wrap {
+    padding: calc(100vw * 70 / 750) calc(100vw * 171 / 750)
+        calc(100vw * 50 / 750);
+    margin-top: calc(100vw * 750 / 750);
+}
+.cont07 .tab_wrap > .tab_inn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: calc(100vw * 1.5 / 750) solid #fff;
+    border-radius: calc(100vw * 50 / 750);
+}
+.cont07 .tab_wrap > .tab_inn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: calc(100vw * 50 / 750);
+    background-color: #fff;
+    transition: all 0.4s ease-in;
+}
+.cont07 .tab_wrap > .tab_inn.active::before {
+    left: 0;
+}
+.cont07 .tab_wrap > .tab_inn > li {
+    position: relative;
+    padding: calc(100vw * 24 / 750) calc(100vw * 36.5 / 750);
+}
+.cont07 .tab_wrap > .tab_inn > li a {
+    display: block;
+    font-size: calc(100vw * 28 / 750);
+    color: #fff;
+    font-weight: 900;
+}
+.cont07 .tab_wrap > .tab_inn > li:nth-child(2) a {
+    color: #000;
+}
+.cont07 .tab_wrap > .tab_inn.active > li:nth-child(1) a {
+    color: #000;
+}
+.cont07 .tab_wrap > .tab_inn.active > li:nth-child(2) a {
+    color: #fff;
+}
+.cont07 .tab_cont {
+    position: relative;
+}
+.cont07 .tab_cont > div {
+    width: calc(100vw * 600 / 750);
+    max-width: 600px;
+    margin: 0 auto;
+}
 .cont07 .tab_cont .tab_img.badge,
 .cont07 .tab_cont .tab_img.badge {
     position: relative;
@@ -1026,20 +1090,83 @@ img {
 }
 
 /* footer */
-.footer {position: relative;}
-.footer .footer_bg {position: relative;}
-.footer .fck_img_01 {position: absolute; top: 14%; left: 10%; animation: fck01 2s ease-in-out infinite;}
-.footer .fck_img_01 img {max-width: 82px; width: calc(100vw * 82 / 750);}
-.footer .fck_img_02 {position: absolute; top: 4%; left: 31%; animation: fck02 2s ease-in-out infinite;}
-.footer .fck_img_02 img {max-width: 143px; width: calc(100vw * 143 / 750);}
-.footer .fck_img_03 {position: absolute; top: 3%; right: 13%; animation: fck03 2s ease-in-out infinite;} 
-.footer .fck_img_03 img {max-width: 152px; width: calc(100vw * 152 / 750);}
-.footer .fck_img_04 {position: absolute; top: 23%; right: 11%; animation: fck04 2s ease-in-out infinite;}
-.footer .fck_img_04 img {max-width: 82px; width: calc(100vw * 82 / 750);}
-.footer .txt {position: absolute; top: 31%; left: 50%; max-width: 324px; width: calc(100vw * 324 / 750); transform: translateX(-50%);}
-.footer .man {position: absolute; bottom: 25%; left: 10%; max-width: 153px; width: calc(100vw * 153 / 750); animation: man 2s ease-in-out infinite;}
-.footer .box {position: absolute; bottom: 23%; left: 32%; max-width: 260px; width: calc(100vw * 260 / 750);}
-.footer .woman {position: absolute; bottom: 22%; left: 69%; max-width: 230px; width: calc(100vw * 230 / 750); animation: woman 2s ease-in-out infinite;}
+.footer {
+    position: relative;
+}
+.footer .footer_bg {
+    position: relative;
+}
+.footer .fck_img_01 {
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    animation: fck01 2s ease-in-out infinite;
+}
+.footer .fck_img_01 img {
+    max-width: 82px;
+    width: calc(100vw * 82 / 750);
+}
+.footer .fck_img_02 {
+    position: absolute;
+    top: 4%;
+    left: 31%;
+    animation: fck02 2s ease-in-out infinite;
+}
+.footer .fck_img_02 img {
+    max-width: 143px;
+    width: calc(100vw * 143 / 750);
+}
+.footer .fck_img_03 {
+    position: absolute;
+    top: 3%;
+    right: 13%;
+    animation: fck03 2s ease-in-out infinite;
+}
+.footer .fck_img_03 img {
+    max-width: 152px;
+    width: calc(100vw * 152 / 750);
+}
+.footer .fck_img_04 {
+    position: absolute;
+    top: 23%;
+    right: 11%;
+    animation: fck04 2s ease-in-out infinite;
+}
+.footer .fck_img_04 img {
+    max-width: 82px;
+    width: calc(100vw * 82 / 750);
+}
+.footer .txt {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    max-width: 324px;
+    width: calc(100vw * 324 / 750);
+    transform: translateX(-50%);
+}
+.footer .man {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    max-width: 153px;
+    width: calc(100vw * 153 / 750);
+    animation: man 2s ease-in-out infinite;
+}
+.footer .box {
+    position: absolute;
+    bottom: 23%;
+    left: 32%;
+    max-width: 260px;
+    width: calc(100vw * 260 / 750);
+}
+.footer .woman {
+    position: absolute;
+    bottom: 22%;
+    left: 69%;
+    max-width: 230px;
+    width: calc(100vw * 230 / 750);
+    animation: woman 2s ease-in-out infinite;
+}
 
 @keyframes fck01 {
     0% {
@@ -1329,6 +1456,7 @@ img {
     }
 
     .cont07 .tab_wrap {
-        padding: 70px 171px 50px; margin-top: 750px;
+        padding: 70px 171px 50px;
+        margin-top: 750px;
     }
 }
