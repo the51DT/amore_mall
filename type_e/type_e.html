@@ -185,8 +185,13 @@
         // 메뉴 탭 스와이프
         var swiper = new Swiper(".mySwiper_01", {
             slidesPerView: "4",
-            spaceBetween: 44,
+            spaceBetween: 20,
             loop: false,
+            breakpoints: {
+                750: {
+                    spaceBetween: 44,
+                }
+            },
         });
         // section03 Swiper
         var swiper = new Swiper(".mySwiper_03", {
