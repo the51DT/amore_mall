@@ -479,7 +479,7 @@ img {
 .cont02 .swiper_border {
     max-width: 600px;
     width: calc(100vw * 600 / 750);
-    margin: 0 auto;
+    margin: -2px auto;
     border: calc(100vw * 2 / 750) solid #fff;
     border-top-left-radius: calc(100vw * 100 / 750);
     border-top-right-radius: calc(100vw * 100 / 750);
