@@ -17,6 +17,9 @@
     position: fixed;
     top: 0;
     left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     transform: translateX(-50%);
     z-index: 99;
     width: clamp(1px, calc(100vw), 750px);
@@ -25,7 +28,15 @@
     transition: all ease-in-out 0.5s;
 }
 .splash img{
+    width: clamp(1px, calc(100vw * 421 / 750), 421px);
+    padding-top: clamp(1px, calc(100vw * 80 / 750), 80px);
+}
+.splash .gif{
+    position: absolute;
+    padding-top: 0;
+    left: 0;
     width: 100%;
+    z-index: -1;
 }
 
 .menu{
