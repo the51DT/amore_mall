@@ -45,7 +45,11 @@ img {
 /* main */
 .bg_img {
     max-width: 100%;
-    background-color: #cb0016;
+    height: calc(100vw * 1332 / 750);
+    max-height: 1332px;
+    background: #cb0016 url(../img/main/splash.gif) no-repeat center center /
+        100%;
+    position: relative;
 }
 .main_txt {
     display: flex;
@@ -57,16 +61,15 @@ img {
     width: calc(100vw * 342 / 750);
     max-width: 342px;
 }
-.main_img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: calc(100vw * 37 / 750);
-    padding-bottom: calc(100vw * 100 / 750);
-    width: calc(100vw * 619 / 750);
-    max-width: 619px;
+.main_date {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100vw * 268 / 750);
+    max-width: 268px;
+    height: calc(100vw * 40 / 750);
+    max-height: 40px;
+    bottom: 7%;
 }
 
 /* nav */
@@ -131,6 +134,7 @@ img {
 
 /* cont01 */
 .cont01 {
+    margin-top: -1px;
     max-width: 100%;
     height: calc(100vw * 3285 / 750);
     max-height: 3285px;
