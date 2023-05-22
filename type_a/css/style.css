@@ -771,7 +771,7 @@ img {
 }
 .cont04 .img_list_wrap {
     position: relative;
-    padding-top: calc(100vw * 804 / 750);
+    padding-top: calc(100vw * 704 / 750);
     z-index: 0;
 }
 .cont04 .img_list_wrap .img_list {
@@ -1538,7 +1538,7 @@ img {
     }
 
     .cont04 .img_list_wrap {
-        padding-top: 804px;
+        padding-top: 704px;
     }
 
     .cont04 .btn {
