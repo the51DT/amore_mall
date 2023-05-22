@@ -332,7 +332,7 @@ img {
     max-width: calc(100vw * 600 / 750);
 }
 .cont01 .cp_pack01 .cp_list {
-    padding: calc(100vw * 41 / 750) 0;
+    padding: calc(100vw * 39 / 750) 0;
 }
 .cont01 .cp_pack01 .cp_list img {
     max-width: calc(100vw * 618 / 750);
@@ -361,8 +361,10 @@ img {
     max-width: calc(100vw * 630 / 750);
 }
 .cont01 .cp_pack03 {
-    width: 100%;
-    background: url(../img/cont01/cont01_cp_bg03.svg) no-repeat center top /
+    margin: 0 auto;
+    max-width: 690px;
+    width: calc(100vw * 690 / 750);
+    background: url(../img/cont01/cont01_cp_bg03.png) no-repeat center top /
         100% auto;
 }
 .cont01 .cp_pack03 .cp_pack03_bg {
@@ -1450,7 +1452,7 @@ img {
     }
 
     .cont01 .cp_pack01 .cp_list {
-        padding: 41px 0;
+        padding: 39px 0;
     }
 
     .cont01 .cp_pack02 .cp_tit {
