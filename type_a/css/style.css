@@ -252,20 +252,13 @@ img {
     width: 100%;
 }
 .nav li a:hover,
-.nav li a:active {
+.nav li a.active {
     top: 0;
     color: #fff;
     width: 100%;
     background: url(../img/main/nav_act.svg) no-repeat center top / 100% 100%;
     background-position-y: 0px;
     background-size: 100%;
-}
-.nav .swiper-slide {
-    flex-shrink: initial;
-}
-.nav_wrap .swiper-wrapper {
-    display: flex;
-    justify-content: space-between;
 }
 
 /* cont01 */

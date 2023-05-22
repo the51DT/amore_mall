@@ -804,28 +804,70 @@
         }, 1100);
 
         // nav
-        const scrollCheck = () => {
-            const currentScroll = $(window).scrollTop();
-            const section = document.querySelectorAll(".content section");
-            const navLi = document.querySelectorAll(".nav li");
-            section.forEach((el) => {
-                if (currentScroll > el.offsetTop - 100) {
-                    const target = el.getAttribute("id");
-                    for (let i = 0; i < navLi.length; i++) {
-                        navLi[i].classList.remove("active");
-                        if (
-                            navLi[i]
-                                .querySelector("a")
-                                .getAttribute("href")
-                                .replace("#", "") === target
-                        ) {
-                            navLi[i].classList.add("active");
-                        }
-                    }
-                }
-            });
+        // const scrollCheck = () => {
+        //     const currentScroll = $(window).scrollTop();
+        //     const section = document.querySelectorAll(".content section");
+        //     const navLi = document.querySelectorAll(".nav li");
+        //     section.forEach((el) => {
+        //         if (currentScroll > el.offsetTop - 100) {
+        //             const target = el.getAttribute("id");
+        //             for (let i = 0; i < navLi.length; i++) {
+        //                 navLi[i].classList.remove("active");
+        //                 if (
+        //                     navLi[i]
+        //                         .querySelector("a")
+        //                         .getAttribute("href")
+        //                         .replace("#", "") === target
+        //                 ) {
+        //                     navLi[i].classList.add("active");
+        //                 }
+        //             }
+        //         }
+        //     });
+        // };
+        // window.addEventListener("scroll", scrollCheck);
+
+        function checkVisible( element, check = 'visible' ) {
+            const viewportHeight = $(window).height(); // Viewport Height
+            const scrolltop = $(window).scrollTop(); // Scroll Top
+            const y = $(element).offset().top;
+            const elementHeight = $(element).height();   
+
+            if (check == "visible") 
+                return ((y < (viewportHeight + scrolltop -400)) && (y > (scrolltop - elementHeight)));
         };
-        window.addEventListener("scroll", scrollCheck);
+
+        const func = function () {
+            if (checkVisible('#nav01') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(0).addClass('active')
+            }
+            if (checkVisible('#nav02') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(1).addClass('active')
+            }
+            if (checkVisible('#nav03') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(2).addClass('active')
+            }
+            if (checkVisible('#nav04') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(3).addClass('active')
+            }
+            if (checkVisible('#nav05') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(4).addClass('active')
+            }
+            if (checkVisible('#nav06') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(5).addClass('active')
+            }
+            if (checkVisible('#nav07') ) {
+                $('.nav li a').removeClass('active')
+                $('.nav li a').eq(6).addClass('active')
+            }
+        }
+        window.addEventListener('scroll', func);
 
         //anim
         function checkVisible(element, check = "visible") {
@@ -841,7 +883,7 @@
                 );
         }
 
-        const func = function () {
+        const func01 = function () {
             if (checkVisible(".cont01")) {
                 $(".cont01 .light_img").css({ opacity: 1 });
             } else {
@@ -879,7 +921,7 @@
             }
         };
 
-        window.addEventListener("scroll", func);
+        window.addEventListener("scroll", func01);
 
         $(function () {
             $(".tab_cont > div + div").hide();

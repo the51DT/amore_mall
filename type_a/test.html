@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*퀵메뉴*/
+    .quick_menu {left:5%;position: absolute;}
+    .quick_menu.fixed {position: fixed;top: 5px; z-index:100}
+    .quick_menu  li {width: 120px;height: 35px;line-height: 35px; border-radius: 5px;background: #b2b2b2;margin-bottom: 10px;overflow: hidden}
+    .quick_menu  li a{color: #fff;display: block;width: 100%;height: 100%;padding:0 10px ;}
+    .quick_menu li.on {background: url(../images/tm_03/quick_arrow.png) no-repeat right 20px center #0368da}
+    .quick_menu  li a:hover {background: url(../images/tm_03/quick_arrow.png) no-repeat right 20px center #0368da}
+        
+
+    .main-img {background:black;width:100%;height:500px;color:#fff;text-align:center;line-height:500px;font-size:30px}
+
+    .section{width:100%;height:100vh;text-align:center;line-height:500px;font-size:30px}
+    #section01{background:red}
+    #section02{background:blue}
+    #section03{background:green}
+    #section04{background:yellow}
+</style>
+<body>
+    <div class="container">
+        <div class="main-img">main</div>
+        <!-- 퀵메뉴 영역 -->
+        <ul class="quick_menu">
+            <li class="on">
+                <a href="#section01" class="f16">section1</a>
+            </li>
+            <li>
+                <a href="#section02" class="f16">section2</a>
+            </li>
+            <li>
+                <a href="#section03" class="f16">section3</a>
+            </li>
+            <li>
+                <a href="#section04" class="f16">section4</a>
+            </li>
+        </ul>
+        <!-- //퀵메뉴 영역 -->
+        <div id="section01" class="section target">
+            section01
+        </div>
+        <div id="section02" class="section target">
+            section02
+        </div>
+        <div id="section03" class="section target">
+            section03
+        </div>
+        <div id="section04" class="section target">
+            section04
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $('a').click(function() {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+    });
+
+    // 퀵메뉴
+    $('.quick_menu li a').click(function() {
+        // 버튼 hover 이벤트
+        return false
+        $(this).parent().addClass('on');
+        $(this).parent().siblings().removeClass('on');
+    });
+
+    var sections = $('.target'),
+        nav = $('.quick_menu'),
+        nav_height = nav.outerHeight();
+
+    $(window).on('scroll', function() {
+        var cur_pos = $(this).scrollTop();
+
+        sections.each(function() {
+            var top = $(this).offset().top - nav_height,
+                bottom = top + $(this).outerHeight();
+
+            if (cur_pos >= top && cur_pos <= bottom) {
+                nav.find('a').parent().removeClass('on');
+                sections.removeClass('active');
+
+                $(this).parent().addClass('on');
+                nav.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass('on');
+            }
+        });
+    });
+
+    nav.find('a').on('click', function() {
+        var $el = $(this),
+            id = $el.attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top 
+        }, 500);
+
+        return false;
+    });
+
+
+
+    $(window).on('scroll', function() {
+        //스크롤의 위치가 상단에서 760보다 크면
+        if ($(window).scrollTop() > 520) {
+            /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+            $('.quick_menu').addClass("fixed");
+            //위의 if문에 대한 조건 만족시 fixed라는 class를 부여함
+        } else {
+            $('.quick_menu').removeClass("fixed");
+            //위의 if문에 대한 조건 아닌경우 fixed라는 class를 삭제함
+        }
+    })
+</script>
+</html>
